@@ -1,0 +1,9 @@
+{
+  "tool": "work/c-verification/check.exe",
+  "packet_checksum": true,
+  "packet_count": true,
+  "content_checksum": true,
+  "digest_verified": false,
+  "key_recovered": false,
+  "status": "Generic C verifier could not recover a digest key; its digest result is not a verified pass. Independent Digitone transport/container/MAIN checks and actual loader execution passed separately."
+}

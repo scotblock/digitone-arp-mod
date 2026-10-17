@@ -1,5 +1,7 @@
 # E09 patch package
 
+**Known issue:** M1 keyboard input can arpeggiate while sequenced notes disable the arp because of incorrect settings ownership. E09A is the separate PC-tested correction; this older package does not contain it.
+
 **This folder creates E09 only.** PC-only preview; physical dual-port validation outstanding.
 
 # Stock-dependent OS 1.44 patch packages

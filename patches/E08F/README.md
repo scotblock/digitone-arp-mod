@@ -1,5 +1,7 @@
 # E08F patch package
 
+**Known issue:** M1 keyboard input can arpeggiate while sequenced notes disable the arp because of incorrect settings ownership. E09A is the separate PC-tested correction; this older package does not contain it.
+
 **This folder creates E08F only.** Experimental; user-reported working hardware baseline, not hardware-certified.
 
 # Stock-dependent OS 1.44 patch packages

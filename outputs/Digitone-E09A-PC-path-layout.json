@@ -1,0 +1,1745 @@
+{
+  "PC_only": true,
+  "hardware_ready": false,
+  "candidate": ".\\work\\os144\\E09A-PC-path-candidate.syx",
+  "candidate_sha256": "68f67aac272cfaa0b52763db150efddbf4654a6773e9604b627898c857fa1c3c",
+  "main_sha256": "18699f67d47434bb714fdd49ca5752c389c1ef3f881dfe6bb9de29ce4be1c118",
+  "payload_sha256": "6ec846a3e19e51b7c0db828dc96b88f0221cd54152467a16c51fa1c14ccbc177",
+  "payload_bytes": 34720,
+  "copy_longwords": 8680,
+  "sections": [
+    [
+      5,
+      160,
+      15,
+      0
+    ],
+    [
+      2,
+      176,
+      16052,
+      33556482
+    ],
+    [
+      3,
+      16240,
+      990248,
+      1073742848
+    ],
+    [
+      4,
+      1006496,
+      32776,
+      2147484672
+    ],
+    [
+      6,
+      1039280,
+      1492,
+      0
+    ],
+    [
+      7,
+      1040784,
+      126352,
+      0
+    ],
+    [
+      8,
+      1167136,
+      103416,
+      0
+    ]
+  ],
+  "container_bytes": 1270875,
+  "syx_bytes": 1610656,
+  "components": [
+    {
+      "name": "persistent-admission",
+      "base": 1203648512,
+      "bytes": 332,
+      "sha256_before_completion_patch": "e9374f76e3bf120d8de75719057bea4904954f78f978b6dea69f8ccab07f2f60",
+      "layout": {
+        "claim_cold": {
+          "address": 1203648512,
+          "size": 68
+        },
+        "complete": {
+          "address": 1203648580,
+          "size": 98
+        },
+        "retained_defer": {
+          "address": 1203648678,
+          "size": 84
+        },
+        "explicit_refuse": {
+          "address": 1203648762,
+          "size": 82
+        }
+      }
+    },
+    {
+      "name": "cold-admission-overlay",
+      "base": 1203649280,
+      "bytes": 280,
+      "sha256_before_completion_patch": "706655f6567db22f3bc1e94d851c60ef13606d4402404513227618ad640be0d3",
+      "layout": {
+        "failure_stop": {
+          "address": 1203649280,
+          "size": 34
+        },
+        "seed_after_copy": {
+          "address": 1203649314,
+          "size": 150
+        },
+        "normal_setup_claim": {
+          "address": 1203649464,
+          "size": 90
+        },
+        "diagnostic_reject": {
+          "address": 1203649554,
+          "size": 6
+        }
+      }
+    },
+    {
+      "name": "input-live-overlay",
+      "base": 1203650048,
+      "bytes": 492,
+      "sha256_before_completion_patch": "394ebd298b5c2b562b8640217b34924ac6009501c3ff458a92ec6cd96bf6826b",
+      "layout": {
+        "packet_guard": {
+          "address": 1203650048,
+          "size": 74
+        },
+        "cached_selector_guard": {
+          "address": 1203650122,
+          "size": 74
+        },
+        "live_producer_guard": {
+          "address": 1203650196,
+          "size": 72
+        },
+        "normal_completion": {
+          "address": 1203650268,
+          "size": 272
+        }
+      }
+    },
+    {
+      "name": "release-reset-overlay",
+      "base": 1203650816,
+      "bytes": 594,
+      "sha256_before_completion_patch": "9c482c1d92ba58e5d52b6db722f6b7d8be1bce45462619694b223892b0e0331c",
+      "layout": {
+        "note_off": {
+          "address": 1203650816,
+          "size": 76
+        },
+        "sustain_set": {
+          "address": 1203650892,
+          "size": 74
+        },
+        "sustain_release": {
+          "address": 1203650966,
+          "size": 74
+        },
+        "normal_setup": {
+          "address": 1203651040,
+          "size": 88
+        },
+        "setup_body": {
+          "address": 1203651128,
+          "size": 86
+        },
+        "pool_wrapper": {
+          "address": 1203651214,
+          "size": 90
+        },
+        "pool_initializer": {
+          "address": 1203651304,
+          "size": 86
+        },
+        "test_exit_refuse": {
+          "address": 1203651390,
+          "size": 2
+        },
+        "command_exit_cleanup": {
+          "address": 1203651392,
+          "size": 18
+        }
+      }
+    },
+    {
+      "name": "resident-deferred-release-overlay",
+      "base": 1203651584,
+      "bytes": 750,
+      "sha256_before_completion_patch": "df837b7e762c256f73629b319202f522d3c9aef444d1e6aa9e60f2f80726dbf9",
+      "layout": {
+        "stock_internal_release": {
+          "address": 1203651584,
+          "size": 12
+        },
+        "internal_release_guard": {
+          "address": 1203651596,
+          "size": 294
+        },
+        "sustain_handled_guard": {
+          "address": 1203651890,
+          "size": 144
+        },
+        "resume_deferred": {
+          "address": 1203652034,
+          "size": 220
+        },
+        "completion_dispatch": {
+          "address": 1203652254,
+          "size": 80
+        }
+      }
+    },
+    {
+      "name": "diagnostic_outer_refuse",
+      "base": 1203652608,
+      "bytes": 2,
+      "layout": {
+        "refuse": {
+          "address": 1203652608,
+          "size": 2
+        }
+      }
+    },
+    {
+      "name": "degree_helper",
+      "base": 1203636736,
+      "bytes": 302
+    },
+    {
+      "name": "arp_degree_tail_hook",
+      "base": 1203637248,
+      "bytes": 146
+    },
+    {
+      "name": "degree_table",
+      "base": 1203637504,
+      "bytes": 560
+    },
+    {
+      "name": "DIN_try_send",
+      "base": 1203638064,
+      "bytes": 158
+    },
+    {
+      "name": "service_release",
+      "base": 1203637038,
+      "bytes": 172
+    },
+    {
+      "name": "release_voice",
+      "base": 1203637394,
+      "bytes": 96
+    },
+    {
+      "name": "start_voice",
+      "base": 1203641216,
+      "bytes": 332
+    },
+    {
+      "name": "pump_releases",
+      "base": 1203641770,
+      "bytes": 62
+    },
+    {
+      "name": "mark_arp_event",
+      "base": 1203641632,
+      "bytes": 70
+    },
+    {
+      "name": "accepted_voice_hook",
+      "base": 1203641548,
+      "bytes": 84
+    },
+    {
+      "name": "allocator_release_hook",
+      "base": 1203641892,
+      "bytes": 56
+    },
+    {
+      "name": "gate_release_hook",
+      "base": 1203641832,
+      "bytes": 60
+    },
+    {
+      "name": "MIDI_task_pump_hook",
+      "base": 1203637210,
+      "bytes": 18
+    },
+    {
+      "name": "retire_event_marker",
+      "base": 1203641702,
+      "bytes": 68
+    },
+    {
+      "name": "MIDI_private_state_seed",
+      "base": 1203641952,
+      "bytes": 160
+    },
+    {
+      "name": "clear_members",
+      "base": 1203652624,
+      "bytes": 30
+    },
+    {
+      "name": "sort_members",
+      "base": 1203652654,
+      "bytes": 66
+    },
+    {
+      "name": "copy_template",
+      "base": 1203652720,
+      "bytes": 34
+    },
+    {
+      "name": "emit_descriptor",
+      "base": 1203652754,
+      "bytes": 126
+    },
+    {
+      "name": "dispatch",
+      "base": 1203652880,
+      "bytes": 632
+    },
+    {
+      "name": "consumer_hook",
+      "base": 1203653512,
+      "bytes": 102
+    },
+    {
+      "name": "retirement_hook",
+      "base": 1203653614,
+      "bytes": 38
+    },
+    {
+      "name": "native_initialize",
+      "base": 1203653652,
+      "bytes": 116
+    },
+    {
+      "name": "configure_rate_gate",
+      "base": 1203653768,
+      "bytes": 136
+    },
+    {
+      "name": "cold_success_initialize",
+      "base": 1203654368,
+      "bytes": 52
+    },
+    {
+      "name": "rate_table",
+      "base": 1203653904,
+      "bytes": 32,
+      "old_base": 1203662592
+    },
+    {
+      "name": "read_MIDI_settings",
+      "base": 1203656704,
+      "bytes": 138
+    },
+    {
+      "name": "write_MIDI_settings",
+      "base": 1203656960,
+      "bytes": 150
+    },
+    {
+      "name": "validate_tagged_word",
+      "base": 1203657984,
+      "bytes": 56
+    },
+    {
+      "name": "encode_MIDI_settings",
+      "base": 1203657216,
+      "bytes": 86
+    },
+    {
+      "name": "decode_MIDI_settings",
+      "base": 1203657600,
+      "bytes": 86
+    },
+    {
+      "name": "selected_track",
+      "base": 1203658240,
+      "bytes": 24
+    },
+    {
+      "name": "M1_handle",
+      "base": 1203658368,
+      "bytes": 26
+    },
+    {
+      "name": "M1_SYN2_open",
+      "base": 1203658496,
+      "bytes": 114
+    },
+    {
+      "name": "M1_controls_render",
+      "base": 1203658752,
+      "bytes": 452
+    },
+    {
+      "name": "M1_controls_entry",
+      "base": 1203660288,
+      "bytes": 78
+    },
+    {
+      "name": "M1_controls_turn",
+      "base": 1203659520,
+      "bytes": 370
+    },
+    {
+      "name": "M1_controls_key",
+      "base": 1203660032,
+      "bytes": 172
+    },
+    {
+      "name": "M1_settings_consumer",
+      "base": 1203660800,
+      "bytes": 356
+    },
+    {
+      "name": "mark_M1_view",
+      "base": 1203661952,
+      "bytes": 106
+    },
+    {
+      "name": "M1_view_tick",
+      "base": 1203662112,
+      "bytes": 82
+    },
+    {
+      "name": "refuse_synth_shortcut_0",
+      "base": 1203661568,
+      "bytes": 86
+    },
+    {
+      "name": "refuse_synth_shortcut_1",
+      "base": 1203661696,
+      "bytes": 86
+    },
+    {
+      "name": "refuse_synth_shortcut_2",
+      "base": 1203661824,
+      "bytes": 86
+    },
+    {
+      "name": "observe_M1_binding",
+      "base": 1203662464,
+      "bytes": 262
+    },
+    {
+      "name": "codec_stock_trampoline_400081f6",
+      "base": 1203662336,
+      "bytes": 14
+    },
+    {
+      "name": "codec_stock_trampoline_4000818a",
+      "base": 1203662368,
+      "bytes": 14
+    },
+    {
+      "name": "M1_control_labels_and_rates",
+      "base": 1203661312,
+      "bytes": 128
+    },
+    {
+      "name": "publish_owned_settings",
+      "base": 1203662848,
+      "bytes": 314
+    },
+    {
+      "name": "select_consumed_settings_owner",
+      "base": 1203663232,
+      "bytes": 158
+    },
+    {
+      "name": "eligible_source_settings_owner",
+      "base": 1203663488,
+      "bytes": 242
+    },
+    {
+      "name": "M1_quiesce_generation",
+      "base": 1203663872,
+      "bytes": 84
+    },
+    {
+      "name": "M1_stock_stop_bridge",
+      "base": 1203664000,
+      "bytes": 18
+    },
+    {
+      "name": "USB_try_send",
+      "base": 1203666432,
+      "bytes": 232
+    },
+    {
+      "name": "USB_service_release",
+      "base": 1203666688,
+      "bytes": 172
+    },
+    {
+      "name": "USB_release_voice",
+      "base": 1203666944,
+      "bytes": 96
+    },
+    {
+      "name": "USB_start_voice",
+      "base": 1203667200,
+      "bytes": 332
+    },
+    {
+      "name": "USB_pump_releases",
+      "base": 1203667712,
+      "bytes": 62
+    },
+    {
+      "name": "start_both",
+      "base": 1203667968,
+      "bytes": 94
+    },
+    {
+      "name": "release_both",
+      "base": 1203668096,
+      "bytes": 62
+    },
+    {
+      "name": "pump_both",
+      "base": 1203668224,
+      "bytes": 46
+    },
+    {
+      "name": "USB_mirror_private_state_seed",
+      "base": 1203668736,
+      "bytes": 160
+    }
+  ],
+  "regions": [
+    {
+      "name": "copier",
+      "base": 1076479152,
+      "bytes": 110
+    },
+    {
+      "name": "begin",
+      "base": 1203634176,
+      "bytes": 42
+    },
+    {
+      "name": "cancel",
+      "base": 1203634218,
+      "bytes": 36
+    },
+    {
+      "name": "commit",
+      "base": 1203634254,
+      "bytes": 136
+    },
+    {
+      "name": "read",
+      "base": 1203634390,
+      "bytes": 62
+    },
+    {
+      "name": "resolve",
+      "base": 1203634452,
+      "bytes": 112
+    },
+    {
+      "name": "snapshot",
+      "base": 1203634564,
+      "bytes": 34
+    },
+    {
+      "name": "before",
+      "base": 1203634598,
+      "bytes": 60
+    },
+    {
+      "name": "after",
+      "base": 1203634658,
+      "bytes": 60
+    },
+    {
+      "name": "caller_commit",
+      "base": 1203634718,
+      "bytes": 86
+    },
+    {
+      "name": "capture",
+      "base": 1203634804,
+      "bytes": 120
+    },
+    {
+      "name": "candidate_store",
+      "base": 1203634924,
+      "bytes": 38
+    },
+    {
+      "name": "quantize",
+      "base": 1203634962,
+      "bytes": 178
+    },
+    {
+      "name": "pitch",
+      "base": 1203635140,
+      "bytes": 232
+    },
+    {
+      "name": "producer_capture",
+      "base": 1203635372,
+      "bytes": 62
+    },
+    {
+      "name": "pitch_hook",
+      "base": 1203635434,
+      "bytes": 56
+    },
+    {
+      "name": "allocate_clear",
+      "base": 1203635490,
+      "bytes": 58
+    },
+    {
+      "name": "reset",
+      "base": 1203635548,
+      "bytes": 230
+    },
+    {
+      "name": "allocator_original",
+      "base": 1203635778,
+      "bytes": 16
+    },
+    {
+      "name": "slot",
+      "base": 1203635794,
+      "bytes": 74
+    },
+    {
+      "name": "copy",
+      "base": 1203635868,
+      "bytes": 74
+    },
+    {
+      "name": "first_copy",
+      "base": 1203635942,
+      "bytes": 18
+    },
+    {
+      "name": "live_capture",
+      "base": 1203646464,
+      "bytes": 474
+    },
+    {
+      "name": "storage_reset",
+      "base": 1203647488,
+      "bytes": 304
+    },
+    {
+      "name": "atomic_live_copy",
+      "base": 1203648000,
+      "bytes": 182
+    },
+    {
+      "name": "persistent-admission",
+      "base": 1203648512,
+      "bytes": 332
+    },
+    {
+      "name": "cold-admission-overlay",
+      "base": 1203649280,
+      "bytes": 280
+    },
+    {
+      "name": "input-live-overlay",
+      "base": 1203650048,
+      "bytes": 492
+    },
+    {
+      "name": "release-reset-overlay",
+      "base": 1203650816,
+      "bytes": 594
+    },
+    {
+      "name": "resident-deferred-release-overlay",
+      "base": 1203651584,
+      "bytes": 750
+    },
+    {
+      "name": "diagnostic_outer_refuse",
+      "base": 1203652608,
+      "bytes": 2
+    },
+    {
+      "name": "degree_helper",
+      "base": 1203636736,
+      "bytes": 302
+    },
+    {
+      "name": "arp_degree_tail_hook",
+      "base": 1203637248,
+      "bytes": 146
+    },
+    {
+      "name": "DIN_try_send",
+      "base": 1203638064,
+      "bytes": 158
+    },
+    {
+      "name": "service_release",
+      "base": 1203637038,
+      "bytes": 172
+    },
+    {
+      "name": "release_voice",
+      "base": 1203637394,
+      "bytes": 96
+    },
+    {
+      "name": "start_voice",
+      "base": 1203641216,
+      "bytes": 332
+    },
+    {
+      "name": "pump_releases",
+      "base": 1203641770,
+      "bytes": 62
+    },
+    {
+      "name": "mark_arp_event",
+      "base": 1203641632,
+      "bytes": 70
+    },
+    {
+      "name": "accepted_voice_hook",
+      "base": 1203641548,
+      "bytes": 84
+    },
+    {
+      "name": "allocator_release_hook",
+      "base": 1203641892,
+      "bytes": 56
+    },
+    {
+      "name": "gate_release_hook",
+      "base": 1203641832,
+      "bytes": 60
+    },
+    {
+      "name": "MIDI_task_pump_hook",
+      "base": 1203637210,
+      "bytes": 18
+    },
+    {
+      "name": "retire_event_marker",
+      "base": 1203641702,
+      "bytes": 68
+    },
+    {
+      "name": "clear_members",
+      "base": 1203652624,
+      "bytes": 30
+    },
+    {
+      "name": "sort_members",
+      "base": 1203652654,
+      "bytes": 66
+    },
+    {
+      "name": "copy_template",
+      "base": 1203652720,
+      "bytes": 34
+    },
+    {
+      "name": "emit_descriptor",
+      "base": 1203652754,
+      "bytes": 126
+    },
+    {
+      "name": "dispatch",
+      "base": 1203652880,
+      "bytes": 632
+    },
+    {
+      "name": "consumer_hook",
+      "base": 1203653512,
+      "bytes": 102
+    },
+    {
+      "name": "retirement_hook",
+      "base": 1203653614,
+      "bytes": 38
+    },
+    {
+      "name": "native_initialize",
+      "base": 1203653652,
+      "bytes": 116
+    },
+    {
+      "name": "configure_rate_gate",
+      "base": 1203653768,
+      "bytes": 136
+    },
+    {
+      "name": "cold_success_initialize",
+      "base": 1203654368,
+      "bytes": 52
+    },
+    {
+      "name": "read_MIDI_settings",
+      "base": 1203656704,
+      "bytes": 138
+    },
+    {
+      "name": "write_MIDI_settings",
+      "base": 1203656960,
+      "bytes": 150
+    },
+    {
+      "name": "validate_tagged_word",
+      "base": 1203657984,
+      "bytes": 56
+    },
+    {
+      "name": "encode_MIDI_settings",
+      "base": 1203657216,
+      "bytes": 86
+    },
+    {
+      "name": "decode_MIDI_settings",
+      "base": 1203657600,
+      "bytes": 86
+    },
+    {
+      "name": "selected_track",
+      "base": 1203658240,
+      "bytes": 24
+    },
+    {
+      "name": "M1_handle",
+      "base": 1203658368,
+      "bytes": 26
+    },
+    {
+      "name": "M1_SYN2_open",
+      "base": 1203658496,
+      "bytes": 114
+    },
+    {
+      "name": "M1_controls_render",
+      "base": 1203658752,
+      "bytes": 452
+    },
+    {
+      "name": "M1_controls_entry",
+      "base": 1203660288,
+      "bytes": 78
+    },
+    {
+      "name": "M1_controls_turn",
+      "base": 1203659520,
+      "bytes": 370
+    },
+    {
+      "name": "M1_controls_key",
+      "base": 1203660032,
+      "bytes": 172
+    },
+    {
+      "name": "M1_settings_consumer",
+      "base": 1203660800,
+      "bytes": 356
+    },
+    {
+      "name": "mark_M1_view",
+      "base": 1203661952,
+      "bytes": 106
+    },
+    {
+      "name": "M1_view_tick",
+      "base": 1203662112,
+      "bytes": 82
+    },
+    {
+      "name": "refuse_synth_shortcut_0",
+      "base": 1203661568,
+      "bytes": 86
+    },
+    {
+      "name": "refuse_synth_shortcut_1",
+      "base": 1203661696,
+      "bytes": 86
+    },
+    {
+      "name": "refuse_synth_shortcut_2",
+      "base": 1203661824,
+      "bytes": 86
+    },
+    {
+      "name": "observe_M1_binding",
+      "base": 1203662464,
+      "bytes": 262
+    },
+    {
+      "name": "codec_stock_trampoline_400081f6",
+      "base": 1203662336,
+      "bytes": 14
+    },
+    {
+      "name": "codec_stock_trampoline_4000818a",
+      "base": 1203662368,
+      "bytes": 14
+    },
+    {
+      "name": "publish_owned_settings",
+      "base": 1203662848,
+      "bytes": 314
+    },
+    {
+      "name": "select_consumed_settings_owner",
+      "base": 1203663232,
+      "bytes": 158
+    },
+    {
+      "name": "eligible_source_settings_owner",
+      "base": 1203663488,
+      "bytes": 242
+    },
+    {
+      "name": "M1_quiesce_generation",
+      "base": 1203663872,
+      "bytes": 84
+    },
+    {
+      "name": "M1_stock_stop_bridge",
+      "base": 1203664000,
+      "bytes": 18
+    },
+    {
+      "name": "USB_try_send",
+      "base": 1203666432,
+      "bytes": 232
+    },
+    {
+      "name": "USB_service_release",
+      "base": 1203666688,
+      "bytes": 172
+    },
+    {
+      "name": "USB_release_voice",
+      "base": 1203666944,
+      "bytes": 96
+    },
+    {
+      "name": "USB_start_voice",
+      "base": 1203667200,
+      "bytes": 332
+    },
+    {
+      "name": "USB_pump_releases",
+      "base": 1203667712,
+      "bytes": 62
+    },
+    {
+      "name": "start_both",
+      "base": 1203667968,
+      "bytes": 94
+    },
+    {
+      "name": "release_both",
+      "base": 1203668096,
+      "bytes": 62
+    },
+    {
+      "name": "pump_both",
+      "base": 1203668224,
+      "bytes": 46
+    }
+  ],
+  "hooks": [
+    {
+      "site": 1074741428,
+      "target": 1203660800,
+      "length": 6,
+      "original": "4ef947be4b88",
+      "replacement": "4ef947be6800"
+    },
+    {
+      "site": 1074743744,
+      "length": 6,
+      "target": 1203653614,
+      "original": "242a00302f0a",
+      "replacement": "4ef947be4bee"
+    },
+    {
+      "site": 1074002826,
+      "target": 1203658496,
+      "length": 8,
+      "original": "661042a7486cffec",
+      "replacement": "4ef947be5f004e71"
+    },
+    {
+      "site": 1074074512,
+      "target": 1203658752,
+      "length": 8,
+      "original": "4fefff7c48d77cfc",
+      "replacement": "4ef947be60004e71"
+    },
+    {
+      "site": 1074077440,
+      "target": 1203660288,
+      "length": 8,
+      "original": "4feffff048d7041c",
+      "replacement": "4ef947be66004e71"
+    },
+    {
+      "site": 1074075944,
+      "target": 1203659520,
+      "length": 8,
+      "original": "4fefffe448d71c3c",
+      "replacement": "4ef947be63004e71"
+    },
+    {
+      "site": 1074078398,
+      "target": 1203660032,
+      "length": 8,
+      "original": "4fefffec48d71c0c",
+      "replacement": "4ef947be65004e71"
+    },
+    {
+      "site": 1074003030,
+      "target": 1203661952,
+      "length": 10,
+      "original": "2f02240e0682fffffff0",
+      "replacement": "4ef947be6c804e714e71"
+    },
+    {
+      "site": 1074078776,
+      "target": 1203662112,
+      "length": 10,
+      "original": "2f0a246f0008202a02c8",
+      "replacement": "4ef947be6d204e714e71"
+    },
+    {
+      "site": 1074077708,
+      "target": 1203661568,
+      "length": 8,
+      "original": "4e56ffdc48d70c0c",
+      "replacement": "4ef947be6b004e71"
+    },
+    {
+      "site": 1074077966,
+      "target": 1203661696,
+      "length": 8,
+      "original": "4e56ffdc48d71c0c",
+      "replacement": "4ef947be6b804e71"
+    },
+    {
+      "site": 1074078184,
+      "target": 1203661824,
+      "length": 8,
+      "original": "4e56ffdc48d71c0c",
+      "replacement": "4ef947be6c004e71"
+    },
+    {
+      "site": 1075093590,
+      "target": 1203662464,
+      "length": 8,
+      "original": "2039419f0de04e5e",
+      "replacement": "4ef947be6e804e71"
+    },
+    {
+      "site": 1073775094,
+      "target": 1203657216,
+      "length": 8,
+      "original": "2f0b2f0a246f000c",
+      "replacement": "4ef947be5a004e71"
+    },
+    {
+      "site": 1073774986,
+      "target": 1203657600,
+      "length": 8,
+      "original": "4feffff448d71c00",
+      "replacement": "4ef947be5b804e71"
+    },
+    {
+      "site": 1074744044,
+      "target": 1203664000,
+      "length": 6,
+      "original": "2479419b3cfc",
+      "replacement": "4ef947be7480"
+    }
+  ],
+  "relocations": [
+    {
+      "region": "clear_members",
+      "offset": 2,
+      "from": "0x47be7060",
+      "to": "0x47be4da0"
+    },
+    {
+      "region": "clear_members",
+      "offset": 18,
+      "from": "0x47be7010",
+      "to": "0x47be4d50"
+    },
+    {
+      "region": "clear_members",
+      "offset": 24,
+      "from": "0x47be7014",
+      "to": "0x47be4d54"
+    },
+    {
+      "region": "sort_members",
+      "offset": 2,
+      "from": "0x47be7060",
+      "to": "0x47be4da0"
+    },
+    {
+      "region": "copy_template",
+      "offset": 4,
+      "from": "0x47be70e0",
+      "to": "0x47be4e20"
+    },
+    {
+      "region": "copy_template",
+      "offset": 22,
+      "from": "0x47be7108",
+      "to": "0x47be4e48"
+    },
+    {
+      "region": "copy_template",
+      "offset": 28,
+      "from": "0x47be7110",
+      "to": "0x47be4e50"
+    },
+    {
+      "region": "emit_descriptor",
+      "offset": 26,
+      "from": "0x47be70e0",
+      "to": "0x47be4e20"
+    },
+    {
+      "region": "emit_descriptor",
+      "offset": 32,
+      "from": "0x47be7200",
+      "to": "0x47be4ea0"
+    },
+    {
+      "region": "emit_descriptor",
+      "offset": 50,
+      "from": "0x47be7200",
+      "to": "0x47be4ea0"
+    },
+    {
+      "region": "emit_descriptor",
+      "offset": 120,
+      "from": "0x47be7200",
+      "to": "0x47be4ea0"
+    },
+    {
+      "region": "dispatch",
+      "offset": 6,
+      "from": "0x47be7000",
+      "to": "0x47be4d40"
+    },
+    {
+      "region": "dispatch",
+      "offset": 14,
+      "from": "0x47be7200",
+      "to": "0x47be4ea0"
+    },
+    {
+      "region": "dispatch",
+      "offset": 194,
+      "from": "0x47be6900",
+      "to": "0x47be4810"
+    },
+    {
+      "region": "dispatch",
+      "offset": 324,
+      "from": "0x47be6900",
+      "to": "0x47be4810"
+    },
+    {
+      "region": "dispatch",
+      "offset": 332,
+      "from": "0x47be7060",
+      "to": "0x47be4da0"
+    },
+    {
+      "region": "dispatch",
+      "offset": 358,
+      "from": "0x47be6800",
+      "to": "0x47be482e"
+    },
+    {
+      "region": "dispatch",
+      "offset": 364,
+      "from": "0x47be6980",
+      "to": "0x47be4870"
+    },
+    {
+      "region": "dispatch",
+      "offset": 402,
+      "from": "0x47be6a00",
+      "to": "0x47be4892"
+    },
+    {
+      "region": "dispatch",
+      "offset": 466,
+      "from": "0x47be6900",
+      "to": "0x47be4810"
+    },
+    {
+      "region": "dispatch",
+      "offset": 476,
+      "from": "0x47be7060",
+      "to": "0x47be4da0"
+    },
+    {
+      "region": "dispatch",
+      "offset": 488,
+      "from": "0x47be6800",
+      "to": "0x47be482e"
+    },
+    {
+      "region": "dispatch",
+      "offset": 494,
+      "from": "0x47be6980",
+      "to": "0x47be4870"
+    },
+    {
+      "region": "dispatch",
+      "offset": 544,
+      "from": "0x47be7060",
+      "to": "0x47be4da0"
+    },
+    {
+      "region": "dispatch",
+      "offset": 554,
+      "from": "0x47be6800",
+      "to": "0x47be482e"
+    },
+    {
+      "region": "dispatch",
+      "offset": 616,
+      "from": "0x47be6a00",
+      "to": "0x47be4892"
+    },
+    {
+      "region": "consumer_hook",
+      "offset": 20,
+      "from": "0x47be7140",
+      "to": "0x47be4e80"
+    },
+    {
+      "region": "consumer_hook",
+      "offset": 30,
+      "from": "0x47be713c",
+      "to": "0x47be4e7c"
+    },
+    {
+      "region": "consumer_hook",
+      "offset": 36,
+      "from": "0x47be7138",
+      "to": "0x47be4e78"
+    },
+    {
+      "region": "consumer_hook",
+      "offset": 42,
+      "from": "0x47be6e00",
+      "to": "0x47be4c88"
+    },
+    {
+      "region": "consumer_hook",
+      "offset": 50,
+      "from": "0x47be7140",
+      "to": "0x47be4e80"
+    },
+    {
+      "region": "consumer_hook",
+      "offset": 58,
+      "from": "0x47be6000",
+      "to": "0x47be4910"
+    },
+    {
+      "region": "retirement_hook",
+      "offset": 2,
+      "from": "0x47be7200",
+      "to": "0x47be4ea0"
+    },
+    {
+      "region": "retirement_hook",
+      "offset": 12,
+      "from": "0x47be7118",
+      "to": "0x47be4e58"
+    },
+    {
+      "region": "native_initialize",
+      "offset": 20,
+      "from": "0x47be7000",
+      "to": "0x47be4d40"
+    },
+    {
+      "region": "native_initialize",
+      "offset": 36,
+      "from": "0x47be7200",
+      "to": "0x47be4ea0"
+    },
+    {
+      "region": "native_initialize",
+      "offset": 58,
+      "from": "0x47be7000",
+      "to": "0x47be4d40"
+    },
+    {
+      "region": "native_initialize",
+      "offset": 70,
+      "from": "0x47be7120",
+      "to": "0x47be4e60"
+    },
+    {
+      "region": "native_initialize",
+      "offset": 84,
+      "from": "0x47be6e00",
+      "to": "0x47be4c88"
+    },
+    {
+      "region": "native_initialize",
+      "offset": 96,
+      "from": "0x47be7028",
+      "to": "0x47be4d68"
+    },
+    {
+      "region": "configure_rate_gate",
+      "offset": 60,
+      "from": "0x47be6f00",
+      "to": "0x47be4d10"
+    },
+    {
+      "region": "configure_rate_gate",
+      "offset": 86,
+      "from": "0x47be7020",
+      "to": "0x47be4d60"
+    },
+    {
+      "region": "configure_rate_gate",
+      "offset": 92,
+      "from": "0x47be7024",
+      "to": "0x47be4d64"
+    },
+    {
+      "region": "configure_rate_gate",
+      "offset": 98,
+      "from": "0x47be7130",
+      "to": "0x47be4e70"
+    },
+    {
+      "region": "configure_rate_gate",
+      "offset": 104,
+      "from": "0x47be7134",
+      "to": "0x47be4e74"
+    }
+  ],
+  "strict_ISA": [
+    {
+      "name": "copier",
+      "instructions": 23,
+      "passed": true
+    },
+    {
+      "name": "begin",
+      "instructions": 14,
+      "passed": true
+    },
+    {
+      "name": "cancel",
+      "instructions": 13,
+      "passed": true
+    },
+    {
+      "name": "commit",
+      "instructions": 39,
+      "passed": true
+    },
+    {
+      "name": "read",
+      "instructions": 20,
+      "passed": true
+    },
+    {
+      "name": "resolve",
+      "instructions": 31,
+      "passed": true
+    },
+    {
+      "name": "snapshot",
+      "instructions": 11,
+      "passed": true
+    },
+    {
+      "name": "before",
+      "instructions": 17,
+      "passed": true
+    },
+    {
+      "name": "after",
+      "instructions": 19,
+      "passed": true
+    },
+    {
+      "name": "caller_commit",
+      "instructions": 25,
+      "passed": true
+    },
+    {
+      "name": "capture",
+      "instructions": 41,
+      "passed": true
+    },
+    {
+      "name": "candidate_store",
+      "instructions": 13,
+      "passed": true
+    },
+    {
+      "name": "quantize",
+      "instructions": 59,
+      "passed": true
+    },
+    {
+      "name": "pitch",
+      "instructions": 68,
+      "passed": true
+    },
+    {
+      "name": "producer_capture",
+      "instructions": 19,
+      "passed": true
+    },
+    {
+      "name": "pitch_hook",
+      "instructions": 17,
+      "passed": true
+    },
+    {
+      "name": "allocate_clear",
+      "instructions": 17,
+      "passed": true
+    },
+    {
+      "name": "reset",
+      "instructions": 58,
+      "passed": true
+    },
+    {
+      "name": "allocator_original",
+      "instructions": 4,
+      "passed": true
+    },
+    {
+      "name": "slot",
+      "instructions": 25,
+      "passed": true
+    },
+    {
+      "name": "copy",
+      "instructions": 21,
+      "passed": true
+    },
+    {
+      "name": "first_copy",
+      "instructions": 4,
+      "passed": true
+    },
+    {
+      "name": "live_capture",
+      "instructions": 129,
+      "passed": true
+    },
+    {
+      "name": "storage_reset",
+      "instructions": 66,
+      "passed": true
+    },
+    {
+      "name": "atomic_live_copy",
+      "instructions": 49,
+      "passed": true
+    },
+    {
+      "name": "persistent-admission",
+      "instructions": 87,
+      "passed": true
+    },
+    {
+      "name": "cold-admission-overlay",
+      "instructions": 61,
+      "passed": true
+    },
+    {
+      "name": "input-live-overlay",
+      "instructions": 116,
+      "passed": true
+    },
+    {
+      "name": "release-reset-overlay",
+      "instructions": 147,
+      "passed": true
+    },
+    {
+      "name": "resident-deferred-release-overlay",
+      "instructions": 184,
+      "passed": true
+    },
+    {
+      "name": "diagnostic_outer_refuse",
+      "instructions": 1,
+      "passed": true
+    }
+  ],
+  "stock_writer_byte_exact": true,
+  "candidate_decompression_exact": true,
+  "policy": "Consolidated corrected startup/live-capture/admission/reset/UI/deferred-release helpers are delivered by the native payload copier. Unsupported diagnostic queue entry returns before mutation. Global shared-owner release is unchanged.",
+  "limits": [
+    "Internal PC-only ownership candidate; no hardware release.",
+    "Consumed context/eligible note sources establish owner identity; retained identities are not dereferenced.",
+    "Physical storage/cache/timing, in-place record reuse and all project/reset overlaps remain unproven."
+  ],
+  "pitch_policy": "Arp step offsets count selected-scale degrees from the selected held note. Off-scale bases use E05 nearest/lower-tie anchoring; chromatic/invalid/unready context keeps stock arithmetic. Octave semitones and later stock transposes remain separate.",
+  "degree_address": 1203636736,
+  "degree_bytes": 302,
+  "degree_hook_address": 1203637248,
+  "degree_hook_bytes": 146,
+  "degree_table_address": 1203637504,
+  "degree_table_bytes": 560,
+  "MIDI_route": "Normal output mask: DIN, USB, or both; independent per-port synth voice ownership retains original releases.",
+  "MIDI_state": 1203641952,
+  "MIDI_state_bytes": 160,
+  "MIDI_markers": 1203641968,
+  "MIDI_records": 1203641984,
+  "MIDI_entries": {
+    "TX": 1203638064,
+    "SERVICE": 1203637038,
+    "OFF": 1203637394,
+    "ON": 1203641216,
+    "PUMP": 1203641770,
+    "MARK": 1203641632,
+    "START": 1203641548,
+    "REL1": 1203641892,
+    "REL2": 1203641832,
+    "POLL": 1203637210,
+    "CLEAR": 1203641702
+  },
+  "MIDI_code_bytes": 1176,
+  "firmware_modified": false,
+  "base": 1203634176,
+  "bytes": 34720,
+  "code_bytes": 6088,
+  "state": 1203653952,
+  "state_bytes": 344,
+  "arena": 1203654304,
+  "arena_bytes": 64,
+  "entries": {
+    "dispatch": 1203652880,
+    "sort": 1203652654,
+    "clear": 1203652624,
+    "emit": 1203652754,
+    "consumer": 1203653512,
+    "retire": 1203653614,
+    "init": 1203653652,
+    "configure": 1203653768
+  },
+  "data_regions": [
+    {
+      "name": "rate_table",
+      "base": 1203653904,
+      "bytes": 32,
+      "old_base": 1203662592
+    },
+    {
+      "name": "M1_control_labels_and_rates",
+      "base": 1203661312,
+      "bytes": 128
+    }
+  ],
+  "rate_units": [
+    21600000,
+    10800000,
+    5400000,
+    2700000,
+    1800000,
+    900000,
+    7200000,
+    3600000
+  ],
+  "rate_labels": [
+    "1/4",
+    "1/8",
+    "1/16",
+    "1/32",
+    "1/48",
+    "1/96",
+    "1/8T",
+    "1/16T"
+  ],
+  "old_payload_bytes": 18436,
+  "additional_copy_bytes": 16284,
+  "copy_source": 1076479408,
+  "copy_source_end": 1076514128,
+  "copy_destination_end": 1203668896,
+  "bootstrap": 1203654368,
+  "cold_success_patch": {
+    "site": 1203649458,
+    "before": "4ef940001df4",
+    "after": "4ef947be4ee0"
+  },
+  "installable_firmware_produced": false,
+  "controls_integrated": true,
+  "controls_baseline_payload_bytes": 20244,
+  "new_controls_hooks": [
+    {
+      "site": 1074002826,
+      "target": 1203658496,
+      "length": 8,
+      "original": "661042a7486cffec",
+      "replacement": "4ef947be5f004e71"
+    },
+    {
+      "site": 1074074512,
+      "target": 1203658752,
+      "length": 8,
+      "original": "4fefff7c48d77cfc",
+      "replacement": "4ef947be60004e71"
+    },
+    {
+      "site": 1074077440,
+      "target": 1203660288,
+      "length": 8,
+      "original": "4feffff048d7041c",
+      "replacement": "4ef947be66004e71"
+    },
+    {
+      "site": 1074075944,
+      "target": 1203659520,
+      "length": 8,
+      "original": "4fefffe448d71c3c",
+      "replacement": "4ef947be63004e71"
+    },
+    {
+      "site": 1074078398,
+      "target": 1203660032,
+      "length": 8,
+      "original": "4fefffec48d71c0c",
+      "replacement": "4ef947be65004e71"
+    },
+    {
+      "site": 1074741428,
+      "target": 1203660800,
+      "length": 6,
+      "original": "4ef947be4b88",
+      "replacement": "4ef947be6800"
+    },
+    {
+      "site": 1074003030,
+      "target": 1203661952,
+      "length": 10,
+      "original": "2f02240e0682fffffff0",
+      "replacement": "4ef947be6c804e714e71"
+    },
+    {
+      "site": 1074078776,
+      "target": 1203662112,
+      "length": 10,
+      "original": "2f0a246f0008202a02c8",
+      "replacement": "4ef947be6d204e714e71"
+    },
+    {
+      "site": 1074077708,
+      "target": 1203661568,
+      "length": 8,
+      "original": "4e56ffdc48d70c0c",
+      "replacement": "4ef947be6b004e71"
+    },
+    {
+      "site": 1074077966,
+      "target": 1203661696,
+      "length": 8,
+      "original": "4e56ffdc48d71c0c",
+      "replacement": "4ef947be6b804e71"
+    },
+    {
+      "site": 1074078184,
+      "target": 1203661824,
+      "length": 8,
+      "original": "4e56ffdc48d71c0c",
+      "replacement": "4ef947be6c004e71"
+    },
+    {
+      "site": 1075093590,
+      "target": 1203662464,
+      "length": 8,
+      "original": "2039419f0de04e5e",
+      "replacement": "4ef947be6e804e71"
+    },
+    {
+      "site": 1073775094,
+      "target": 1203657216,
+      "length": 8,
+      "original": "2f0b2f0a246f000c",
+      "replacement": "4ef947be5a004e71"
+    },
+    {
+      "site": 1073774986,
+      "target": 1203657600,
+      "length": 8,
+      "original": "4feffff448d71c00",
+      "replacement": "4ef947be5b804e71"
+    }
+  ],
+  "controls_extension_bytes": 12012,
+  "new_state_offsets": {
+    "pending_tagged_word": 324,
+    "binding_pointer_cookie": 328,
+    "binding_word_cookie": 332
+  },
+  "owner_offset": 336,
+  "request_owner_offset": 340,
+  "owner_guard_entries": {
+    "publish": 1203662848,
+    "select_owner": 1203663232,
+    "source_owner": 1203663488
+  },
+  "ownership_guards_integrated": true,
+  "menu_routing_corrected": true,
+  "parent_build": "E09",
+  "menu_changes": [
+    "Stock page subtraction is -20, not -14.",
+    "Only M1 FUNC+SYN2 opens custom controls.",
+    "Only that same M1 entry marks a custom page."
+  ],
+  "menu_helper_delta_bytes": 32,
+  "USB_mirror_state": 1203668736,
+  "USB_mirror_state_bytes": 160,
+  "USB_mirror_records": 1203668768,
+  "dual_port_synth_mirroring": true,
+  "M1_sequence_owner_fix": true,
+  "patch_only_existing_region": {
+    "name": "eligible_source_settings_owner",
+    "base": 1203663488,
+    "bytes": 242
+  },
+  "additional_copy_bytes_over_E09": 0,
+  "limitations": [
+    "M1 only; M2\u2013M4 and step editor remain unimplemented.",
+    "Physical validation, saved-project persistence and queued-note ownership across every transition remain unverified."
+  ]
+}

@@ -13,8 +13,10 @@ def package(output):
     output = Path(output)
     output.mkdir(parents=True, exist_ok=True)
     assets = []
-    for build in ['E08F', 'E09']:
-        folder = ROOT / 'patches' / build
+    for folder in sorted((ROOT/'patches').iterdir()):
+        if not folder.is_dir() or not (folder/'manifest.json').is_file():
+            continue
+        build = folder.name
         patch = folder / (build + '.darp')
         meta, _ = decode_patch(patch.read_bytes())
         published = json.loads((folder / 'manifest.json').read_text())

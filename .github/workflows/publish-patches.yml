@@ -23,6 +23,6 @@ jobs:
           RELEASE_TAG: ${{ github.ref_name }}
         run: |
           gh release create "$RELEASE_TAG" --verify-tag --prerelease --latest=false \
-            --title "OS 1.44 patches: E08F baseline and E09 PC-only preview" \
+            --title "OS 1.44 experimental arp patch packages" \
             --notes-file docs/PATCH_RELEASE.md \
-            dist/Digitone-OS1.44-E08F-patch.zip dist/Digitone-OS1.44-E09-patch.zip dist/SHA256SUMS.txt
+            dist/*.zip dist/SHA256SUMS.txt

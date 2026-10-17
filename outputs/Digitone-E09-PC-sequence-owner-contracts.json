@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "PC_only": true,
+  "cases": [
+    "sequenced_lock_list_is_not_parameters",
+    "cached_lock_list_is_not_parameters",
+    "null_lock_list",
+    "live_input_uses_same_consumed_pattern",
+    "live_rejects_multiple_notes",
+    "sequence_accepts_chord",
+    "sequence_accepts_eight_notes",
+    "other_MIDI_track",
+    "release",
+    "not_selected",
+    "empty_chord",
+    "too_many_notes",
+    "invalid_note",
+    "unknown_mode",
+    "invalid_sequence_gate",
+    "missing_consumed_pattern",
+    "timer_is_not_source"
+  ],
+  "case_count": 17,
+  "no_invalid_lock_pointer_dereference": true,
+  "limits": [
+    "Isolated source-owner helper, not full sequencer or hardware coverage."
+  ]
+}

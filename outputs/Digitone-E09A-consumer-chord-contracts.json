@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "PC_only": true,
+  "checks": [
+    "Sequenced fixture chord sorts/deduplicates to C E G twice, selecting consumed Kit settings and never dereferencing lock-list pointers.",
+    "Transport stop clears generation after owned descriptor retirement.",
+    "Live note-on, timed output and release remain functional with corrected owner selection.",
+    "M2 bypass preserves the source descriptor.",
+    "Pattern arp OFF preserves the original chord."
+  ],
+  "notes": [
+    60,
+    64,
+    67,
+    60,
+    64,
+    67
+  ],
+  "limits": [
+    "Descriptor and clock fixtures; stock consumer continuations stop at RTS boundaries. Native panel sequence playback is tested separately."
+  ]
+}

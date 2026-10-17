@@ -1,0 +1,23 @@
+{
+  "PC_only": true,
+  "candidate_sha256": "68f67aac272cfaa0b52763db150efddbf4654a6773e9604b627898c857fa1c3c",
+  "limits": [
+    "Flash/PLL/DDR hardware is modeled. Physical cache coherence is not emulated.",
+    "This executes the stock loader from its bootstrap, not the MIDI update receiver."
+  ],
+  "reached": "0x400004e8",
+  "main_matches": true,
+  "instructions": 59004824,
+  "flash_writes": [],
+  "boot_flags": 1310720,
+  "cache_controls": {
+    "0xc05": "0x80000235",
+    "0x801": "0x80000000",
+    "0x2": "0x8c000",
+    "0x4": "0x0",
+    "0x5": "0x0"
+  },
+  "handoff": "work/os144/E09A-PC-loader-handoff.bin",
+  "passed": true,
+  "seconds": 27.514999999999418
+}

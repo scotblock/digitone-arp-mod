@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "PC_only": true,
+  "hardware_ready": false,
+  "candidate": "Digitone_OS1.44E09A_M1_SEQUENCE_FIX_PC_ONLY.syx",
+  "sha256": "68f67aac272cfaa0b52763db150efddbf4654a6773e9604b627898c857fa1c3c",
+  "bytes": 1610656,
+  "parent": "E09",
+  "new_RAM_bytes": 0,
+  "payload_bytes": 34720,
+  "sequence_pulses_current": 1,
+  "sequence_pulses_corrected": 5,
+  "matching_note_pairs_per_port": 31,
+  "keyboard_arp_pitches": [
+    60,
+    64,
+    67
+  ],
+  "native_chord_contract": [
+    60,
+    64,
+    67,
+    60,
+    64,
+    67
+  ],
+  "packaged_helpers_host_loaded": false,
+  "checks": [
+    "Digitone-E09-PC-sequence-owner-contracts.json",
+    "Digitone-E09-native-sequence-owner-current.json",
+    "Digitone-E09-native-sequence-owner-fixed.json",
+    "Digitone-E09A-consumer-chord-contracts.json",
+    "Digitone-E09A-packed-loader.json",
+    "Digitone-E09A-PC-startup-comparison.json",
+    "Digitone-E09A-PC-container-verification.json",
+    "Digitone-E09A-packaged-native-sequence.json"
+  ],
+  "limits": [
+    "Panel-entered continuous sequence test uses a single-pitch trig; multi-note chord output additionally covered by isolated descriptor fixtures.",
+    "USB endpoint and route/input state retain disclosed PC fixtures. No new physical delivery/timing/cache validation.",
+    "M2\u2013M4 arps, step editor, saved-project persistence and exhaustive transition/context ownership are not established."
+  ]
+}

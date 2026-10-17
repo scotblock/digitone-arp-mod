@@ -1,0 +1,300 @@
+{
+  "PC_only": true,
+  "helpers_host_loaded": false,
+  "hooks_host_patched": false,
+  "M1_initializer_host_called": false,
+  "settings_host_written": false,
+  "candidate_sha256": "2d7446c086699918ed882a7f9e52ac6e29657d09557a4be519b1500bfcd710f0",
+  "startup_snapshot": ".\\work\\E09-startup-E09_restored\\snapshots\\E09-PC-path-candidate\\gui-raw.snap",
+  "wire": [
+    {
+      "phase": "native_play",
+      "ms": 10020.66671875,
+      "bytes": [
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "native_play",
+      "ms": 10146.000046875,
+      "bytes": [
+        144,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "native_play",
+      "ms": 12019.7368125,
+      "bytes": [
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "native_play",
+      "ms": 12144.408609375,
+      "bytes": [
+        144,
+        60,
+        0
+      ]
+    }
+  ],
+  "marks": [],
+  "samples": [],
+  "failure": null,
+  "USB_packets": [
+    {
+      "phase": "native_play",
+      "bytes": [
+        9,
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "native_play",
+      "bytes": [
+        9,
+        144,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "native_play",
+      "bytes": [
+        9,
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "native_play",
+      "bytes": [
+        9,
+        144,
+        60,
+        0
+      ]
+    }
+  ],
+  "native_descriptors": [
+    {
+      "phase": "native_play",
+      "ms": 10020.66671875,
+      "pointer": "0x419f1fb4",
+      "words": [
+        1,
+        0,
+        1,
+        197633,
+        1,
+        1006632960,
+        0,
+        2700000,
+        100,
+        432777600,
+        1100946064,
+        1,
+        0
+      ],
+      "source_parameter_word": 0,
+      "ui_data": "0x41306862",
+      "ui_word": 44722,
+      "state": [
+        0,
+        0,
+        0,
+        0,
+        5400000,
+        1350000,
+        1100946064,
+        1100946064
+      ]
+    },
+    {
+      "phase": "native_play",
+      "ms": 12019.7368125,
+      "pointer": "0x419bfd08",
+      "words": [
+        2,
+        1093690004,
+        1082209564,
+        1082209576,
+        1082124064,
+        1082125040,
+        1082126016,
+        1082126992,
+        1094251228,
+        0,
+        0,
+        0,
+        1100741948
+      ],
+      "source_parameter_word": null,
+      "ui_data": "0x41306862",
+      "ui_word": 44722,
+      "state": [
+        1,
+        0,
+        0,
+        0,
+        900000,
+        225000,
+        1093691490,
+        1093691490
+      ]
+    },
+    {
+      "phase": "native_play",
+      "ms": 12019.7368125,
+      "pointer": "0x419bfd3c",
+      "words": [
+        0,
+        0,
+        1,
+        197633,
+        1,
+        1006632960,
+        0,
+        2700000,
+        100,
+        519177600,
+        1100745228,
+        1,
+        1100742000
+      ],
+      "source_parameter_word": 0,
+      "ui_data": "0x41306862",
+      "ui_word": 44722,
+      "state": [
+        0,
+        0,
+        0,
+        0,
+        5400000,
+        1350000,
+        1100745228,
+        1100745228
+      ]
+    }
+  ],
+  "dispatch_counts": {
+    "native_program:3": 38,
+    "native_play:1": 1,
+    "native_play:3": 130,
+    "native_play:2": 1,
+    "native_play:0": 1,
+    "native_stop:3": 28
+  },
+  "startup_copier_source_reclaimed": true,
+  "owner_fix_host_overlay": false,
+  "arp_rate_set_through_native_UI": "1/96",
+  "observed_DIN_notes": [
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ]
+  ],
+  "observed_USB_notes": [
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ]
+  ],
+  "sequenced_arp_pulses": [
+    {
+      "ms": 12019.7368125,
+      "note": 60
+    }
+  ],
+  "sequenced_pulse_count": 1,
+  "passed": true,
+  "DIN_notes": [
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ]
+  ],
+  "USB_notes": [
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ]
+  ],
+  "matching_note_pairs": 2,
+  "route_and_USB_state_are_fixtures": true,
+  "USB_endpoint_handoff_is_fixture": true,
+  "physical_port_delivery_verified": false
+}
