@@ -15,3 +15,7 @@ Repository export checks validate file integrity, Python syntax and excluded fil
 ## Hardware follow-up — 17 October 2026
 
 Following the E09A download, the user reports both synth arp and MIDI-track arp output on the physical Digitone through DIN and USB. The installed hash was not independently verified. In a direct follow-up, the user confirms that M1 also arpeggiates from sequencer trigs. Physical note-off/Stop behavior remains a distinct, unconfirmed check. See outputs/Digitone-E09A-hardware-observation-2026-10-17.json.
+
+## E10 lifecycle continuation (17 October 2026)
+
+See [the scoped lifecycle report](../outputs/Digitone-E10-PC-lifecycle-verification.json) and [notes](../outputs/Digitone-E10-PC-lifecycle-notes.md). This covers native stopped pattern copy/paste/undo, trig clear/undo preserving settings, ten guarded reset-entry fixtures, 128 synchronized retained records and explicit stock write/cold restoration of unsaved editor changes. The stock writer is invoked through a disclosed test call frame. Automatic power-fail dispatch, physical persistence and interrupted-write recovery are not verified. No installable E10 is produced.

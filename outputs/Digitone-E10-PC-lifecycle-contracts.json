@@ -1,0 +1,20 @@
+{
+  "PC_only": true,
+  "passed": true,
+  "strict_ColdFire_checked": true,
+  "checks": [
+    "An unsaved native editor change updates the bank and retained record; the actual stock COKI validator accepts the refreshed header.",
+    "Stale project generation, invalid COKI header and out-of-range slots refuse before retained-record writes.",
+    "Actual stock memcpy plus exact producer/consumer continuations carry step records through paste, undo-paste and the clear-undo snapshot, preserving the source pattern.",
+    "Unknown and previous-generation clipboard sources produce absent/disabled steps, not stale destination or foreign-project settings.",
+    "A new/failed project capture revokes mirror ownership; a successful matching retained-image encode reestablishes it.",
+    "The editor retains its original interrupt mask/flags around notification, bank commit and retained-image synchronization."
+  ],
+  "limits": [
+    "PC-only. No hardware timing, cache coherence, automatic power-fail dispatch or complete RAM ownership certification.",
+    "Clipboard and undo extension records are generation-scoped; unknown/stale/cross-project kit sources restore absent disabled steps.",
+    "Pattern clear follows stock MIDI-setting semantics: it clears trigs while retaining arp settings.",
+    "Only the verified native pattern clipboard handlers and native incremental retained-kit serializer are adapted; other copy/reset/bypass families remain unproven.",
+    "Isolated native-header, project and exact-callsite fixtures; actual panel copy/undo and write/reboot chains are separate tests."
+  ]
+}

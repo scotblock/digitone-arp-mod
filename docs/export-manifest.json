@@ -9836,6 +9836,167 @@
       "source_sha256": "37eecdb1942f87adf95ba36e4ba6671e8b05e755f31001c2bddbc0fc0f769a14",
       "export_sha256": "37eecdb1942f87adf95ba36e4ba6671e8b05e755f31001c2bddbc0fc0f769a14",
       "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-life-cache-reboot.json",
+      "path": "outputs/Digitone-E10-PC-life-cache-reboot.json",
+      "source_sha256": "983fcd7d521048a9ab44278f0e18e9a9255fdcf4861e3c14d1cee3dcc5a36b6d",
+      "export_sha256": "ce8d927a1f03959f9910bcd122ff9aad49ca324dc850e0f0dcbb4393ce4d715e",
+      "personal_paths_rewritten": true
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-life-cache-write.json",
+      "path": "outputs/Digitone-E10-PC-life-cache-write.json",
+      "source_sha256": "691ad523164d37256d125421e90b83cfaa5e716eb706636999c92ff04b735fba",
+      "export_sha256": "d233750243cdfff7a4ad8106bcead90d5cff73edd24933e0eba3f4b21d8dd753",
+      "personal_paths_rewritten": true
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-life-copy-cache.json",
+      "path": "outputs/Digitone-E10-PC-life-copy-cache.json",
+      "source_sha256": "e5cfc2fa48e55ac74255a8f3e29165ae43cef7eee39d000f264d05e51e04827c",
+      "export_sha256": "c2bc44c69b10ace4af70dfe7b12d57c694616e698a7fe83fcd5d1d35c51da37e",
+      "personal_paths_rewritten": true
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-life-named-load.json",
+      "path": "outputs/Digitone-E10-PC-life-named-load.json",
+      "source_sha256": "025730e414c132bfc675dfd88f4b8481849b67aba531b3153f6fb7619f7b94de",
+      "export_sha256": "7c1b0e9494014f17bb906016db512fb03c7137e5766fd55d718fa44faf82398a",
+      "personal_paths_rewritten": true
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-life-playback.json",
+      "path": "outputs/Digitone-E10-PC-life-playback.json",
+      "source_sha256": "407bdbcbdf5a5bcc39702e1e618616b86513b6526623bb9c15d0a222361722d1",
+      "export_sha256": "849080cf08e1448f5dbbde10927db394acbac1d851ffb57b7870767ce852cc73",
+      "personal_paths_rewritten": true
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-life-reset-refusal.json",
+      "path": "outputs/Digitone-E10-PC-life-reset-refusal.json",
+      "source_sha256": "cc592266169b111d8b9eb1368225b7479331838697fb6caf91680d6d45b159ca",
+      "export_sha256": "41a68f3850de3f115eaa7fe60bd1d7615f0d1da6eea1ea85b564bb777615f938",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-life-startup.json",
+      "path": "outputs/Digitone-E10-PC-life-startup.json",
+      "source_sha256": "0ebc4657ec05817820e6604907e5f155a87cd01ae359353676deeae279555c61",
+      "export_sha256": "8d5a90df2a4cfdcaa702f33eb17c97530e1a209b24e50f5b91656a0b17ba8bf6",
+      "personal_paths_rewritten": true
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-lifecycle-contracts.json",
+      "path": "outputs/Digitone-E10-PC-lifecycle-contracts.json",
+      "source_sha256": "4f9d9b5aa733fc765ac73ede1ab30c93d79206338cbd5e6eca582a894c0ef2d8",
+      "export_sha256": "a33606cbe1dc998c7797b1fc367d79e994743e2ddabe37c68879c8fa9a3a704d",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-lifecycle-notes.md",
+      "path": "outputs/Digitone-E10-PC-lifecycle-notes.md",
+      "source_sha256": "392970795a14626ecf9cb30951da63d9978d1afe6238611a2d84f6aca791ff4e",
+      "export_sha256": "2c1acf65bed2479b08761e984a3bacefd76a893cf536c9f7b61cdb94faadac2c",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-lifecycle-verification.json",
+      "path": "outputs/Digitone-E10-PC-lifecycle-verification.json",
+      "source_sha256": "81760975b461f1b2146fedae6c4f56675d430ff83db4952f88ea9c8a4bc59819",
+      "export_sha256": "04ccf42fde74841891747bfc59b300c88d459170d2989f2a478d2998b7b734a5",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/build-PC-E10-lifecycle.py",
+      "path": "work/build-PC-E10-lifecycle.py",
+      "source_sha256": "66ac2db394a0990c9a89cf226a9d10e642beebdd6f6433f7edaf6515b2b8c47a",
+      "export_sha256": "79e5599651c52f8695a4f997cd90edfcc66500e70d12faef00c87a225b8d77ee",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/integrate-PC-E10-lifecycle.py",
+      "path": "work/integrate-PC-E10-lifecycle.py",
+      "source_sha256": "229fa85cbf33bc865eb8db6819a789889f59d42cfe3b639861c1a4a6b9661513",
+      "export_sha256": "229fa85cbf33bc865eb8db6819a789889f59d42cfe3b639861c1a4a6b9661513",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/probe-PC-E10-copy-cache.py",
+      "path": "work/probe-PC-E10-copy-cache.py",
+      "source_sha256": "5ac9e84f46fff9215f12be06487e28ff0d5641df86a63d971174c97ea77a1b43",
+      "export_sha256": "5ac9e84f46fff9215f12be06487e28ff0d5641df86a63d971174c97ea77a1b43",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E10-bound-reset-refusal.py",
+      "path": "work/test-PC-E10-bound-reset-refusal.py",
+      "source_sha256": "ec893080e06514c64d3fcf7dc3ace64bc2b0b322825f7e5834a69c494eec933e",
+      "export_sha256": "ec893080e06514c64d3fcf7dc3ace64bc2b0b322825f7e5834a69c494eec933e",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E10-life-cache-reboot.py",
+      "path": "work/test-PC-E10-life-cache-reboot.py",
+      "source_sha256": "ba6d8ecd0edd051a02c08eb92e626ecd979b441d117e833331a1c1920c31bb97",
+      "export_sha256": "ba6d8ecd0edd051a02c08eb92e626ecd979b441d117e833331a1c1920c31bb97",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E10-life-cache-write.py",
+      "path": "work/test-PC-E10-life-cache-write.py",
+      "source_sha256": "35971af443877b57a7a76a206c87d262f8d39192d992425ad6060018bb902072",
+      "export_sha256": "35971af443877b57a7a76a206c87d262f8d39192d992425ad6060018bb902072",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E10-life-copy-cache.py",
+      "path": "work/test-PC-E10-life-copy-cache.py",
+      "source_sha256": "9fe426540ab3e0ee8240352395f73307dec5172a50400ff36ae9883c5c15cb83",
+      "export_sha256": "3dfacd974ae303b1992c565728d1e66445f92bd6988a0cf4f5ad61fe286b2cf7",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E10-life-named-load.py",
+      "path": "work/test-PC-E10-life-named-load.py",
+      "source_sha256": "a28646bdae095fbdbc7a71de378ccb5665072582593ea453de623d97e67baf06",
+      "export_sha256": "b6d2e0bb5c0ca00e55df03dcb841043d25d36d7e7406337178c2c3c83304a1d8",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E10-life-playback.py",
+      "path": "work/test-PC-E10-life-playback.py",
+      "source_sha256": "35053cc7f7c715b0408d86d86f7d2f650900d82248440d83e115c9a2698efbb9",
+      "export_sha256": "35053cc7f7c715b0408d86d86f7d2f650900d82248440d83e115c9a2698efbb9",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E10-life-reset-refusal.py",
+      "path": "work/test-PC-E10-life-reset-refusal.py",
+      "source_sha256": "a21461dbcd9f4f54b71fd78880904db396e9d2f1c878954bf4dd2588ed525eb5",
+      "export_sha256": "a21461dbcd9f4f54b71fd78880904db396e9d2f1c878954bf4dd2588ed525eb5",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E10-life-startup.py",
+      "path": "work/test-PC-E10-life-startup.py",
+      "source_sha256": "1e2fe1d5f171717a236e46e07428a633e3c450e8e0b476bcb4c1aa75ec7b4633",
+      "export_sha256": "6a0f2eafa58f3312ce6830b494df20e27a7fbc464850acef9c6f7618d5809bf4",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E10-lifecycle.py",
+      "path": "work/test-PC-E10-lifecycle.py",
+      "source_sha256": "8078c916192906b64aba40665162563a34f1a47fa54085a9440c17f9ebc73fe2",
+      "export_sha256": "1da6a5c49f8b216d74cc60be448f0322d429867d47754ce6939a0f07e0c034a8",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/verify-PC-E10-lifecycle.py",
+      "path": "work/verify-PC-E10-lifecycle.py",
+      "source_sha256": "990825e7a0589d704f56881855273361c4693dcd510fb19e0f5dbee8e5cd9454",
+      "export_sha256": "709a402eafc8744c6fe462cb2429ab39043f463bad9db40fc516b0f1a3101d54",
+      "personal_paths_rewritten": false
     }
   ]
 }
