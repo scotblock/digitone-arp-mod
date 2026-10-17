@@ -1,0 +1,1067 @@
+{
+  "source": "Decoded OS 1.42 tables; static comparison, not CPU execution",
+  "membership_cases": 55296,
+  "scales": [
+    {
+      "raw_scale": -1,
+      "name_index": 0,
+      "name": "CHROMATIC",
+      "short_name": "CHRO",
+      "pitch_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "degree_bytes": null
+    },
+    {
+      "raw_scale": 0,
+      "name_index": 1,
+      "name": "IONIAN (MAJ)",
+      "short_name": "ION",
+      "pitch_classes": [
+        0,
+        2,
+        4,
+        5,
+        7,
+        9,
+        11
+      ],
+      "degree_bytes": [
+        1,
+        0,
+        2,
+        0,
+        3,
+        4,
+        0,
+        5,
+        0,
+        6,
+        0,
+        7,
+        8
+      ]
+    },
+    {
+      "raw_scale": 1,
+      "name_index": 2,
+      "name": "DORIAN",
+      "short_name": "DOR",
+      "pitch_classes": [
+        0,
+        2,
+        3,
+        5,
+        7,
+        9,
+        10
+      ],
+      "degree_bytes": [
+        1,
+        0,
+        2,
+        3,
+        0,
+        4,
+        0,
+        5,
+        0,
+        6,
+        7,
+        0,
+        8
+      ]
+    },
+    {
+      "raw_scale": 2,
+      "name_index": 3,
+      "name": "PHRYGIAN",
+      "short_name": "PHRY",
+      "pitch_classes": [
+        0,
+        1,
+        3,
+        5,
+        7,
+        8,
+        10
+      ],
+      "degree_bytes": [
+        1,
+        2,
+        0,
+        3,
+        0,
+        4,
+        0,
+        5,
+        6,
+        0,
+        7,
+        0,
+        8
+      ]
+    },
+    {
+      "raw_scale": 3,
+      "name_index": 4,
+      "name": "LYDIAN",
+      "short_name": "LYD",
+      "pitch_classes": [
+        0,
+        2,
+        4,
+        6,
+        7,
+        9,
+        11
+      ],
+      "degree_bytes": [
+        1,
+        0,
+        2,
+        0,
+        3,
+        0,
+        4,
+        5,
+        0,
+        6,
+        0,
+        7,
+        8
+      ]
+    },
+    {
+      "raw_scale": 4,
+      "name_index": 5,
+      "name": "MIXOLYDIAN",
+      "short_name": "MIXO",
+      "pitch_classes": [
+        0,
+        2,
+        4,
+        5,
+        7,
+        9,
+        10
+      ],
+      "degree_bytes": [
+        1,
+        0,
+        2,
+        0,
+        3,
+        4,
+        0,
+        5,
+        0,
+        6,
+        7,
+        0,
+        8
+      ]
+    },
+    {
+      "raw_scale": 5,
+      "name_index": 6,
+      "name": "AEOLIAN (MIN)",
+      "short_name": "AEOL",
+      "pitch_classes": [
+        0,
+        2,
+        3,
+        5,
+        7,
+        8,
+        10
+      ],
+      "degree_bytes": [
+        1,
+        0,
+        2,
+        3,
+        0,
+        4,
+        0,
+        5,
+        6,
+        0,
+        7,
+        0,
+        8
+      ]
+    },
+    {
+      "raw_scale": 6,
+      "name_index": 7,
+      "name": "LOCRIAN",
+      "short_name": "LOCR",
+      "pitch_classes": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        8,
+        10
+      ],
+      "degree_bytes": [
+        1,
+        2,
+        0,
+        3,
+        0,
+        4,
+        5,
+        0,
+        6,
+        0,
+        7,
+        0,
+        8
+      ]
+    },
+    {
+      "raw_scale": 7,
+      "name_index": 8,
+      "name": "PENTATONIC MINOR",
+      "short_name": "PNMI",
+      "pitch_classes": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "degree_bytes": [
+        1,
+        0,
+        0,
+        2,
+        0,
+        3,
+        0,
+        4,
+        0,
+        0,
+        5,
+        0,
+        6
+      ]
+    },
+    {
+      "raw_scale": 8,
+      "name_index": 9,
+      "name": "PENTATONIC MAJOR",
+      "short_name": "PNMA",
+      "pitch_classes": [
+        0,
+        2,
+        4,
+        7,
+        9
+      ],
+      "degree_bytes": [
+        1,
+        0,
+        2,
+        0,
+        3,
+        0,
+        0,
+        4,
+        0,
+        5,
+        0,
+        0,
+        6
+      ]
+    },
+    {
+      "raw_scale": 9,
+      "name_index": 10,
+      "name": "MELODIC MINOR",
+      "short_name": "MLMI",
+      "pitch_classes": [
+        0,
+        2,
+        3,
+        5,
+        7,
+        9,
+        11
+      ],
+      "degree_bytes": [
+        1,
+        0,
+        2,
+        3,
+        0,
+        4,
+        0,
+        5,
+        0,
+        6,
+        0,
+        7,
+        8
+      ]
+    },
+    {
+      "raw_scale": 10,
+      "name_index": 11,
+      "name": "HARMONIC MINOR",
+      "short_name": "HRMI",
+      "pitch_classes": [
+        0,
+        2,
+        3,
+        5,
+        7,
+        8,
+        11
+      ],
+      "degree_bytes": [
+        1,
+        0,
+        2,
+        3,
+        0,
+        4,
+        0,
+        5,
+        6,
+        0,
+        0,
+        7,
+        8
+      ]
+    },
+    {
+      "raw_scale": 11,
+      "name_index": 12,
+      "name": "WHOLE TONE",
+      "short_name": "WHTN",
+      "pitch_classes": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "degree_bytes": [
+        1,
+        0,
+        2,
+        0,
+        3,
+        0,
+        4,
+        0,
+        5,
+        0,
+        6,
+        0,
+        7
+      ]
+    },
+    {
+      "raw_scale": 12,
+      "name_index": 13,
+      "name": "BLUES",
+      "short_name": "BLUE",
+      "pitch_classes": [
+        0,
+        3,
+        5,
+        6,
+        7,
+        10
+      ],
+      "degree_bytes": [
+        1,
+        0,
+        0,
+        2,
+        0,
+        3,
+        4,
+        5,
+        0,
+        0,
+        6,
+        0,
+        7
+      ]
+    },
+    {
+      "raw_scale": 13,
+      "name_index": 14,
+      "name": "COMBO MINOR",
+      "short_name": "COMB",
+      "pitch_classes": [
+        0,
+        2,
+        3,
+        5,
+        7,
+        8,
+        10,
+        11
+      ],
+      "degree_bytes": [
+        1,
+        0,
+        2,
+        3,
+        0,
+        4,
+        0,
+        5,
+        6,
+        0,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "raw_scale": 14,
+      "name_index": 15,
+      "name": "PERSIAN",
+      "short_name": "PERS",
+      "pitch_classes": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        8,
+        11
+      ],
+      "degree_bytes": [
+        1,
+        2,
+        0,
+        0,
+        3,
+        4,
+        5,
+        0,
+        6,
+        0,
+        0,
+        7,
+        8
+      ]
+    },
+    {
+      "raw_scale": 15,
+      "name_index": 16,
+      "name": "IWATO",
+      "short_name": "IWAT",
+      "pitch_classes": [
+        0,
+        1,
+        5,
+        6,
+        10
+      ],
+      "degree_bytes": [
+        1,
+        2,
+        0,
+        0,
+        0,
+        3,
+        4,
+        0,
+        0,
+        0,
+        5,
+        0,
+        6
+      ]
+    },
+    {
+      "raw_scale": 16,
+      "name_index": 17,
+      "name": "IN-SEN",
+      "short_name": "INSN",
+      "pitch_classes": [
+        0,
+        1,
+        5,
+        7,
+        10
+      ],
+      "degree_bytes": [
+        1,
+        2,
+        0,
+        0,
+        0,
+        3,
+        0,
+        4,
+        0,
+        0,
+        5,
+        0,
+        6
+      ]
+    },
+    {
+      "raw_scale": 17,
+      "name_index": 18,
+      "name": "HIRAJOSHI",
+      "short_name": "HIRJ",
+      "pitch_classes": [
+        0,
+        2,
+        3,
+        7,
+        8
+      ],
+      "degree_bytes": [
+        1,
+        0,
+        2,
+        3,
+        0,
+        0,
+        0,
+        4,
+        5,
+        0,
+        0,
+        0,
+        6
+      ]
+    },
+    {
+      "raw_scale": 18,
+      "name_index": 19,
+      "name": "PELOG",
+      "short_name": "PELG",
+      "pitch_classes": [
+        0,
+        1,
+        3,
+        7,
+        8
+      ],
+      "degree_bytes": [
+        1,
+        2,
+        0,
+        3,
+        0,
+        0,
+        0,
+        4,
+        5,
+        0,
+        0,
+        0,
+        6
+      ]
+    },
+    {
+      "raw_scale": 19,
+      "name_index": 20,
+      "name": "PHRYGIAN DOMINANT",
+      "short_name": "PHYD",
+      "pitch_classes": [
+        0,
+        1,
+        4,
+        5,
+        7,
+        8,
+        10
+      ],
+      "degree_bytes": [
+        1,
+        2,
+        0,
+        0,
+        3,
+        4,
+        0,
+        5,
+        6,
+        0,
+        7,
+        0,
+        8
+      ]
+    },
+    {
+      "raw_scale": 20,
+      "name_index": 21,
+      "name": "WHOLE-HALF DIM",
+      "short_name": "WHDI",
+      "pitch_classes": [
+        0,
+        2,
+        3,
+        5,
+        6,
+        8,
+        9,
+        11
+      ],
+      "degree_bytes": [
+        1,
+        0,
+        2,
+        3,
+        0,
+        4,
+        5,
+        0,
+        6,
+        7,
+        0,
+        8,
+        9
+      ]
+    },
+    {
+      "raw_scale": 21,
+      "name_index": 22,
+      "name": "HALF-WHOLE DIM",
+      "short_name": "HWDI",
+      "pitch_classes": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10
+      ],
+      "degree_bytes": [
+        1,
+        2,
+        0,
+        3,
+        4,
+        0,
+        5,
+        6,
+        0,
+        7,
+        8,
+        0,
+        9
+      ]
+    },
+    {
+      "raw_scale": 22,
+      "name_index": 23,
+      "name": "SPANISH",
+      "short_name": "SPAN",
+      "pitch_classes": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        8,
+        10
+      ],
+      "degree_bytes": [
+        1,
+        2,
+        0,
+        3,
+        4,
+        5,
+        6,
+        0,
+        7,
+        0,
+        8,
+        0,
+        9
+      ]
+    },
+    {
+      "raw_scale": 23,
+      "name_index": 24,
+      "name": "MAJOR LOCRIAN",
+      "short_name": "MAJL",
+      "pitch_classes": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        8,
+        10
+      ],
+      "degree_bytes": [
+        1,
+        0,
+        2,
+        0,
+        3,
+        4,
+        5,
+        0,
+        6,
+        0,
+        7,
+        0,
+        8
+      ]
+    },
+    {
+      "raw_scale": 24,
+      "name_index": 25,
+      "name": "SUPER LOCRIAN",
+      "short_name": "SPRL",
+      "pitch_classes": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        8,
+        10
+      ],
+      "degree_bytes": [
+        1,
+        2,
+        0,
+        3,
+        4,
+        0,
+        5,
+        0,
+        6,
+        0,
+        7,
+        0,
+        8
+      ]
+    },
+    {
+      "raw_scale": 25,
+      "name_index": 26,
+      "name": "DORIAN B2",
+      "short_name": "DOR2",
+      "pitch_classes": [
+        0,
+        1,
+        3,
+        5,
+        7,
+        9,
+        10
+      ],
+      "degree_bytes": [
+        1,
+        2,
+        0,
+        3,
+        0,
+        4,
+        0,
+        5,
+        0,
+        6,
+        7,
+        0,
+        8
+      ]
+    },
+    {
+      "raw_scale": 26,
+      "name_index": 27,
+      "name": "LYDIAN AUGMENTED",
+      "short_name": "LYAU",
+      "pitch_classes": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        9,
+        11
+      ],
+      "degree_bytes": [
+        1,
+        0,
+        2,
+        0,
+        3,
+        0,
+        4,
+        0,
+        5,
+        6,
+        0,
+        7,
+        8
+      ]
+    },
+    {
+      "raw_scale": 27,
+      "name_index": 28,
+      "name": "LYDIAN DOMINANT",
+      "short_name": "LYDO",
+      "pitch_classes": [
+        0,
+        2,
+        4,
+        6,
+        7,
+        9,
+        10
+      ],
+      "degree_bytes": [
+        1,
+        0,
+        2,
+        0,
+        3,
+        0,
+        4,
+        5,
+        0,
+        6,
+        7,
+        0,
+        8
+      ]
+    },
+    {
+      "raw_scale": 28,
+      "name_index": 29,
+      "name": "DOUBLE HARM MAJ",
+      "short_name": "DBLH",
+      "pitch_classes": [
+        0,
+        1,
+        4,
+        5,
+        7,
+        8,
+        11
+      ],
+      "degree_bytes": [
+        1,
+        2,
+        0,
+        0,
+        3,
+        4,
+        0,
+        5,
+        6,
+        0,
+        0,
+        7,
+        8
+      ]
+    },
+    {
+      "raw_scale": 29,
+      "name_index": 30,
+      "name": "LYDIAN #2 #6",
+      "short_name": "LY26",
+      "pitch_classes": [
+        0,
+        3,
+        4,
+        6,
+        7,
+        10,
+        11
+      ],
+      "degree_bytes": [
+        1,
+        0,
+        0,
+        2,
+        3,
+        0,
+        4,
+        5,
+        0,
+        0,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "raw_scale": 30,
+      "name_index": 31,
+      "name": "ULTRAPHRYGIAN",
+      "short_name": "ULTR",
+      "pitch_classes": [
+        0,
+        1,
+        3,
+        4,
+        7,
+        8,
+        9
+      ],
+      "degree_bytes": [
+        1,
+        2,
+        0,
+        3,
+        4,
+        0,
+        0,
+        5,
+        6,
+        7,
+        0,
+        0,
+        8
+      ]
+    },
+    {
+      "raw_scale": 31,
+      "name_index": 32,
+      "name": "HUNGARIAN MINOR",
+      "short_name": "HUNG",
+      "pitch_classes": [
+        0,
+        2,
+        3,
+        6,
+        7,
+        8,
+        11
+      ],
+      "degree_bytes": [
+        1,
+        0,
+        2,
+        3,
+        0,
+        0,
+        4,
+        5,
+        6,
+        0,
+        0,
+        7,
+        8
+      ]
+    },
+    {
+      "raw_scale": 32,
+      "name_index": 33,
+      "name": "ORIENTAL",
+      "short_name": "ORIE",
+      "pitch_classes": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        9,
+        10
+      ],
+      "degree_bytes": [
+        1,
+        2,
+        0,
+        0,
+        3,
+        4,
+        5,
+        0,
+        0,
+        6,
+        7,
+        0,
+        8
+      ]
+    },
+    {
+      "raw_scale": 33,
+      "name_index": 34,
+      "name": "IONIAN #2 #5",
+      "short_name": "IO25",
+      "pitch_classes": [
+        0,
+        3,
+        4,
+        5,
+        8,
+        9,
+        11
+      ],
+      "degree_bytes": [
+        1,
+        0,
+        0,
+        2,
+        3,
+        4,
+        0,
+        0,
+        5,
+        6,
+        0,
+        7,
+        8
+      ]
+    },
+    {
+      "raw_scale": 34,
+      "name_index": 35,
+      "name": "LOCRIAN BB3 BB7",
+      "short_name": "LO37",
+      "pitch_classes": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        8,
+        9
+      ],
+      "degree_bytes": [
+        1,
+        2,
+        3,
+        0,
+        0,
+        4,
+        5,
+        0,
+        6,
+        7,
+        0,
+        0,
+        8
+      ]
+    }
+  ]
+}

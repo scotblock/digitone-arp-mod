@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "PC_only": true,
+  "strict_ColdFire_regions_checked": true,
+  "checks": [
+    "D opens the step page and binds a disabled, blank 16-step sequence to the current M1 settings owner.",
+    "A/B independently edit root and selected scale, in both directions.",
+    "C/E/F/G/H edit length, step, signed scale offset, rest and sequence enable without using CC fields.",
+    "Offset and length limits clamp correctly; shortening length clamps the selected step.",
+    "D returns to the existing main controls.",
+    "A different active playback owner refuses the complete edit, including page/binding changes.",
+    "Stock MIDI/CC parameter storage remains byte-for-byte unchanged."
+  ],
+  "groups": 7,
+  "controls": {
+    "main_D": "Steps page",
+    "step_A": "Root",
+    "step_B": "Scale",
+    "step_C": "Length 1..16",
+    "step_D": "Return to main controls",
+    "step_E": "Selected step",
+    "step_F": "Scale-degree offset -24..24",
+    "step_G": "Rest on/off",
+    "step_H": "Sequence on/off"
+  },
+  "limits": [
+    "Isolated native editor API calls, not native panel-event/render coverage. Startup/storage/persistence/hardware integration remains unfinished."
+  ]
+}

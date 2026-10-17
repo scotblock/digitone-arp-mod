@@ -12,11 +12,13 @@ Source and research archive for the original Elektron Digitone / Digitone Keys, 
 | E08F | M1 MIDI-track UP arp, MODE/RATE/GATE controls, corrected menu routing | User reported working on Digitone; exact installed hash not independently verified |
 | E09 | Synth arp follows normal DIN / USB / both selection, independent note ownership per port | PC tests only; physical dual-port validation outstanding |
 | E09A | Corrects M1 sequenced notes selecting parameter-lock lists as arp settings | User confirms physical synth/M1 arp DIN and USB output and M1 sequencer-triggered arp; installed hash not independently verified |
+| E10 prototype | M1 16-step scale-degree sequence, rests, root/scale controls and native encoder editor | PC-only overlay and native panel/playback checks; no installable firmware or project saving |
 
-M2–M4 arps and a synth-style MIDI arp step editor are **not implemented**. E08F/E09 have a **confirmed M1 sequencer arp bug**: a sequenced note can disable the arp by selecting the wrong settings source. E09A corrects that source selection in PC tests. Broader multi-note native sequence entry, transition ownership and saved-project persistence need further work. E08E contains a known menu regression and is superseded by E08F. E04 failed to finish startup on hardware; stock was restored successfully.
+M2–M4 arps are **not implemented**. A MIDI arp step editor now exists as an **E10 PC prototype**, with startup installation and per-pattern saved storage unfinished. E08F/E09 have a **confirmed M1 sequencer arp bug**: a sequenced note can disable the arp by selecting the wrong settings source. E09A corrects that source selection, with user-reported sequencer operation on hardware. Broader multi-note native sequence entry, transition ownership and saved-project persistence need further work. E08E contains a known menu regression and is superseded by E08F. E04 failed to finish startup on hardware; stock was restored successfully.
 
 ## Start here
 
+- [E10 step sequencer prototype and controls](outputs/Digitone-E10-PC-step-sequencer-notes.md) — source/tests only, no E10 download firmware.
 - [E09A sequencer arp correction](outputs/Digitone-E09A-sequence-notes.md)
 - [Download experimental patch packages](https://github.com/scotblock/digitone-arp-mod/releases) — supply your own stock OS 1.44 file; [instructions](docs/PATCH_RELEASE.md).
 - [Latest routing change and remaining work](outputs/Digitone-E09-routing-and-next-features.md)

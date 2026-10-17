@@ -1,0 +1,111 @@
+{
+  "passed": true,
+  "PC_only": true,
+  "native_code_executed": true,
+  "checks": [
+    {
+      "case": "C Ionian scale degrees",
+      "notes": [
+        60,
+        62,
+        64,
+        65,
+        67,
+        69,
+        71,
+        72
+      ]
+    },
+    {
+      "case": "D Ionian scale degrees",
+      "notes": [
+        62,
+        64,
+        66,
+        67,
+        69,
+        71,
+        73,
+        74
+      ]
+    },
+    {
+      "case": "rests advance time and wrap without allocating descriptors",
+      "notes": [
+        60,
+        null,
+        64,
+        null,
+        60,
+        null,
+        64,
+        null
+      ]
+    },
+    {
+      "case": "signed negative scale offsets",
+      "notes": [
+        59,
+        57,
+        60,
+        62
+      ]
+    },
+    {
+      "case": "outside MIDI range is a rest, not byte wrapping",
+      "notes": [
+        null,
+        125,
+        127
+      ]
+    },
+    {
+      "case": "offsets follow ascending chord selection",
+      "notes": [
+        60,
+        65,
+        71
+      ]
+    },
+    {
+      "case": "other pattern owner cannot use stored offsets",
+      "notes": [
+        60,
+        60
+      ]
+    },
+    {
+      "case": "disabled sequencer preserves ordinary arp",
+      "notes": [
+        60,
+        60
+      ]
+    },
+    {
+      "case": "all-rest pattern remains silent and never claims arena",
+      "notes": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "Stop clears generation and sequence cursor"
+    },
+    {
+      "case": "busy arena does not advance sequence or overwrite note"
+    },
+    {
+      "case": "fresh sequenced trig restarts at step one"
+    }
+  ],
+  "groups": 12,
+  "limits": [
+    "Temporary PC RAM overlay only. Physical ownership, startup/copy/reset, device controls and saved settings not integrated.",
+    "Owner is an explicit PC fixture matched against E09A consumed owner; pointer reuse/lifetime not certified.",
+    "Root/scale is an explicit prototype configuration; native MIDI keyboard scale capture is not claimed.",
+    "Descriptors, clock, scale word and sequence configuration are fixtures. Stock consumer exits are bounded; no audio/MIDI port delivery test here."
+  ]
+}

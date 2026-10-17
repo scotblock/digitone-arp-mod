@@ -1,0 +1,45 @@
+{
+  "PC_only": true,
+  "passed": true,
+  "installable_firmware_created": false,
+  "user_offset_preference": "scale degrees like E06",
+  "M1_only": true,
+  "maximum_steps": 16,
+  "saved_to_project": false,
+  "native_panel_editor_used": true,
+  "matched_note_pairs_per_port": 23,
+  "final_program": {
+    "offsets": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 4,
+    "rests_zero_based": [
+      2
+    ],
+    "root": "C",
+    "scale": "Ionian"
+  },
+  "groups": {
+    "engine": 12,
+    "publication": 17,
+    "editor": 7
+  },
+  "reports": [
+    "Digitone-E10-PC-step-engine.json",
+    "Digitone-E10-PC-step-publication.json",
+    "Digitone-E10-PC-step-editor.json",
+    "Digitone-E10-PC-step-playback.json",
+    "Digitone-E10-PC-step-panel-playback.json"
+  ],
+  "remaining": [
+    "Per-pattern durable storage and serialization",
+    "Native startup/reset initialization and compact placement",
+    "Packaged startup/playback verification",
+    "M2\u2013M4 extension",
+    "Physical validation of new code/state"
+  ],
+  "E09A_and_E09_firmware_unchanged": true
+}

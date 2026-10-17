@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "PC_only": true,
+  "strict_ColdFire_decode_and_MOVE_checked": true,
+  "checks": [
+    "Complete enable/length/rest-mask/root-scale/offset block is published natively.",
+    "bad length rejected without mutation",
+    "too long rejected without mutation",
+    "mask overflow rejected without mutation",
+    "bad flag rejected without mutation",
+    "invalid root rejected without mutation",
+    "invalid scale rejected without mutation",
+    "missing valid bit rejected without mutation",
+    "reserved word bits rejected without mutation",
+    "stale UI owner rejected without mutation",
+    "bad source span rejected without mutation",
+    "Last offset is validated before any field changes; both signed bounds are checked.",
+    "A live edit to the same consumed owner is admitted.",
+    "UI selection cannot replace the sequence belonging to another active pattern.",
+    "Shortening length bounds both playback and editor cursors.",
+    "COLD admission rejects settings publication.",
+    "Original interrupt level and condition flags are restored."
+  ],
+  "groups": 17,
+  "limits": [
+    "API only; no panel callbacks, saving, startup or hardware storage integration.",
+    "Native UI binding, settings and playback state are explicit isolated fixtures."
+  ]
+}
