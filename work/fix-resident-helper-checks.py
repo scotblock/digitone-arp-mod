@@ -1,0 +1,5 @@
+p='work/test-resident-caller-helpers.py';s=open(p).read();s=s.replace('observed.append((pc,m.read(REC,4),m.read(REC+4,4)))','observed.append((len(m.steps)-1,pc,m.read(REC,4),m.read(REC+4,4)))');s=s.replace("entry=m.steps.index(names['begin']);exitidx=m.steps.index(names['commit'])","entry=m.steps.index(0x4009719e);exitidx=m.steps.index(names['commit'])");s=s.replace("not any(pc in set(m.steps[entry+1:exitidx]) for pc,i,w in observed)","not any(entry<=idx<exitidx for idx,pc,i,w in observed)")
+s=s.replace("  check('displaced instructions replayed',m.reg['d0']==(expected if valid_owner else 0) or True) # reader above clobbers d0/a0; tested separately below", "  check('displaced instructions replayed',replay=={'d0':0,'a0':0x41345ef8})")
+s=s.replace(" valid_owner=kind", " replay={'d0':m.reg['d0'],'a0':m.reg['a0']}\n valid_owner=kind")
+s='\n'.join(l for l in s.split('\n') if "print('DEBUG'" not in l)
+open(p,'w').write(s)

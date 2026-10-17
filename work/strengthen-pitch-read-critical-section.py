@@ -1,0 +1,7 @@
+p='work/test-actual-capture-and-pitch.py';s=open(p).read()
+s=s.replace("a.emit('4fefffdc48d71cfc246f0028282f002c')", "a.emit('4fefffdc48d71cfc40c746fc2700246f0028282f002c')")
+s=s.replace("a.emit('4fef000c2f002f04');absolute(a,'4eb9',names['quantize'])", "a.emit('4fef000c2f0046c72f04');absolute(a,'4eb9',names['quantize'])")
+s=s.replace("a.emit('4cd71cfc4fef00244e75');add('pitch',a)","a.emit('46c74cd71cfc4fef00244e75');add('pitch',a)")
+s=s.replace('import copy\nRANGES.extend', 'import copy\npipelines=[]\nRANGES.extend')
+s=s.replace(" coarse=m.reg['d6'];allocation=", " pipelines.append((copy.deepcopy(m),e,t))\n coarse=m.reg['d6'];allocation=")
+open(p,'w').write(s)

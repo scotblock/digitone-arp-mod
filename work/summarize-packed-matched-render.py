@@ -1,0 +1,61 @@
+"""Compare new packed replay with immutable completed shared-state controls."""
+import pathlib,json,hashlib,collections
+o=pathlib.Path('outputs');read=lambda n:json.loads((o/n).read_text())
+reference=read('Digitone-matched-render-comparison.json')
+candidate=read('Digitone-matched-render-packed-native-pattern-copy.json')
+info=json.loads(pathlib.Path('work/packed-context-build.json').read_text())
+checks={name:read('Digitone-packed-context-'+name+'.json') for name in ['differential-checks','copy-checks','hook-ABI','outer-ABI','relocation-audit','reset-entry']}
+assert candidate['_finished'] and candidate['failure'] is None
+assert all(candidate['storage_checks'].values())
+assert candidate['prepared_checkpoint']['sha256']==reference['shared_checkpoint_sha256']==hashlib.sha256(pathlib.Path('work/cache-fresh-trace-prepared.snap').read_bytes()).hexdigest()
+assert candidate['helper_reinjected'] and candidate['PC_runtime_extension_installed']
+assert candidate['candidate_installation']['candidate_sha256']==info['sha256']
+assert not candidate['timing']['clock']['decode_mismatches']
+for name,c in checks.items():assert c.get('passed',c.get('failure') is None),name
+stock=reference['measurements']['stock'];full=reference['measurements']['full'];p=candidate['matched_probe']
+ev=next(e for e in candidate['events'] if e['kind']=='pitch' and e.get('event')==full['event'] and e.get('generation')==full['generation'])
+pitch=next(e for e in p['points'] if e['label']=='pitch_entry' and e['cycles']==ev['cycles'])
+assert pitch['fields']==stock['pitch_fields']==full['pitch_fields']
+frame=next(f for f in pitch['frames'] if f[0]==191);start=frame[1]
+store=next(e for e in p['stores'] if e['pc']=='0x40096c26' and e['cycles']>pitch['cycles'] and any(f[0]==191 and f[1]==start for f in e['frames']))
+end=next(e for e in p['interrupts'] if e['kind']=='exit' and e['vector']==191 and e['frames'][-1][1]==start)
+blocks=[e for e in p['blocks'] if start<=e['cycles']<store['cycles'] and e['instructions']]
+data=[e for e in p['data'] if start<=e['cycles']<store['cycles']]
+interrupts=[e for e in p['interrupts'] if e['kind']=='entry' and e['taken'] and not e['from_instruction'] and start<=e['cycle_before']<store['cycles']]
+capture=next(e for e in p['captures'] if e['start']==store['address'] and e['cycles']>start)
+output=next(e for e in candidate['pitch_outputs'] if e['event']==full['event'] and e['generation']==full['generation'])
+assert output['fixed_note']==57<<16
+q=next(e for e in candidate['quantizer_calls'] if e['event']==full['event'] and e['generation']==full['generation'])
+assert q['word']=='0x8000433b' and q['note']==57 and q['expected']==57
+blockcost=sum(e['cost'] for e in blocks);datacost=sum(e['cost'] for e in data);irq=sum(e['cycles']-e['cycle_before'] for e in interrupts)
+costs=collections.Counter()
+for e in data:costs.update(e['charges'])
+packed={'event':ev['event'],'generation':ev['generation'],'frame_start_cycles':start,'frame_end_cycles':end['cycles'],'pitch_entry_cycles':pitch['cycles'],'pitch_fields':pitch['fields'],'first_store':store,'first_capture':capture,'first_store_elapsed_cycles':store['cycles']-start,'frame_wall_cycles':end['cycles']-start,'block_cycles':blockcost,'fetch_cycles':sum(e['fetch_cycles'] for e in blocks),'data_cycles':datacost,'data_charge_breakdown':dict(costs),'IRQ_entry_cycles':irq,'attribution_residual_cycles':store['cycles']-start-blockcost-datacost-irq,'instructions':sum(e['instructions'] for e in blocks),'fresh_margin_cycles':capture['cycles']-store['cycles'],'all_workload_stale_captures':sum(not e['all_words_fresh'] for e in candidate['DMA_captures'] if e['ms']>=20),'overlay_fetch_cycles':sum(e['fetch_cycles'] for e in blocks if 0x47be0000<=int(e['pc'],16)<0x47be0000+info['code_bytes'])}
+assert packed['attribution_residual_cycles']==0
+for key in ['TX_underflow','TX_overflow','RX_overflow','RX_empty_read','invalid_shift_words_completed']:assert not candidate['timing']['memory']['FIFO']['counts'].get(key,0)
+baseline=read('Digitone-matched-render-full-native-pattern-copy.json')
+assert [row[1] for row in candidate['inputs']]==[row[1] for row in baseline['inputs']], 'input command sequence differs'
+assert len(candidate['MIDI_delivery'])==len(baseline['MIDI_delivery']), 'extra MIDI deliveries'
+assert [row['bytes'] for row in candidate['MIDI_delivery']]==[row['bytes'] for row in baseline['MIDI_delivery']], 'MIDI message bytes differ'
+assert candidate['delayed_note_fixture']['added_timer_ticks']==baseline['delayed_note_fixture']['added_timer_ticks']
+assert candidate['timing']['memory']['costs']==baseline['timing']['memory']['costs']
+for label in ['initial','after actual transition']:
+ c=next(m for m in candidate['marks'] if m['label']==label);b=next(m for m in baseline['marks'] if m['label']==label)
+ assert c['backing_hash']==b['backing_hash'] and c['backing']==b['backing']
+keys=['frame_start_cycles','pitch_entry_cycles','first_store_elapsed_cycles','frame_wall_cycles','block_cycles','fetch_cycles','data_cycles','IRQ_entry_cycles','attribution_residual_cycles','instructions','overlay_fetch_cycles','fresh_margin_cycles','all_workload_stale_captures']
+deltas={name:{k:packed[k]-r[k] for k in keys} for name,r in [('packed_minus_original',full),('packed_minus_stock',stock)]}
+for name,r in [('packed_minus_original',full),('packed_minus_stock',stock)]:
+ d=deltas[name];d['first_store_cycles']=store['cycles']-r['first_store']['cycles'];d['computation_flow_and_stall_cycles']=d['block_cycles']-d['fetch_cycles'];d['stock_region_fetch_cycles']=d['fetch_cycles']-d['overlay_fetch_cycles']
+ assert d['first_store_cycles']==d['frame_start_cycles']+d['first_store_elapsed_cycles']
+syx=pathlib.Path('inputs/Digitone_and_Digitone_Keys_OS1.42.syx')
+firmware=hashlib.sha256(syx.read_bytes()).hexdigest();assert firmware==candidate['firmware_sha256']==baseline['firmware_sha256']
+out={'firmware_modified':False,'firmware_sha256':firmware,'shared_checkpoint_sha256':reference['shared_checkpoint_sha256'],'build':{k:info[k] for k in ['size','previous_size','code_bytes','previous_reachable_code_bytes','table_bytes','table_unchanged','sha256','removed_checks','method']},'checks':checks,'isolated_costs':{'pitch':read('Digitone-packed-pitch-local-cost.json'),'combined':read('Digitone-packed-combined-local-cost.json')},'measurements':{'stock':stock,'original':full,'packed':packed},'deltas':deltas,'baseline_reused':True,'baseline_report_sha256':{name:hashlib.sha256((o/('Digitone-matched-render-'+name+'-native-pattern-copy.json')).read_bytes()).hexdigest() for name in ['stock','full']},'candidate_installation':candidate['candidate_installation'],'limits':['264/132 MHz and memory/DMA costs remain modeled assumptions, not measured silicon timings.','Same prepared snapshot and input workload; completed stock/original controls reused without rerunning them.','Candidate is explicitly installed in PC RAM before timed playback; no loader/bootstrap installation of the packed candidate has been tested.','Only the seven playback hook destinations are retargeted in this focused replay. The inherited initializer hook at 0x400f0504 still refers to 0x47be0666; the relocated reset entry must be connected before startup/reinitialization coverage.','Region ownership and physical cache coherence remain unproven.','Block-granular clock/capture observations; one handoff and 2.63 seconds of playback coverage.','Delayed source note remains queued beyond this focused replay; this run does not newly prove its later consumption.']}
+(o/'Digitone-packed-context-comparison.json').write_text(json.dumps(out,indent=2))
+delta=deltas['packed_minus_original'];regression=deltas['packed_minus_stock']['first_store_elapsed_cycles']
+lines=['# Packed context and pitch comparison','','The PC-only image shrinks from 2,564 to 2,212 bytes (352 bytes; 13.73%). The 535 retained instructions shrink from 1,888 to 1,784 bytes; an additional six-byte forwarding jump is bypassed. Padding is removed, transfers shortened and code/table pointers relocated. The 420-byte lookup table, context storage, checks, register saves and interrupt masks are preserved. Firmware remains unchanged.','','## Behavior checks','',f"Machine-code differential comparisons: {sum(checks['differential-checks']['differential_cases'].values()):,}. Additional tests cover cache producer invalidation and stock memcpy ABI, four actual producer/pitch hook interfaces, 40 outer commit cases, eight allocator-return cases and 20 begin/cancel continuation cases. A structural audit accounts for all 535 retained reachable instructions and the bypassed forwarding jump, and verifies 496 fallthroughs. These checks preserve the existing helper contracts; they do not expand proof of hardware ownership or startup safety.",'','## Same-state timing comparison','','The candidate restores the same prepared snapshot, verifies inherited code and hooks, then installs the relocated candidate only in PC RAM. It uses the same 264/132 MHz candidate, memory costs, native pattern handoff and audio probes as the completed stock/original controls. No timing-charge ablation or prewarming is applied. Controls are reused from their completed runs.','','| Measurement | Stock | Original helper | Packed helper |','|---|---:|---:|---:|']
+lines.insert(lines.index('## Same-state timing comparison'),'Seven direct initialization/reset-entry cases also match, including bad-header, null-pointer and wrong-argument failure paths. These invoke the entry directly rather than proving the outer startup/shutdown route.\n')
+lines.insert(lines.index('| Measurement | Stock | Original helper | Packed helper |'),'Panel command sequence, MIDI message bytes and delay fixture are verified against the reference. An earlier candidate replay enabled additional live-note inputs and is excluded from this comparison.\n')
+for key,label in [('frame_start_cycles','Render start, cycles'),('first_store_elapsed_cycles','Start to first output write, cycles'),('fetch_cycles','Instruction fetch charges, cycles'),('data_cycles','Data access charges, cycles'),('fresh_margin_cycles','Observed first-write margin, cycles'),('all_workload_stale_captures','Stale captures after 20 ms')]:lines.append(f"| {label} | {stock[key]} | {full[key]} | {packed[key]} |")
+lines+=['',f"Relative to the original helper, within-render work changes by {delta['first_store_elapsed_cycles']:+,} cycles ({delta['first_store_elapsed_cycles']/264:+.3f} µs). This comprises {delta['fetch_cycles']:+,} fetch cycles, {delta['data_cycles']:+,} data cycles, {delta['computation_flow_and_stall_cycles']:+,} computation/flow/stall cycles and {delta['IRQ_entry_cycles']:+,} interrupt-entry cycles. Accounting residual is zero.",'',f"Compared with stock, the remaining within-render difference is {regression:+,} cycles ({regression/264:+.3f} µs). The packed first-write margin is {packed['fresh_margin_cycles']/264:+.3f} µs. The complete 72-byte event is identical in all three runs; event {ev['event']} / generation {ev['generation']} uses retained context 0x8000433b and outputs note 57. Code and guards remain intact; no unexpected guest writes, decoder mismatches or modeled FIFO faults were observed.",'','The separate isolated cold producer/begin/success/commit/pitch sequence falls from 5,818 to 5,539 cycles (279 cycles). Its instruction-fetch charges fall by 280 cycles and data charges are unchanged. The isolated cold pitch alone stays at 3,054 cycles. These fixtures supply a successful selector result and execute no scheduler or DMA; they support cost investigation, not completed-handoff coverage.','','## Limits','',*['- '+x for x in out['limits']],'',f"Next: connect and test the relocated startup/reinitialization route; then {'isolate the remaining context/copy and downstream cache costs before another optimization' if packed['all_workload_stale_captures'] else 'extend the candidate to longer and voice-heavy playback'}. Passing this comparison would still not establish physical timing or readiness to flash."]
+(o/'Digitone-packed-context-audit.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+print(json.dumps({'size':info['size'],'deltas':deltas,'stale':{k:r['all_workload_stale_captures'] for k,r in out['measurements'].items()}},indent=2))

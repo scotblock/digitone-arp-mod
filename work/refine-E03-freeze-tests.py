@@ -1,0 +1,13 @@
+from pathlib import Path
+p=Path('work/test-E03-receive-freeze-design.py').read_text()
+p=p.replace('self.flash_started=False;self.log=[]','self.flash_started=False;self.faulted=False;self.log=[]')
+p=p.replace(' def reject(self,owner):',' def fault(self,owner):\n  assert self.owner==owner;self.faulted=True;self.log.append(\'unknown failure latched; no reopening\')\n def reject(self,owner):')
+p=p.replace("  if self.flash_started:return 'flash_started_keep_frozen'","  if self.flash_started:return 'flash_started_keep_frozen'\n  if self.faulted:return 'fault_keep_frozen'")
+p=p.replace("f=Freeze(m);owner='update-view-1';assert f.acquire(owner) and not f.acquire('second-owner') and f.reject('wrong-owner')=='wrong_owner'","f=Freeze(m);owner='update-view-1'")
+p=p.replace("  # Owner reacquisition and out-of-owner cleanup must not reopen the gate.\n  assert", "  # Queue entries and the partial frame above predate freeze acquisition.\n  assert f.acquire(owner) and not f.acquire('second-owner') and f.reject('wrong-owner')=='wrong_owner'\n  # Owner reacquisition and out-of-owner cleanup must not reopen the gate.\n  assert")
+p=p.replace("   result='unknown_exception_keep_frozen';assert f.owner==owner and int.from_bytes(m.uc.mem_read(0x419950a4,4),'big')==0", "   try:raise RuntimeError('modeled unexpected action failure')\n   except RuntimeError:f.fault(owner)\n   result=f.reject(owner);assert result=='fault_keep_frozen' and f.owner==owner and int.from_bytes(m.uc.mem_read(0x419950a4,4),'big')==0")
+p=p.replace("   if name=='flash_error':\n    def fail", "   if name=='flash_error':\n    m.forced_flash_errors=0\n    def fail")
+p=p.replace("if sum(x[0]=='program' for x in m.actions)==1:uc.reg_write(UC_M68K_REG_D0,0xffffffff)","if sum(x[0]=='program' for x in m.actions)==1:m.forced_flash_errors+=1;uc.reg_write(UC_M68K_REG_D0,0xffffffff)")
+p=p.replace("if name=='flash_error':assert sum(x[0]=='program' for x in m.actions)>1", "if name=='flash_error':assert m.forced_flash_errors==1 and sum(x[0]=='program' for x in m.actions)>1")
+p=p.replace("'queued_before_processing':queued", "'queued_before_freeze':queued")
+Path('work/test-E03-receive-freeze-design.py').write_text(p)

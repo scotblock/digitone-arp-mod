@@ -1,0 +1,15 @@
+from pathlib import Path
+import json,hashlib,collections
+runtime=json.loads(Path('outputs/Digitone-E04-PC-copy-pointer-provenance-runtime.json').read_text());retained=json.loads(Path('outputs/Digitone-E04-PC-pattern-retained-provenance-runtime.json').read_text());controls=json.loads(Path('outputs/Digitone-E04-PC-buffer-copy-branch-controls.json').read_text())
+assert runtime['passed'] and runtime['pattern_replacement_confirmed'] and retained['passed'] and retained['pattern_replacement_confirmed'] and controls['passed']
+buffer=[x for x in runtime['target_copies'] if x['caller']=='0x4018ab94'];pattern=[x for x in runtime['target_copies'] if x['caller']!='0x4018ab94']
+assert len(buffer)==32023 and len(pattern)==4
+assert all(x['allocation_match'] and x['destination_matches_header'] and x['fits_allocation_with_terminator'] and x['heap_bounded'] and not x['queue_overlap'] for x in buffer)
+assert all(x['entry_match'] and not x['queue_overlap'] for x in pattern)
+assert all(x['destination']==x['descriptor_destination'] for x in retained['pattern_entries'])
+old=json.loads(Path('outputs/Digitone-E04-PC-input-live-summary.json').read_text());hashes={}
+for file,h in old['hashes'].items():
+ actual=hashlib.sha256(Path(file).read_bytes()).hexdigest();assert actual==h;hashes[file]=actual
+spec=json.loads(Path('work/os144/PC_ONLY-resident-deferred-release-overlay.json').read_text());assert hashlib.sha256(Path('work/os144/PC_ONLY-resident-deferred-release-overlay.bin').read_bytes()).hexdigest()==spec['sha256']
+r={'PC_only':True,'passed':True,'model_ms':runtime['elapsed_model_ms'],'confirmed_pattern_replacement':True,'buffer_copies':len(buffer),'buffer_max_size':max(x['bytes'] for x in buffer),'matched_heap_allocations_with_terminator_room':True,'isolated_branch_cases':len(controls['cases']),'pattern_conversion_entries':len(retained['pattern_entries']),'pattern_bulk_operations':len(pattern),'pattern_destination':retained['pattern_entries'][0]['destination'],'retained_constructor_entries':retained['retained_construction'],'retained_callback_entries':retained['retained_callbacks'],'pattern_entries':retained['pattern_entries'],'stock_heap_range':['0x419f20a0','0x429f20a0'],'queue_range':['0x47be2860','0x47be29f0'],'firmware_and_overlay_unchanged':True,'exclusive_storage_ownership_certified':False,'hashes':hashes,'limits':['Native allocator exclusion assumes intact metadata and successful normal returns; allocation-failure exceptions/unwinding are not proven.','Finite playback workload; not a physical DMA/cache/timing test.','Pattern callback preserves caller-supplied pointer identity, but upstream base ownership and all computed/interior caller routes remain outside this result.','Snapshot starts after resident native initialization; host-loaded PC hooks are not newly packaged firmware.']}
+Path('outputs/Digitone-E04-PC-copy-pointer-provenance-summary.json').write_text(json.dumps(r,indent=2));print('PASS',len(buffer),'buffer copies;',len(pattern),'pattern bulk operations; hashes unchanged')

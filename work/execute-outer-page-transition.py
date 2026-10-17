@@ -1,0 +1,31 @@
+"""Execute outer page removal up to pool initializer, with actual mutex acquisition."""
+exec(open('work/execute-shutdown-callback.py').read().split('# Existing page-entry helper')[0])
+RANGES.extend([(0x400d7d50,0x400d7dfe),(0x4015a5e2,0x4015a608),(0x40001a4c,0x40001ac4),(0x400d6baa,0x400d6bb4)])
+checks=[];cases=[]
+M=0x28000000;NODE=0x28001000;TASK=0x28100000;O=0x27000000;V=0x27001000
+for recursive in [False,True]:
+ m=setup_state()
+ for a,n in [(M,0x2000),(TASK,0x100),(0x429a39a8,4),(0x401a3ba8,0x34)]:m.map(a,n)
+ for k in range(0,0x34,4):m.write(0x401a3ba8+k,4,struct.unpack_from('>I',b,0x401a3ba8-base+k)[0])
+ m.write(0x429a39a8,4,TASK)
+ if recursive:m.write(M+8,4,TASK)
+ m.write(M+20,4,NODE);m.write(M+24,4,NODE)
+ m.write(NODE,4,M+20);m.write(NODE+4,4,M+20);m.write(NODE+8,4,O)
+ m.write(O,4,0x401a3ba8);m.write(O+48,1,1);m.write(O+44,4,M)
+ m.write(O+64,4,V);m.write(O+68,4,V+16);m.write(O+72,4,V+16)
+ m.write(V,4,0x27002000);m.write(V+8,4,0x400ae502);m.write(V+12,4,0x400ae45e)
+ p=pop(m,60);m.write(T+56,4,p);m.write(0x400002fc,4,0x400d924e)
+ begin=len(m.steps);m.put('-(a7)',4,M);m.put('-(a7)',4,0xffffffff)
+ m.until(0x400d7d50,0x400f0504)
+ path=m.steps[begin:]
+ check('actual page removal reaches initializer through virtual exit',all(x in path for x in [0x400d7db4,0x400d6db6,0x400ae45e,0x4009c802,0x4009bcbc]))
+ check('page mutex owned by supplied current task',m.read(M+8,4)==TASK)
+ check('page mutex recursion count is correct',m.read(M+4,4)==(1 if recursive else 0))
+ check('interrupt mask restored before callback setup',m.sr&0xff00==0x2000 and 0x40001aa4 in path)
+ check('retained payload survives to initializer entry',m.read(p,4)==1 and m.read(T+56,4)==p)
+ check('alternate audio vector still installed',m.read(0x400002fc,4)==0x400d924e)
+ check('page node remains linked during callback',m.read(M+20,4)==NODE and m.read(NODE+8,4)==O)
+ check('no trap on uncontended or recursive acquisition',0x40001a9e not in path)
+ cases.append({'recursive_acquisition':recursive,'steps':[hex(x) for x in path],'sr':hex(m.sr),'mutex_owner':hex(m.read(M+8,4)),'recursion_count':m.read(M+4,4),'retained_count':m.read(p,4),'handler':hex(m.read(0x400002fc,4))})
+pathlib.Path('outputs/Digitone-outer-page-transition-execution-results.json').write_text(json.dumps({'firmware_modified':False,'checks':checks,'cases':cases,'scope':'Actual page-removal dispatcher, mutex uncontended/recursive branches, callable copy and exit callback to initializer boundary.','limitations':['Controlled manager/page/node/callback state, current task pointer, zero configuration flag and entry SR 2000.','One-byte closure allocator return supplied; no heap allocator execution.','No contention trap/scheduler, ISR, MIDI task or peripheral execution.','No proof real page entry retains payload records.','Stopped before pool mutation, page unlink and normal unlock.']},indent=2))
+print(json.dumps({'checks':len(checks),'cases':len(cases),'steps':sum(len(c['steps']) for c in cases)}))

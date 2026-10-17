@@ -1,0 +1,2 @@
+import pathlib
+p=pathlib.Path('work/write-shared-DMA-arbiter-report.py');s=p.read_text();s=s.replace('Software progress registers are not fully updated per hardware beat.', 'Queued descriptor fields are currently captured at request time, although payload source bytes are read when their granted beats execute. Pending descriptor edits are not fully modeled. Software progress registers are not fully updated per hardware beat.');p.write_text(s)

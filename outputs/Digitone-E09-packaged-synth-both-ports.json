@@ -1,0 +1,1448 @@
+{
+  "PC_only": true,
+  "helpers_host_loaded": false,
+  "hooks_host_patched": false,
+  "M1_initializer_host_called": false,
+  "settings_host_written": false,
+  "candidate_sha256": "2d7446c086699918ed882a7f9e52ac6e29657d09557a4be519b1500bfcd710f0",
+  "startup_snapshot": "./work/E09-startup-E09_restored/snapshots/E09-PC-path-candidate/gui-raw.snap",
+  "wire": [
+    {
+      "phase": "synth_UP_both",
+      "ms": 7507.33334375,
+      "bytes": [
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 7574.000046875,
+      "bytes": [
+        128,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 7757.33334375,
+      "bytes": [
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 7824.000046875,
+      "bytes": [
+        128,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 7882.00003125,
+      "bytes": [
+        144,
+        62,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 7948.66671875,
+      "bytes": [
+        128,
+        62,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 8007.333375,
+      "bytes": [
+        144,
+        64,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 8074.0,
+      "bytes": [
+        128,
+        64,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 8132.000015625,
+      "bytes": [
+        144,
+        65,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 8198.66671875,
+      "bytes": [
+        128,
+        65,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 8257.333375,
+      "bytes": [
+        144,
+        67,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 8324.000046875,
+      "bytes": [
+        128,
+        67,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 8382.00003125,
+      "bytes": [
+        144,
+        69,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 8448.666671875,
+      "bytes": [
+        128,
+        69,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 8507.333375,
+      "bytes": [
+        144,
+        71,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 8574.00003125,
+      "bytes": [
+        128,
+        71,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 8632.00003125,
+      "bytes": [
+        144,
+        72,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 8698.6666875,
+      "bytes": [
+        128,
+        72,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 8757.33334375,
+      "bytes": [
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 8824.000046875,
+      "bytes": [
+        128,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 8882.00003125,
+      "bytes": [
+        144,
+        62,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 8948.6666875,
+      "bytes": [
+        128,
+        62,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 9007.333375,
+      "bytes": [
+        144,
+        64,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 9074.000015625,
+      "bytes": [
+        128,
+        64,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 9132.000046875,
+      "bytes": [
+        144,
+        65,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 9198.66671875,
+      "bytes": [
+        128,
+        65,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 9257.33334375,
+      "bytes": [
+        144,
+        67,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 9324.00003125,
+      "bytes": [
+        128,
+        67,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 9382.000015625,
+      "bytes": [
+        144,
+        69,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 9448.666703125,
+      "bytes": [
+        128,
+        69,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 9507.333390625,
+      "bytes": [
+        144,
+        71,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 9574.000046875,
+      "bytes": [
+        128,
+        71,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 9632.00003125,
+      "bytes": [
+        144,
+        72,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 9698.66671875,
+      "bytes": [
+        128,
+        72,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 9757.333375,
+      "bytes": [
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "ms": 9824.00003125,
+      "bytes": [
+        128,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "release",
+      "ms": 10007.333359375,
+      "bytes": [
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "release",
+      "ms": 10074.0,
+      "bytes": [
+        128,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "release",
+      "ms": 10507.333375,
+      "bytes": [
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "release",
+      "ms": 10574.000046875,
+      "bytes": [
+        128,
+        60,
+        0
+      ]
+    }
+  ],
+  "marks": [],
+  "samples": [],
+  "failure": null,
+  "USB_packets": [
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        9,
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        8,
+        128,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        9,
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        8,
+        128,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        9,
+        144,
+        62,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        8,
+        128,
+        62,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        9,
+        144,
+        64,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        8,
+        128,
+        64,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        9,
+        144,
+        65,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        8,
+        128,
+        65,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        9,
+        144,
+        67,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        8,
+        128,
+        67,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        9,
+        144,
+        69,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        8,
+        128,
+        69,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        9,
+        144,
+        71,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        8,
+        128,
+        71,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        9,
+        144,
+        72,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        8,
+        128,
+        72,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        9,
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        8,
+        128,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        9,
+        144,
+        62,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        8,
+        128,
+        62,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        9,
+        144,
+        64,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        8,
+        128,
+        64,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        9,
+        144,
+        65,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        8,
+        128,
+        65,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        9,
+        144,
+        67,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        8,
+        128,
+        67,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        9,
+        144,
+        69,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        8,
+        128,
+        69,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        9,
+        144,
+        71,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        8,
+        128,
+        71,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        9,
+        144,
+        72,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        8,
+        128,
+        72,
+        0
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        9,
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "synth_UP_both",
+      "bytes": [
+        8,
+        128,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "release",
+      "bytes": [
+        9,
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "release",
+      "bytes": [
+        8,
+        128,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "release",
+      "bytes": [
+        9,
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "release",
+      "bytes": [
+        8,
+        128,
+        60,
+        0
+      ]
+    }
+  ],
+  "arp_step_fixtures": [
+    {
+      "track": 0,
+      "settings": "0x413062ac",
+      "length": 8,
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "track": 0,
+      "settings": "0x413062ac",
+      "length": 8,
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "track": 0,
+      "settings": "0x413062ac",
+      "length": 8,
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "track": 0,
+      "settings": "0x413062ac",
+      "length": 8,
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "track": 0,
+      "settings": "0x413062ac",
+      "length": 8,
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "track": 0,
+      "settings": "0x413062ac",
+      "length": 8,
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "track": 0,
+      "settings": "0x413062ac",
+      "length": 8,
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "track": 0,
+      "settings": "0x413062ac",
+      "length": 8,
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "track": 0,
+      "settings": "0x413062ac",
+      "length": 8,
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "track": 0,
+      "settings": "0x413062ac",
+      "length": 8,
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "track": 0,
+      "settings": "0x413062ac",
+      "length": 8,
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "track": 0,
+      "settings": "0x413062ac",
+      "length": 8,
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "track": 0,
+      "settings": "0x413062ac",
+      "length": 8,
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "track": 0,
+      "settings": "0x413062ac",
+      "length": 8,
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "track": 0,
+      "settings": "0x413062ac",
+      "length": 8,
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "track": 0,
+      "settings": "0x413062ac",
+      "length": 8,
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "track": 0,
+      "settings": "0x413062ac",
+      "length": 8,
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "track": 0,
+      "settings": "0x413062ac",
+      "length": 8,
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "track": 0,
+      "settings": "0x413062ac",
+      "length": 8,
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "track": 0,
+      "settings": "0x413062ac",
+      "length": 8,
+      "offsets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "startup_copier_source_reclaimed": true,
+  "passed": true,
+  "DIN_notes": [
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      128,
+      60,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      128,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      128,
+      62,
+      0
+    ],
+    [
+      144,
+      64,
+      100
+    ],
+    [
+      128,
+      64,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      128,
+      65,
+      0
+    ],
+    [
+      144,
+      67,
+      100
+    ],
+    [
+      128,
+      67,
+      0
+    ],
+    [
+      144,
+      69,
+      100
+    ],
+    [
+      128,
+      69,
+      0
+    ],
+    [
+      144,
+      71,
+      100
+    ],
+    [
+      128,
+      71,
+      0
+    ],
+    [
+      144,
+      72,
+      100
+    ],
+    [
+      128,
+      72,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      128,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      128,
+      62,
+      0
+    ],
+    [
+      144,
+      64,
+      100
+    ],
+    [
+      128,
+      64,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      128,
+      65,
+      0
+    ],
+    [
+      144,
+      67,
+      100
+    ],
+    [
+      128,
+      67,
+      0
+    ],
+    [
+      144,
+      69,
+      100
+    ],
+    [
+      128,
+      69,
+      0
+    ],
+    [
+      144,
+      71,
+      100
+    ],
+    [
+      128,
+      71,
+      0
+    ],
+    [
+      144,
+      72,
+      100
+    ],
+    [
+      128,
+      72,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      128,
+      60,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      128,
+      60,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      128,
+      60,
+      0
+    ]
+  ],
+  "USB_notes": [
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      128,
+      60,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      128,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      128,
+      62,
+      0
+    ],
+    [
+      144,
+      64,
+      100
+    ],
+    [
+      128,
+      64,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      128,
+      65,
+      0
+    ],
+    [
+      144,
+      67,
+      100
+    ],
+    [
+      128,
+      67,
+      0
+    ],
+    [
+      144,
+      69,
+      100
+    ],
+    [
+      128,
+      69,
+      0
+    ],
+    [
+      144,
+      71,
+      100
+    ],
+    [
+      128,
+      71,
+      0
+    ],
+    [
+      144,
+      72,
+      100
+    ],
+    [
+      128,
+      72,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      128,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      128,
+      62,
+      0
+    ],
+    [
+      144,
+      64,
+      100
+    ],
+    [
+      128,
+      64,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      128,
+      65,
+      0
+    ],
+    [
+      144,
+      67,
+      100
+    ],
+    [
+      128,
+      67,
+      0
+    ],
+    [
+      144,
+      69,
+      100
+    ],
+    [
+      128,
+      69,
+      0
+    ],
+    [
+      144,
+      71,
+      100
+    ],
+    [
+      128,
+      71,
+      0
+    ],
+    [
+      144,
+      72,
+      100
+    ],
+    [
+      128,
+      72,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      128,
+      60,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      128,
+      60,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      128,
+      60,
+      0
+    ]
+  ],
+  "matching_note_pairs": 20,
+  "USB_endpoint_submit_is_fixture": true,
+  "extra_USB_state_host_initialized": false,
+  "physical_port_delivery_verified": false
+}

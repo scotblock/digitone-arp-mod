@@ -1,0 +1,2 @@
+import pathlib
+s=pathlib.Path('work/test-timestamped-DMA-native.py').read_text().replace('from timestamped_dma import TimestampedMemory as MemoryTiming','from shared_dma_arbiter import SharedDmaMemory as MemoryTiming').replace('0x40003000,4,4,0,4,0x80','0x40003000,0xd404,4,0,0xd404,0x80').replace('Digitone-timestamped-DMA-native-check.json','Digitone-shared-DMA-native-poll-check.json');exec(compile(s,'native-shared-dma-check','exec'))

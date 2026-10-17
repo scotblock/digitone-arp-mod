@@ -1,0 +1,21 @@
+# Machine-code bootstrap and failure endpoint — PC-only test
+
+The proposed bootstrap now executes as machine instructions in the PC interpreter. It replaces the previous Python allocation/copy/relocation orchestration for this boundary. No original firmware, decoded image, or flashable package was changed or generated.
+
+The instruction fixture is 386 bytes, with an 18-entry, 216-byte relocation table: 602 bytes combined. The two existing split-clear instruction fixtures add another 108 bytes, giving 710 bytes for this tested arrangement. These sizes do not certify an installed layout: the bootstrap runs at synthetic address `50040000`, its table at `50041000`, and the clear fixtures at synthetic addresses. The proposed 864-byte resident interval has not yet been assigned a complete installation layout or globally certified for ownership.
+
+The bootstrap saves registers and status, masks interrupts, calls the split clears, and checks an additive checksum of the complete 4,096-byte staging reserve. It executes the real stock allocator with request `15c80`, zeros the allocation with stock memset, and copies the extension with stock memcpy. It checks the destination checksum, then validates all 18 relocation records before writing any relocation. Operand offsets must be even and allow a complete four-byte write inside the 1,678-byte helper code. Target offsets must be even and inside that code. Every original operand must match the expected value.
+
+The second loop performs the relocations with machine instructions. The bootstrap writes the metadata magic, version, and length, leaving readiness zero and the global owner pointer unpublished. It erases source staging, restores the saved registers/status/stack, and returns the private owner pointer in d0. Publication and completion of the stock initializer are deliberately absent.
+
+Cold and warm allocation return `419a38c0` and `419c38c0`, respectively. Both copies match the direct byte-relocation oracle. The recovered stock CACR and ACR0 writes then execute at a separate controlled boundary, and the relocated quantizer calls stock scale-membership code successfully. This still does not simulate physical cache coherence or execute the application entry.
+
+Failure cases cover actual heap exhaustion, a changed source byte, changed copied operand and non-operand bytes, an out-of-range operand offset, an out-of-range target, an odd operand offset, and a mismatched expected operand. They erase staging, keep ownership unpublished, and make no relocation writes. The failure continuation is executable code that masks interrupts and branches to itself. The interpreter runs two complete self-loop iterations and stops on the third visit so the test can finish.
+
+This is a **proposed fail-closed terminal endpoint**, not a verified graceful stock continuation. No identical `46fc270060fe` sequence was found in the decoded main image. A device running that endpoint would not finish startup; recovery/update reachability from that situation has not been tested. Allocations made before a late failure are not freed, because the endpoint does not resume execution. The stock application and complete initializer are not certified to run after an allocation or integrity failure.
+
+The additive checksum detects the single-byte corruption fixtures. It is not cryptographic authentication and does not detect every possible compensating multi-byte change. The earlier receive/content checks remain a separate boundary, and the complete extended firmware container/read/depack path is not integrated here.
+
+Next: audit and implement the resident placement and startup call site, then connect the private allocation to the complete stock initializer with a verified readiness/publication boundary. In parallel with that implementation work, inherited loader cache state and the required physical cache synchronization still need evidence before device execution can be considered.
+
+Detailed checks and cases are in `Digitone-machine-bootstrap-results.json`; decoded instructions are in `Digitone-machine-bootstrap-instructions.txt`. Allocator pressure is supplied by actual nested allocator execution at a controlled boundary. Long clear loops retain the previously validated summaries. All execution uses the project's custom instruction interpreter.

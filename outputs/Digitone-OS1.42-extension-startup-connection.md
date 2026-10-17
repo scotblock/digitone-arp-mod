@@ -1,0 +1,17 @@
+# Extension bytes connected to startup allocation — PC only
+
+40 checks passed in four startup cases. The test now carries the actual 1,678 bytes of previously tested helper instructions through reception/checksum validation, simulated flash readback, startup staging, the stock allocator, stock copying, relocation, and the recovered cache-control boundary. The original SysEx and decoded main image retain their recorded hashes. No firmware binary or flashable package was produced.
+
+The helper bodies occupy 1,678 bytes inside a zero-padded 4,096-byte extension fixture. This is a unit fixture, not a complete Elektron container. The real receiver and content-checksum instructions accept the fixture; a PC flash backend checks every programmed block by readback. Truncation, a bad content checksum, and a silent second-block write failure cannot supply bytes to startup.
+
+The verified unit bytes are then explicitly placed at the proposed decoded extension address, `4024f4b0..402504b0`. This bridge does **not** execute the full extended-container storage read and decompression. The proposed split-clear routines preserve these bytes; their long clear loops use the previously validated summaries. The actual stock allocator receives `15c80`, followed by stock memset and memcpy. Cold allocation returns owner `419a38c0`, giving code destination `419b8540`. A second allocation in the warm fixture gives owner `419c38c0` and destination `419d8540`.
+
+After copying, Python relocates known absolute cross-helper addresses and the allocator trampoline's interior return address. Source staging is erased. The owner remains unpublished through these operations. The actual stock instructions at `40000554..40000568` then write CACR `a50ce100` and ACR0 `4007e020`, in that order, stopping before the application call at `40000568`. Selector 4 is ACR0; the disassembler's ITT0 label is misleading for this CPU.
+
+The model subsequently supplies an isolated owner/header/readiness fixture and executes instructions fetched from the allocated RAM bytes. The relocated resolver rejects absent and unready ownership, returns the expected track record once ready, and the relocated quantizer calls stock scale-membership code: note 61 with root 60 and raw scale 0 becomes 60. Both cold and warm destinations pass. This is a narrow relocated-execution check; it does not certify every helper or execute the full stock initializer.
+
+Actual heap exhaustion returns null; a corrupted stage fails the proposed hash gate. Both cases leave ownership unpublished and suppress the PC cache/application handoff. These are proposed policy outcomes, not a verified stock failure continuation. The existing initializer fixture still contains its older allocation assumptions and is not installed or executed as a startup bootstrap by this test.
+
+The next concrete task is to implement and test the **machine-code bootstrap and relocation routine**, including its verified failure continuation and publication boundary. Then execute all helpers from the allocated copy and integrate a complete extended-main read/depack fixture. Cache-control writes have been recorded, but inherited loader cache state and physical data/instruction cache coherence remain unproved; these checks do not establish hardware readiness.
+
+Detailed results are in `Digitone-extension-startup-connection-results.json`. The tests use the project's custom instruction interpreter; flash storage and hardware cache effects are fixtures, not device execution.

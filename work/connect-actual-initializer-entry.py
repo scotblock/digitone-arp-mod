@@ -1,0 +1,12 @@
+p='work/test-resident-caller-helpers.py';s=open(p).read()
+s=s.replace(" if pc==0x400f05d0:"," if pc==0x400f0504:return bytes.fromhex('4ef9')+u32(names['init_preflight'])+bytes.fromhex('4e714e71')\n if pc==0x400f05d0:")
+s=s.replace("m.run(names['init_preflight'],(158,))","m.run(0x400f0504,(158,))")
+s=s.replace("for track,kind in", """m=cold_machine();writes_before=len(m.writes)
+try:m.run(0x400f0504,(157,))
+except RuntimeError as exc:check('wrong record geometry fails before allocation or pool mutation',str(exc)=='instruction budget exceeded' and not m.allocations and all(0x30000000<=addr<0x30003000 for addr,n,v in m.writes[writes_before:]))
+else:raise AssertionError('wrong geometry returned')
+cases.append({'kind':'unsupported initializer geometry','steps':len(m.steps),'endpoint':'mask-and-spin'})
+for track,kind in""")
+# Update limitations to distinguish two test sets.
+s=s.replace("'Owner allocation/header and candidate snapshots supplied before test'", "'Cold initialization executes actual wrapper/stores with supplied allocator return; caller tests supply initialized owner and candidate snapshots'")
+open(p,'w').write(s)

@@ -1,0 +1,3 @@
+from pathlib import Path
+p=Path('work/summarize-PC-release-reset.py');s=p.read_text();s=s.replace(" m=restored(case['ui_snapshot'])\n for hook in cfg['hooks']:assert bytes(m.uc.mem_read(hook['site'],hook['length'])).hex()==hook['replacement']\n assert rd(m.uc,0x47be2840)==0x4c495645", " import zlib\n saved_blob=snapshot._load_blob(case['ui_snapshot'])\n def saved_bytes(address,length):\n  page=max(b for b in saved_blob['pages'] if b<=address);data=zlib.decompress(saved_blob['pages'][page]);answer=data[address-page:address-page+length];assert len(answer)==length;return answer\n for hook in cfg['hooks']:assert saved_bytes(hook['site'],hook['length']).hex()==hook['replacement']\n assert int.from_bytes(saved_bytes(0x47be2840,4),'big')==0x4c495645")
+p.write_text(s)

@@ -1,0 +1,3 @@
+import pathlib
+p=pathlib.Path('work/precise_audio_dma.py');s=p.read_text().replace("state['request_cycle']=at;state['deadline']=at+math.ceil(self.audio_period)","state['request_cycle']=at;state['deadline']=math.ceil(self.next_audio+self.audio_period) if self.request_at is not None else at+math.ceil(self.audio_period)");p.write_text(s)
+p=pathlib.Path('work/test-precise-audio-timing.py');s=p.read_text().replace("check('fractional request phase does not drift',t.next_audio==Fraction(400,3))", "check('fractional request phase does not drift',t.next_audio==Fraction(400,3))\ncheck('deadline uses the actual next fractional arrival',t.audio_records[0]['deadline']==67)");p.write_text(s)

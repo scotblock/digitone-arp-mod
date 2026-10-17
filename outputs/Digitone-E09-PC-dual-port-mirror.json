@@ -1,0 +1,508 @@
+{
+  "PC_only": true,
+  "passed": true,
+  "cases": [
+    {
+      "name": "mask_0",
+      "DIN": [],
+      "USB": [],
+      "DIN_active": 0,
+      "USB_active": 0
+    },
+    {
+      "name": "mask_1",
+      "DIN": [
+        [
+          144,
+          60,
+          100
+        ],
+        [
+          128,
+          60,
+          0
+        ],
+        [
+          145,
+          61,
+          100
+        ],
+        [
+          129,
+          61,
+          0
+        ],
+        [
+          146,
+          62,
+          100
+        ],
+        [
+          130,
+          62,
+          0
+        ],
+        [
+          147,
+          63,
+          100
+        ],
+        [
+          131,
+          63,
+          0
+        ]
+      ],
+      "USB": [],
+      "DIN_active": 0,
+      "USB_active": 0
+    },
+    {
+      "name": "mask_2",
+      "DIN": [],
+      "USB": [
+        [
+          144,
+          60,
+          100
+        ],
+        [
+          128,
+          60,
+          0
+        ],
+        [
+          145,
+          61,
+          100
+        ],
+        [
+          129,
+          61,
+          0
+        ],
+        [
+          146,
+          62,
+          100
+        ],
+        [
+          130,
+          62,
+          0
+        ],
+        [
+          147,
+          63,
+          100
+        ],
+        [
+          131,
+          63,
+          0
+        ]
+      ],
+      "DIN_active": 0,
+      "USB_active": 0
+    },
+    {
+      "name": "mask_3",
+      "DIN": [
+        [
+          144,
+          60,
+          100
+        ],
+        [
+          128,
+          60,
+          0
+        ],
+        [
+          145,
+          61,
+          100
+        ],
+        [
+          129,
+          61,
+          0
+        ],
+        [
+          146,
+          62,
+          100
+        ],
+        [
+          130,
+          62,
+          0
+        ],
+        [
+          147,
+          63,
+          100
+        ],
+        [
+          131,
+          63,
+          0
+        ]
+      ],
+      "USB": [
+        [
+          144,
+          60,
+          100
+        ],
+        [
+          128,
+          60,
+          0
+        ],
+        [
+          145,
+          61,
+          100
+        ],
+        [
+          129,
+          61,
+          0
+        ],
+        [
+          146,
+          62,
+          100
+        ],
+        [
+          130,
+          62,
+          0
+        ],
+        [
+          147,
+          63,
+          100
+        ],
+        [
+          131,
+          63,
+          0
+        ]
+      ],
+      "DIN_active": 0,
+      "USB_active": 0
+    },
+    {
+      "name": "shared_voices_one_pair_per_port",
+      "DIN": [
+        [
+          144,
+          60,
+          100
+        ],
+        [
+          128,
+          60,
+          0
+        ]
+      ],
+      "USB": [
+        [
+          144,
+          60,
+          100
+        ],
+        [
+          128,
+          60,
+          0
+        ]
+      ],
+      "DIN_active": 0,
+      "USB_active": 0
+    },
+    {
+      "name": "route_and_channel_change_keep_original_release",
+      "DIN": [
+        [
+          144,
+          60,
+          100
+        ],
+        [
+          128,
+          60,
+          0
+        ]
+      ],
+      "USB": [
+        [
+          144,
+          60,
+          100
+        ],
+        [
+          128,
+          60,
+          0
+        ]
+      ],
+      "DIN_active": 0,
+      "USB_active": 0
+    },
+    {
+      "name": "DIN_full_USB_still_operates",
+      "DIN": [],
+      "USB": [
+        [
+          144,
+          60,
+          100
+        ],
+        [
+          128,
+          60,
+          0
+        ]
+      ],
+      "DIN_active": 0,
+      "USB_active": 0
+    },
+    {
+      "name": "USB_disconnected_DIN_still_operates",
+      "DIN": [
+        [
+          144,
+          60,
+          100
+        ],
+        [
+          128,
+          60,
+          0
+        ]
+      ],
+      "USB": [],
+      "DIN_active": 0,
+      "USB_active": 0
+    },
+    {
+      "name": "DIN_release_retries_without_duplicate_USB_off",
+      "DIN": [
+        [
+          144,
+          60,
+          100
+        ],
+        [
+          128,
+          60,
+          0
+        ]
+      ],
+      "USB": [
+        [
+          144,
+          60,
+          100
+        ],
+        [
+          128,
+          60,
+          0
+        ]
+      ],
+      "DIN_active": 0,
+      "USB_active": 0
+    },
+    {
+      "name": "USB_release_retries_without_duplicate_DIN_off",
+      "DIN": [
+        [
+          144,
+          60,
+          100
+        ],
+        [
+          128,
+          60,
+          0
+        ]
+      ],
+      "USB": [
+        [
+          144,
+          60,
+          100
+        ],
+        [
+          128,
+          60,
+          0
+        ]
+      ],
+      "DIN_active": 0,
+      "USB_active": 0
+    },
+    {
+      "name": "USB_submit_failure_does_not_claim_owner",
+      "DIN": [
+        [
+          144,
+          60,
+          100
+        ],
+        [
+          128,
+          60,
+          0
+        ]
+      ],
+      "USB": [],
+      "DIN_active": 0,
+      "USB_active": 0
+    },
+    {
+      "name": "USB_endpoint_stopped_DIN_continues",
+      "DIN": [
+        [
+          144,
+          60,
+          100
+        ],
+        [
+          128,
+          60,
+          0
+        ]
+      ],
+      "USB": [],
+      "DIN_active": 0,
+      "USB_active": 0
+    },
+    {
+      "name": "USB_pending_full_DIN_continues",
+      "DIN": [
+        [
+          144,
+          60,
+          100
+        ],
+        [
+          128,
+          60,
+          0
+        ]
+      ],
+      "USB": [],
+      "DIN_active": 0,
+      "USB_active": 0
+    },
+    {
+      "name": "USB_pool_descriptor_busy_DIN_continues",
+      "DIN": [
+        [
+          144,
+          60,
+          100
+        ],
+        [
+          128,
+          60,
+          0
+        ]
+      ],
+      "USB": [],
+      "DIN_active": 0,
+      "USB_active": 0
+    },
+    {
+      "name": "USB_bad_write_alignment_DIN_continues",
+      "DIN": [
+        [
+          144,
+          60,
+          100
+        ],
+        [
+          128,
+          60,
+          0
+        ]
+      ],
+      "USB": [],
+      "DIN_active": 0,
+      "USB_active": 0
+    },
+    {
+      "name": "USB_buffer_wrap_preserves_pair",
+      "DIN": [
+        [
+          144,
+          60,
+          100
+        ],
+        [
+          128,
+          60,
+          0
+        ]
+      ],
+      "USB": [
+        [
+          144,
+          60,
+          100
+        ],
+        [
+          128,
+          60,
+          0
+        ]
+      ],
+      "DIN_active": 0,
+      "USB_active": 0
+    },
+    {
+      "name": "USB_rejected_note_off_retries_without_DUP_DIN",
+      "DIN": [
+        [
+          144,
+          60,
+          100
+        ],
+        [
+          128,
+          60,
+          0
+        ]
+      ],
+      "USB": [
+        [
+          144,
+          60,
+          100
+        ],
+        [
+          128,
+          60,
+          0
+        ]
+      ],
+      "DIN_active": 0,
+      "USB_active": 0
+    }
+  ],
+  "native_owner_helpers": true,
+  "native_DIN_writer": true,
+  "native_USB_packetizer_and_pool_allocator": true,
+  "USB_endpoint_submit_is_fixture": true,
+  "firmware_container_created": false,
+  "limits": [
+    "Endpoint success/failure and peripheral readiness are fixtures, not real USB/DMA/host timing.",
+    "Host initializes the proposed extra code/state; native startup/reset integration and RAM lifetime remain outstanding.",
+    "These tests exercise synth voice mirroring; M1\u2019s actual scheduler on both outputs is a separate continuous check."
+  ]
+}

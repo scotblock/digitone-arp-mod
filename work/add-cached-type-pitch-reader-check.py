@@ -1,0 +1,5 @@
+p='work/test-actual-capture-and-pitch.py';s=open(p).read()
+s=s.replace("# Current pattern busy/fault affects new capture", """m=copy.deepcopy(base_machine);m.write(base_event,4,1);m.write(RETAINED,4,1)
+check('pitch reader admits cached synth type one',m.run(names['pitch'],(base_event,61))==60)
+# Current pattern busy/fault affects new capture""")
+open(p,'w').write(s)

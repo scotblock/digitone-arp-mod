@@ -1,0 +1,13 @@
+from pathlib import Path
+p=Path('work/validate-E03-receiver-to-updater.py').read_text()
+p=p.replace("['valid','bad_final_packet_checksum','bad_end_seed','bad_end_count','missing_last_packet','missing_end','container_corruption_with_valid_packet_checksums']","['valid','container_corruption_with_valid_packet_checksums']")
+p=p.replace("'Actual USB/UART ingress, application queue consumption/user confirmation and reset completion are not executed.'","'Stock received-image action 400c9536 runs its completed-buffer accessor and compatibility decision into the updater. Display, string, function-object and project-save operations are stubbed; kernel dispatch/user interaction and reset are unexecuted.'")
+p=p.replace("flash=bytearray", "m.uc.mem_write(0x47f1c000,u32(0x47f1c100));m.uc.mem_write(0x47f1c100,bytes(256));m.heap=0x47f1d000\n  flash=bytearray")
+p=p.replace("if pc==0x400fccf0:","if pc in [0x40174454,0x40146456]:uc.mem_write(args[0],bytes(16))\n   elif pc==0x400e96c0:result=m.heap;m.heap+=256;uc.mem_write(result,bytes(256))\n   elif pc==0x400fccf0:")
+p=p.replace('0x40189518]:','0x40189518,0x400c9198,0x400a0248,0x40174454,0x40146456,0x400e96c0,0x40146410]:')
+p=p.replace('u32(0xdeadbee0)+u32(DATA)','u32(0xdeadbee0)+u32(0x47f1c000)')
+p=p.replace('emu_start(0x40100440,','emu_start(0x400c9536,')
+p=p.replace('call(m,0x40100440,[DATA]','call(m,0x400c9536,[0x47f1c000]')
+p=p.replace('ordinary-receive-updater-checks.json','receive-action-updater-checks.json')
+p=p.replace('updater_programming_boundary_reached=True','stock_received_image_action_reached_updater=True,updater_programming_boundary_reached=True')
+Path('work/validate-E03-receive-action-updater.py').write_text(p)

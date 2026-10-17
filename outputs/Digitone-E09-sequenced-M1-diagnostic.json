@@ -1,0 +1,17 @@
+{
+  "PC_only": true,
+  "helpers_host_loaded": false,
+  "hooks_host_patched": false,
+  "M1_initializer_host_called": false,
+  "settings_host_written": false,
+  "candidate_sha256": "2d7446c086699918ed882a7f9e52ac6e29657d09557a4be519b1500bfcd710f0",
+  "startup_snapshot": "./work/E09-startup-E09_restored/snapshots/E09-PC-path-candidate/gui-raw.snap",
+  "wire": [],
+  "marks": [],
+  "samples": [],
+  "failure": "Traceback (most recent call last):\n  File \"E09-sequenced-M1-diagnostic\", line 61, in <module>\nAssertionError: ([], [])\n",
+  "USB_packets": [],
+  "startup_copier_source_reclaimed": true,
+  "sequenced_chord_is_host_fixture": true,
+  "passed": false
+}

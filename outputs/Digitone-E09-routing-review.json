@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "PC_only": true,
+  "hardware_ready": false,
+  "device_update_performed": false,
+  "candidate": "./outputs/Digitone_OS1.44E09_DUAL_PORT_ARP_PC_ONLY.syx",
+  "sha256": "2d7446c086699918ed882a7f9e52ac6e29657d09557a4be519b1500bfcd710f0",
+  "bytes": 1610656,
+  "parent_build": "E08F",
+  "synth_matching_note_pairs_per_port": 20,
+  "M1_matching_note_pairs_per_port": 11,
+  "payload_bytes": 34720,
+  "added_payload_bytes": 2464,
+  "added_USB_owner_state_bytes": 160,
+  "owner_driver_cases": 17,
+  "implemented": [
+    "Synth arp follows the DIN/USB/both output mask, with independent pending release ownership on each port.",
+    "Existing M1 stock output fanout verified on both ports."
+  ],
+  "not_implemented": [
+    "M2\u2013M4 arps",
+    "MIDI arp step editor",
+    "New project step-storage schema"
+  ],
+  "checks": [
+    "Digitone-E09-stock-output-fanout.json",
+    "Digitone-E09-PC-dual-port-mirror.json",
+    "Digitone-E09-PC-dual-port-ISA.json",
+    "Digitone-E09-M1-both-ports.json",
+    "Digitone-E09-synth-both-ports.json",
+    "Digitone-E09-PC-container-verification.json",
+    "Digitone-E09-packed-loader.json",
+    "Digitone-E09-PC-startup-comparison.json",
+    "Digitone-E09-reset-refusal.json",
+    "Digitone-E09-packaged-M1-both-ports.json",
+    "Digitone-E09-packaged-synth-both-ports.json",
+    "Digitone-E09-four-track-sequencer-audit.json"
+  ],
+  "limits": [
+    "USB endpoint acceptance/readiness and queue failures use fixtures. Physical host delivery, cache behavior, timing and added RAM ownership are unverified.",
+    "Arp/pattern fields and routing/input gates in the continuous synth test include disclosed fixtures.",
+    "The added USB sidecar is copied at startup and protected in the tested reset refusals; arbitrary lifetime/exception paths are not certified.",
+    "Normal sequencer-driven MIDI chord behavior and project persistence are separate gaps."
+  ],
+  "sequenced_chord_diagnostic": {
+    "passed": false,
+    "input": "Host-written runtime pattern fixture, not native panel-entered chord",
+    "observed": "No MIDI notes from either port in this diagnostic. Fixture validity and producer execution were not independently established.",
+    "conclusion": "Normal MIDI sequenced chord playback remains unverified; this does not isolate a firmware defect."
+  }
+}

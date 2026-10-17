@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-17",
+  "source": "User report in chat",
+  "build_context": "E08F discussed immediately before report; exact installed file/hash not independently verified",
+  "user_report": "all appears to be working on digitone. The synth arp goes out via midi port but the midi track arp goes out via usb",
+  "observations": {
+    "general_operation": "reported working",
+    "synth_arp_DIN_output": "reported working",
+    "MIDI_track_arp_USB_output": "reported working"
+  },
+  "not_established": [
+    "Whether MIDI-track arp also reaches DIN",
+    "Whether synth arp reaches USB",
+    "Physical output configuration",
+    "Exclusive RAM/cache ownership or worst-case timing"
+  ],
+  "action": "Recorded observation; no firmware changes or device transmission"
+}

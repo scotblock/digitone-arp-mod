@@ -1,0 +1,69 @@
+{
+  "PC_only": true,
+  "passed": true,
+  "actual_stock_handle_getter_executed": true,
+  "tracks": [
+    {
+      "track": "M1",
+      "descriptor_track_index": 0,
+      "UI_handle_root_offset": "0xff8",
+      "UI_handle_stride": 68,
+      "parameter_record_bytes": 164,
+      "active_kit_record_offset": "0x5ce",
+      "stock_cached_record_slot": "0x419c5b14"
+    },
+    {
+      "track": "M2",
+      "descriptor_track_index": 1,
+      "UI_handle_root_offset": "0x103c",
+      "UI_handle_stride": 68,
+      "parameter_record_bytes": 164,
+      "active_kit_record_offset": "0x672",
+      "stock_cached_record_slot": "0x419c5b18"
+    },
+    {
+      "track": "M3",
+      "descriptor_track_index": 2,
+      "UI_handle_root_offset": "0x1080",
+      "UI_handle_stride": 68,
+      "parameter_record_bytes": 164,
+      "active_kit_record_offset": "0x716",
+      "stock_cached_record_slot": "0x419c5b1c"
+    },
+    {
+      "track": "M4",
+      "descriptor_track_index": 3,
+      "UI_handle_root_offset": "0x10c4",
+      "UI_handle_stride": 68,
+      "parameter_record_bytes": 164,
+      "active_kit_record_offset": "0x7ba",
+      "stock_cached_record_slot": "0x419c5b20"
+    }
+  ],
+  "record_and_cache_offsets_basis": "Native consumer arithmetic at 0x400f43be..0x400f43de plus the established M1 record base; broader owner lifetimes still require per-track audit.",
+  "current_extension_limits": [
+    "One 344-byte M1 state and one 64-byte private event arena.",
+    "M1-only descriptor predicate, fixed UI handle, fixed cache slot and fixed kit offset.",
+    "One source owner/request owner and one settings publication slot.",
+    "Page title, shortcut guard and getters currently M1-specific."
+  ],
+  "four_track_storage_minimum": {
+    "independent_states_at_current_size": 1376,
+    "independent_arenas_at_current_size": 256,
+    "additional_state_and_arenas_bytes": 1224
+  },
+  "sequencer_storage_minimum_per_track": {
+    "signed_step_offsets": 16,
+    "enabled_step_mask": 2,
+    "length": 1,
+    "minimum_new_serialized_bytes": 19
+  },
+  "sequencer_blockers": [
+    "Existing two-byte extension word already encodes MODE/RATE/GATE; it cannot hold 16 step offsets.",
+    "A separate owned saved block/schema and import/export migration are required, or an explicitly temporary RAM-only prototype.",
+    "Synth editor callbacks cannot safely be reused with MIDI records without new accessors.",
+    "Normal sequenced chord feeding and queued/sustained handoff must be proved before four-track release."
+  ],
+  "implemented_M2_M4_arp": false,
+  "implemented_MIDI_step_editor": false
+}

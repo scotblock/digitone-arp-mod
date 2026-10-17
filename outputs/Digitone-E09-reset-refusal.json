@@ -1,0 +1,111 @@
+{
+  "PC_only": true,
+  "cases": [
+    {
+      "name": "diagnostic_0x0",
+      "entry": "0x4009c6d0",
+      "admission_fixture": "0x0",
+      "writes": [],
+      "USB_pending_owner_is_fixture": true,
+      "passed": true,
+      "balanced_return": true,
+      "D0_preserved": true,
+      "whole_payload_M1_state_and_arena_unchanged": true
+    },
+    {
+      "name": "diagnostic_0x434f4c44",
+      "entry": "0x4009c6d0",
+      "admission_fixture": "0x434f4c44",
+      "writes": [],
+      "USB_pending_owner_is_fixture": true,
+      "passed": true,
+      "balanced_return": true,
+      "D0_preserved": true,
+      "whole_payload_M1_state_and_arena_unchanged": true
+    },
+    {
+      "name": "diagnostic_0x494e4954",
+      "entry": "0x4009c6d0",
+      "admission_fixture": "0x494e4954",
+      "writes": [],
+      "USB_pending_owner_is_fixture": true,
+      "passed": true,
+      "balanced_return": true,
+      "D0_preserved": true,
+      "whole_payload_M1_state_and_arena_unchanged": true
+    },
+    {
+      "name": "diagnostic_0x4c495645",
+      "entry": "0x4009c6d0",
+      "admission_fixture": "0x4c495645",
+      "writes": [],
+      "USB_pending_owner_is_fixture": true,
+      "passed": true,
+      "balanced_return": true,
+      "D0_preserved": true,
+      "whole_payload_M1_state_and_arena_unchanged": true
+    },
+    {
+      "name": "diagnostic_0x4641494c",
+      "entry": "0x4009c6d0",
+      "admission_fixture": "0x4641494c",
+      "writes": [],
+      "USB_pending_owner_is_fixture": true,
+      "passed": true,
+      "balanced_return": true,
+      "D0_preserved": true,
+      "whole_payload_M1_state_and_arena_unchanged": true
+    },
+    {
+      "name": "warm_setup",
+      "entry": "0x4009d0d8",
+      "admission_fixture": "0x4c495645",
+      "writes": [],
+      "USB_pending_owner_is_fixture": true,
+      "passed": true,
+      "balanced_return": true,
+      "D0_preserved": true,
+      "whole_payload_M1_state_and_arena_unchanged": true
+    },
+    {
+      "name": "pool_wrapper",
+      "entry": "0x4009c5a0",
+      "admission_fixture": "0x4c495645",
+      "writes": [],
+      "USB_pending_owner_is_fixture": true,
+      "passed": true,
+      "balanced_return": true,
+      "D0_preserved": true,
+      "whole_payload_M1_state_and_arena_unchanged": true
+    },
+    {
+      "name": "pool_initializer",
+      "entry": "0x400ffed0",
+      "admission_fixture": "0x4c495645",
+      "writes": [],
+      "USB_pending_owner_is_fixture": true,
+      "passed": true,
+      "balanced_return": true,
+      "D0_preserved": true,
+      "whole_payload_M1_state_and_arena_unchanged": true
+    },
+    {
+      "name": "test_exit",
+      "entry": "0x4009d0ea",
+      "admission_fixture": "0x4c495645",
+      "writes": [],
+      "USB_pending_owner_is_fixture": true,
+      "passed": true,
+      "balanced_return": true,
+      "D0_preserved": true,
+      "whole_payload_M1_state_and_arena_unchanged": true
+    }
+  ],
+  "helpers_host_loaded": false,
+  "limits": [
+    "Native stopped entry calls use explicit admission-state fixtures and no asynchronous overlap.",
+    "Whole diagnostic entry remains deliberately disabled. Warm pool/setup entries must refuse before storage changes.",
+    "These checks do not certify unknown interior/computed bypasses, warm copier replay or physical reset behavior."
+  ],
+  "passed": true
+}

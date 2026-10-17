@@ -1,0 +1,31 @@
+{
+  "PC_only": true,
+  "passed": true,
+  "hardware_ready": false,
+  "device_update_performed": false,
+  "candidate": "./outputs/Digitone_OS1.44E08F_M1_ARP_MENU_FIX_PC_ONLY.syx",
+  "sha256": "085ef1cae6d22878da74acf4a756dd9a22389971f211208e9bd67ff349e146f8",
+  "bytes": 1610016,
+  "parent": "E08E",
+  "changed_payload_bytes": 161,
+  "changes_limited_to_two_UI_helpers": true,
+  "payload_size_unchanged": true,
+  "RAM_state_and_arena_unchanged": true,
+  "MIDI_note_ons": 81,
+  "matched_note_offs": 81,
+  "checks": [
+    "Digitone-E08E-PC-menu-fix-contracts.json",
+    "Digitone-E08E-PC-menu-panel.json",
+    "Digitone-E08E-PC-menu-frame-comparison.json",
+    "Digitone-E08F-PC-container-verification.json",
+    "Digitone-E08F-packed-loader.json",
+    "Digitone-E08F-PC-startup-comparison.json",
+    "Digitone-E08F-packaged-menu-panel.json",
+    "Digitone-E08F-packaged-panel-playback.json"
+  ],
+  "limits": [
+    "No physical cache/timing/RAM ownership certification.",
+    "M1 live-input playback repeated; internal MIDI sequencer-chord/project persistence gaps are not closed by this menu fix.",
+    "No new physical device test or installation occurred."
+  ]
+}

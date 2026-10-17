@@ -1,0 +1,291 @@
+{
+  "PC_only": true,
+  "firmware_unchanged": true,
+  "menu_helpers_host_loaded": false,
+  "overlay_host_writes": false,
+  "cases": [
+    {
+      "label": "corrected",
+      "page_calls": [
+        {
+          "phase": "warm",
+          "index": 1,
+          "selected": 4
+        },
+        {
+          "phase": "4-TRIG",
+          "index": 0,
+          "selected": 4
+        },
+        {
+          "phase": "4-SYN1",
+          "index": 1,
+          "selected": 4
+        },
+        {
+          "phase": "4-SYN2",
+          "index": 2,
+          "selected": 4
+        },
+        {
+          "phase": "4-FLTR",
+          "index": 3,
+          "selected": 4
+        },
+        {
+          "phase": "4-AMP",
+          "index": 4,
+          "selected": 4
+        },
+        {
+          "phase": "4-LFO",
+          "index": 5,
+          "selected": 4
+        },
+        {
+          "phase": "4-LFO",
+          "index": 5,
+          "selected": 5
+        },
+        {
+          "phase": "5-TRIG",
+          "index": 0,
+          "selected": 5
+        },
+        {
+          "phase": "5-SYN1",
+          "index": 1,
+          "selected": 5
+        },
+        {
+          "phase": "5-SYN2",
+          "index": 2,
+          "selected": 5
+        },
+        {
+          "phase": "5-FLTR",
+          "index": 3,
+          "selected": 5
+        },
+        {
+          "phase": "5-AMP",
+          "index": 4,
+          "selected": 5
+        },
+        {
+          "phase": "5-LFO",
+          "index": 5,
+          "selected": 5
+        },
+        {
+          "phase": "5-LFO",
+          "index": 5,
+          "selected": 0
+        },
+        {
+          "phase": "0-TRIG",
+          "index": 0,
+          "selected": 0
+        },
+        {
+          "phase": "0-SYN1",
+          "index": 1,
+          "selected": 0
+        },
+        {
+          "phase": "0-SYN2",
+          "index": 2,
+          "selected": 0
+        },
+        {
+          "phase": "0-FLTR",
+          "index": 3,
+          "selected": 0
+        },
+        {
+          "phase": "0-AMP",
+          "index": 4,
+          "selected": 0
+        },
+        {
+          "phase": "0-LFO",
+          "index": 5,
+          "selected": 0
+        },
+        {
+          "phase": "0-SYN1-reset",
+          "index": 1,
+          "selected": 0
+        },
+        {
+          "phase": "0-FUNC-SYN1",
+          "index": 1,
+          "selected": 5
+        },
+        {
+          "phase": "5-FUNC-SYN2",
+          "index": 6,
+          "selected": 5
+        },
+        {
+          "phase": "5-FUNC-SYN2",
+          "index": 6,
+          "selected": 4
+        },
+        {
+          "phase": "4-SYN1-reset",
+          "index": 1,
+          "selected": 4
+        },
+        {
+          "phase": "4-SYN1-after-custom",
+          "index": 1,
+          "selected": 0
+        }
+      ],
+      "marks": [
+        {
+          "phase": "4-TRIG",
+          "selected": 4,
+          "screen": "outputs\\PC-menu-F-packaged-corrected-4-TRIG.png"
+        },
+        {
+          "phase": "4-SYN1",
+          "selected": 4,
+          "screen": "outputs\\PC-menu-F-packaged-corrected-4-SYN1.png"
+        },
+        {
+          "phase": "4-SYN2",
+          "selected": 4,
+          "screen": "outputs\\PC-menu-F-packaged-corrected-4-SYN2.png"
+        },
+        {
+          "phase": "4-FLTR",
+          "selected": 4,
+          "screen": "outputs\\PC-menu-F-packaged-corrected-4-FLTR.png"
+        },
+        {
+          "phase": "4-AMP",
+          "selected": 4,
+          "screen": "outputs\\PC-menu-F-packaged-corrected-4-AMP.png"
+        },
+        {
+          "phase": "4-LFO",
+          "selected": 4,
+          "screen": "outputs\\PC-menu-F-packaged-corrected-4-LFO.png"
+        },
+        {
+          "phase": "5-TRIG",
+          "selected": 5,
+          "screen": "outputs\\PC-menu-F-packaged-corrected-5-TRIG.png"
+        },
+        {
+          "phase": "5-SYN1",
+          "selected": 5,
+          "screen": "outputs\\PC-menu-F-packaged-corrected-5-SYN1.png"
+        },
+        {
+          "phase": "5-SYN2",
+          "selected": 5,
+          "screen": "outputs\\PC-menu-F-packaged-corrected-5-SYN2.png"
+        },
+        {
+          "phase": "5-FLTR",
+          "selected": 5,
+          "screen": "outputs\\PC-menu-F-packaged-corrected-5-FLTR.png"
+        },
+        {
+          "phase": "5-AMP",
+          "selected": 5,
+          "screen": "outputs\\PC-menu-F-packaged-corrected-5-AMP.png"
+        },
+        {
+          "phase": "5-LFO",
+          "selected": 5,
+          "screen": "outputs\\PC-menu-F-packaged-corrected-5-LFO.png"
+        },
+        {
+          "phase": "0-TRIG",
+          "selected": 0,
+          "screen": "outputs\\PC-menu-F-packaged-corrected-0-TRIG.png"
+        },
+        {
+          "phase": "0-SYN1",
+          "selected": 0,
+          "screen": "outputs\\PC-menu-F-packaged-corrected-0-SYN1.png"
+        },
+        {
+          "phase": "0-SYN2",
+          "selected": 0,
+          "screen": "outputs\\PC-menu-F-packaged-corrected-0-SYN2.png"
+        },
+        {
+          "phase": "0-FLTR",
+          "selected": 0,
+          "screen": "outputs\\PC-menu-F-packaged-corrected-0-FLTR.png"
+        },
+        {
+          "phase": "0-AMP",
+          "selected": 0,
+          "screen": "outputs\\PC-menu-F-packaged-corrected-0-AMP.png"
+        },
+        {
+          "phase": "0-LFO",
+          "selected": 0,
+          "screen": "outputs\\PC-menu-F-packaged-corrected-0-LFO.png"
+        },
+        {
+          "phase": "0-FUNC-SYN1",
+          "selected": 0,
+          "screen": "outputs\\PC-menu-F-packaged-corrected-0-FUNC-SYN1.png"
+        },
+        {
+          "phase": "5-FUNC-SYN2",
+          "selected": 5,
+          "screen": "outputs\\PC-menu-F-packaged-corrected-5-FUNC-SYN2.png"
+        },
+        {
+          "phase": "4-FUNC-SYN2",
+          "selected": 4,
+          "screen": "outputs\\PC-menu-F-packaged-corrected-4-FUNC-SYN2.png"
+        },
+        {
+          "phase": "4-SYN1-after-custom",
+          "selected": 4,
+          "screen": "outputs\\PC-menu-F-packaged-corrected-4-SYN1-after-custom.png"
+        },
+        {
+          "phase": "0-FUNC-SYN1-after-custom",
+          "selected": 0,
+          "screen": "outputs\\PC-menu-F-packaged-corrected-0-FUNC-SYN1-after-custom.png"
+        }
+      ],
+      "tag_writes": [
+        {
+          "phase": "4-FUNC-SYN2",
+          "pc": "0x47be6cc8",
+          "address": "0x41c27b68",
+          "selected": 4
+        },
+        {
+          "phase": "4-FUNC-SYN2",
+          "pc": "0x47be6e84",
+          "address": "0x40553ca8",
+          "selected": 4
+        },
+        {
+          "phase": "4-FUNC-SYN2",
+          "pc": "0x47be6e84",
+          "address": "0x40553bc4",
+          "selected": 4
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "limits": [
+    "Emulated panel/peripherals and saved emulator state, not physical hardware.",
+    "Menu helpers supplied by the packaged native startup copier, verified before panel execution; peripheral/ISA modeling remains."
+  ],
+  "passed": true
+}

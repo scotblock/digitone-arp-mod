@@ -1,0 +1,22 @@
+{
+  "PC_only": true,
+  "passed": true,
+  "transport_messages": 12578,
+  "packet_checksum_and_sequence_verified": true,
+  "container_length_checksum_and_padding_verified": true,
+  "main_compressed_header_checksum_verified": true,
+  "main_decompression_exact": true,
+  "unchanged_sections": [
+    5,
+    2,
+    4,
+    6,
+    7,
+    8
+  ],
+  "E07_E08D_and_stock_unchanged": true,
+  "sha256": "085ef1cae6d22878da74acf4a756dd9a22389971f211208e9bd67ff349e146f8",
+  "limits": [
+    "Independent framing/codec verification does not execute a physical updater or certify the new source/RAM ranges."
+  ]
+}

@@ -1,0 +1,13 @@
+p='work/test-resident-caller-helpers.py';s=open(p).read()
+s=s.replace("case={'kind':'cold instruction initialization'", "import copy\ninitialized_owner_machine=copy.deepcopy(m)\ncase={'kind':'cold instruction initialization'")
+s=s.replace("'null_owner','bad_magic']]:", "'null_owner','bad_magic']]+[(0,'cold_connected')]:")
+s=s.replace(" m=create();m.map(OWNER,0x14c70);m.map(0x4199d590,4);m.write(0x4199d590,4,OWNER);m.map(POOL,128*72)\n for j in range(128):m.write(POOL+j*72+68,4,POOL+(j+1)*72 if j<127 else 0)\n m.write(0x4199fea0,4,POOL)",""" if kind=='cold_connected':m=copy.deepcopy(initialized_owner_machine)
+ else:
+  m=create();m.map(OWNER,0x14c70);m.map(0x4199d590,4);m.write(0x4199d590,4,OWNER);m.map(POOL,128*72)
+  for j in range(128):m.write(POOL+j*72+68,4,POOL+(j+1)*72 if j<127 else 0)
+  m.write(0x4199fea0,4,POOL)""")
+s=s.replace(" for off,val in [(0,0x534c4332),(4,2),(8,0xb70),(12,1)]:m.write(H+off,4,val)"," if kind!='cold_connected':\n  for off,val in [(0,0x534c4332),(4,2),(8,0xb70),(12,1)]:m.write(H+off,4,val)")
+s=s.replace(" for off,val in [(0,oldid),(4,oldword),(8,0),(12,0x80000000|track)]:m.write(REC+off,4,val)"," if kind!='cold_connected':\n  for off,val in [(0,oldid),(4,oldword),(8,0),(12,0x80000000|track)]:m.write(REC+off,4,val)")
+s=s.replace(" before=m.reg.copy();initialsp=m.reg['a7'];observed=[]", " before=m.reg.copy();initialsp=m.reg['a7'];observed=[];steps_before=len(m.steps)")
+s=s.replace("'steps':len(m.steps),'metadata_helpers_executed'", "'steps':len(m.steps)-steps_before,'metadata_helpers_executed'")
+open(p,'w').write(s)

@@ -1,0 +1,2 @@
+import pathlib
+p=pathlib.Path('work/test-precise-audio-timing.py');s=p.read_text().replace("m.uc.reg_write(UC_M68K_REG_SR,0x2000);t.deliver_irqs();check('unmask delivers actual native vector'", "m.uc.reg_write(UC_M68K_REG_SR,0x2000);m.uc.mem_write(0xfc04c008,(1<<14).to_bytes(4,'big'));t.deliver_irqs();check('interrupt controller mask retains completion request',not ssi.int50_delivered)\nm.uc.mem_write(0xfc04c008,bytes(4));t.deliver_irqs();check('unmask delivers actual native vector'");p.write_text(s)
