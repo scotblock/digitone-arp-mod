@@ -14,4 +14,4 @@ Repository export checks validate file integrity, Python syntax and excluded fil
 
 ## Hardware follow-up — 17 October 2026
 
-Following the E09A download, the user reports both synth arp and MIDI-track arp output on the physical Digitone through DIN and USB. The installed hash was not independently verified. The report does not specify keyboard versus sequencer input, or confirm physical note-off/Stop behavior. Those remain distinct checks. See outputs/Digitone-E09A-hardware-observation-2026-10-17.json.
+Following the E09A download, the user reports both synth arp and MIDI-track arp output on the physical Digitone through DIN and USB. The installed hash was not independently verified. In a direct follow-up, the user confirms that M1 also arpeggiates from sequencer trigs. Physical note-off/Stop behavior remains a distinct, unconfirmed check. See outputs/Digitone-E09A-hardware-observation-2026-10-17.json.
