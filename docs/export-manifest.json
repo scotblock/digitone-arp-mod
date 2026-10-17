@@ -10137,6 +10137,48 @@
       "source_sha256": "f7f2662ebcf2b28ec8eeaaa4dcdb6abd3482f7750fe26b1ee770a97aa1d45fd2",
       "export_sha256": "2f2f1452e8e09006b6b1d1be18dd60544d98002d2dda22d63608c744737c3484",
       "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E10-development-assumptions.md",
+      "path": "outputs/Digitone-E10-development-assumptions.md",
+      "source_sha256": "8503698d8796100c6ac1729557eb38e9b624ac442e1ea666f2bd5ea0058f939e",
+      "export_sha256": "9b72d4340bfe5a28b4d3e5ed83b51c7510553753419c2cb453445702784bfe45",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-update-interruption-notes.md",
+      "path": "outputs/Digitone-E10-PC-update-interruption-notes.md",
+      "source_sha256": "4711d6056a22df1ce56fb66743ad1510f441b7a06879310bcf2e09a127c96a88",
+      "export_sha256": "2a22079cbc0da293f7bf355c724bab8f3c62688a1a7bdcf97dd5670ef7eebdaf",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E10-update-interrupt.py",
+      "path": "work/test-PC-E10-update-interrupt.py",
+      "source_sha256": "3b400c1a760b2b7f1e5a5e7164053bc82d269c9d0bb5e12843ea727f82d9a655",
+      "export_sha256": "dc4c4e4c36fbbf47e29855cf6ebc9df24593d739fffca2819cb39a9f77e5380e",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E10-stock-update-interrupt-control.py",
+      "path": "work/test-PC-E10-stock-update-interrupt-control.py",
+      "source_sha256": "75c73f84002a92d496895e4b49337a17022f751765f59688b8e18e89ac304e8b",
+      "export_sha256": "2c9f93dfbad58c5d72ad11670f9b5d67475c147eb01452d0524765beb8c3060b",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-update-interrupt.json",
+      "path": "outputs/Digitone-E10-PC-update-interrupt.json",
+      "source_sha256": "0434ed6d33ea9280bba296cd1dce20655fb5e5c5a24afc9d4051f2b9152ddced",
+      "export_sha256": "5642caba8c1fd9cff84b2aed4258a1326d5e8bd404db8ccab3d4237e3be03ad4",
+      "personal_paths_rewritten": true
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-stock-update-interrupt-control.json",
+      "path": "outputs/Digitone-E10-PC-stock-update-interrupt-control.json",
+      "source_sha256": "3ad4d86203e243e7882dca4387e4d8901d0d764d8627f1268b3d67eb769f491b",
+      "export_sha256": "d4bd3b20e2a7032e1ceae16dd5d2a4fd20ebc9aad50ff68ffd1a4f0ed5ade900",
+      "personal_paths_rewritten": true
     }
   ]
 }

@@ -23,3 +23,7 @@ See [the scoped lifecycle report](../outputs/Digitone-E10-PC-lifecycle-verificat
 ## E10 modeled automatic power fail (17 October 2026)
 
 [The new evidence](../outputs/Digitone-E10-PC-powerfail-verification.json) records completed verification, not an overall safety pass: `automatic_modeled_dispatch_and_cold_restore_passed` is true while `mid_write_recovery_safe` is false. A complete interrupt-dispatched write followed by fresh cold startup restores all 128 records. A synthetic first-command cut makes the actual stock reader choose a partial image. The board pin, external interrupt, INTC2 force delivery and narrow CC/TC W1C model are disclosed fixtures; physical hold-up, final power latch and eMMC durability remain untested. See [the notes](../outputs/Digitone-E10-PC-powerfail-notes.md).
+
+## Accepted development scope — 17 October 2026
+
+The user accepts stock power handling as an inherited assumption and chose to keep the unit closed. A quantified hold-up measurement is not a gate to continuing E10 development. No guaranteed abrupt-loss recovery is claimed. A focused interrupt during E10 synchronization and a stopped-entry stock-helper control both leave unrecognized working-bank headers; see [the diagnostic](../outputs/Digitone-E10-PC-update-interruption-notes.md). This is recorded under the inherited interruption limitation; it is not a new power-system redesign requirement. E10 packaged loader/startup/playback integration remains outstanding.
