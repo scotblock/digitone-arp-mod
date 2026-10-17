@@ -1,0 +1,20 @@
+{
+  "patch_metadata": {
+    "format": "digitone-xor-v1",
+    "build": "E08F",
+    "device": "Original Digitone / Digitone Keys",
+    "base_os": "1.44",
+    "status": "Experimental; user-reported working hardware baseline, not hardware-certified",
+    "source_bytes": 1673760,
+    "source_sha256": "d4f200d04484333d82822db7744e6484d0def8f2db8ddf55ee2b780cc13c9659",
+    "target_bytes": 1610016,
+    "target_sha256": "085ef1cae6d22878da74acf4a756dd9a22389971f211208e9bd67ff349e146f8",
+    "output_filename": "Digitone_OS1.44E08F_M1_ARP_MENU_FIX_PC_ONLY.syx",
+    "delta_sha256": "9542fd078cf7deb0e70fc52e2ef6e98fefd5eacc991519ed285bea6143eb0a71"
+  },
+  "patch_sha256": "4f4a5f20272e9e758827ccce8d65b2310a578536e894e70b22fbf38f97466883",
+  "validation": {
+    "reconstructed_byte_exact": true,
+    "new_hardware_test": false
+  }
+}

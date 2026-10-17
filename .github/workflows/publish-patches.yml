@@ -1,0 +1,28 @@
+name: Publish stock-dependent patch packages
+on:
+  push:
+    tags:
+      - 'patches-*'
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Test the patcher without firmware
+        run: python3 -m unittest discover -s release-tools -p test_patcher.py -v
+      - name: Assemble and check download packages
+        run: python3 release-tools/package_release.py --output dist
+      - name: Publish experimental release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          gh release create "$RELEASE_TAG" --verify-tag --prerelease --latest=false \
+            --title "OS 1.44 patches: E08F baseline and E09 PC-only preview" \
+            --notes-file docs/PATCH_RELEASE.md \
+            dist/Digitone-OS1.44-E08F-patch.zip dist/Digitone-OS1.44-E09-patch.zip dist/SHA256SUMS.txt

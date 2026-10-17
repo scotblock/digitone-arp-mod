@@ -3,3 +3,5 @@
 *.md text eol=lf
 *.json text eol=lf
 *.patch -text
+*.darp -text -diff
+*.cmd text eol=crlf

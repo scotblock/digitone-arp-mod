@@ -16,6 +16,7 @@ M2–M4 arps and a synth-style MIDI arp step editor are **not implemented**. Ord
 
 ## Start here
 
+- [Download experimental patch packages](https://github.com/scotblock/digitone-arp-mod/releases) — supply your own stock OS 1.44 file; [instructions](docs/PATCH_RELEASE.md).
 - [Latest routing change and remaining work](outputs/Digitone-E09-routing-and-next-features.md)
 - [Validation scope and limits](docs/VALIDATION.md)
 - [How the source archive is organized](docs/REPRODUCIBILITY.md)
@@ -24,7 +25,7 @@ M2–M4 arps and a synth-style MIDI arp step editor are **not implemented**. Ord
 
 `work/` preserves the research scripts and their original relative paths. `outputs/` contains historical notes and selected recorded results. Older notes describe experiments, proposed changes and superseded decisions; they are not current installation instructions.
 
-This is a **source archive, not a turnkey firmware release**. Stock/modified firmware, extracted firmware sections, flash cards, snapshots, recordings and private projects are excluded. Firmware inputs must be obtained separately. No installable firmware is supplied, and a passing PC test does not establish hardware readiness.
+The research tree is a **source archive, not a turnkey source build**. Experimental release packages provide a separate stock-dependent patcher for E08F and the E09 PC-only preview. Stock/modified firmware, extracted firmware sections, flash cards, snapshots, recordings and private projects are excluded. Firmware inputs must be obtained separately. No complete installable image is supplied, and a passing PC test does not establish hardware readiness.
 
 Personal absolute file paths were rewritten during export. The manifest records hashes of the original and exported source. Some historical scripts still require local path/toolchain configuration and generated artifacts. See the reproducibility notes before running them.
 

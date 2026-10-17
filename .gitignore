@@ -34,3 +34,5 @@ work/emulator-deps/
 work/disassembly-deps/
 work/unicorn*build*/
 work/user-session-audio/
+dist/
+.patch-test-*/

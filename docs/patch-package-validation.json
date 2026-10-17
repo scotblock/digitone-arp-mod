@@ -1,0 +1,39 @@
+{
+  "source_sha256": "d4f200d04484333d82822db7744e6484d0def8f2db8ddf55ee2b780cc13c9659",
+  "new_firmware_execution_tests": false,
+  "checks": [
+    {
+      "build": "E08F",
+      "patch_bytes": 1272198,
+      "candidate_bytes": 1610016,
+      "exact_reconstruction": true,
+      "candidate_sha256": "085ef1cae6d22878da74acf4a756dd9a22389971f211208e9bd67ff349e146f8"
+    },
+    {
+      "build": "E09",
+      "patch_bytes": 1272526,
+      "candidate_bytes": 1610656,
+      "exact_reconstruction": true,
+      "candidate_sha256": "2d7446c086699918ed882a7f9e52ac6e29657d09557a4be519b1500bfcd710f0"
+    }
+  ],
+  "patcher_unit_tests": 8,
+  "patcher_unit_tests_passed": true,
+  "package_generation_deterministic": true,
+  "extracted_package_checks": [
+    {
+      "build": "E08F",
+      "zip_sha256": "bd7deb254b6d558354068362f0fb38df295224eee5752b1e840ab34464ba24d5",
+      "extracted_cli_exact": true,
+      "second_run_refused_overwrite": true,
+      "firmware_images_in_zip": false
+    },
+    {
+      "build": "E09",
+      "zip_sha256": "56b3c8ea49c32b262b00cf9da72abd3fd1a730f99c4380692d51c86162ac3fbd",
+      "extracted_cli_exact": true,
+      "second_run_refused_overwrite": true,
+      "firmware_images_in_zip": false
+    }
+  ]
+}

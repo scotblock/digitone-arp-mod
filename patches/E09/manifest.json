@@ -1,0 +1,20 @@
+{
+  "patch_metadata": {
+    "format": "digitone-xor-v1",
+    "build": "E09",
+    "device": "Original Digitone / Digitone Keys",
+    "base_os": "1.44",
+    "status": "PC-only preview; physical dual-port validation outstanding",
+    "source_bytes": 1673760,
+    "source_sha256": "d4f200d04484333d82822db7744e6484d0def8f2db8ddf55ee2b780cc13c9659",
+    "target_bytes": 1610656,
+    "target_sha256": "2d7446c086699918ed882a7f9e52ac6e29657d09557a4be519b1500bfcd710f0",
+    "output_filename": "Digitone_OS1.44E09_DUAL_PORT_ARP_PC_ONLY.syx",
+    "delta_sha256": "182150314355635f632a0a903e3fd691376befe08e6dad715787507a8460687a"
+  },
+  "patch_sha256": "788c7a6ad64a39be7f0ed8f39be0f8ef4f4c1171bf0e2ac92388d53cf24bc9f9",
+  "validation": {
+    "reconstructed_byte_exact": true,
+    "new_hardware_test": false
+  }
+}
