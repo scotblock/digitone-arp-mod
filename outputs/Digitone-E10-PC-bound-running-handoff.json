@@ -1,0 +1,223 @@
+{
+  "PC_only": true,
+  "helpers_host_loaded": false,
+  "hooks_host_patched": false,
+  "M1_initializer_host_called": false,
+  "settings_host_written": false,
+  "candidate_sha256": "68f67aac272cfaa0b52763db150efddbf4654a6773e9604b627898c857fa1c3c",
+  "startup_snapshot": "<workspace>\\work\\E10-bound-startup-E10_restored\\snapshots\\E09A-PC-path-candidate\\gui-raw.snap",
+  "wire": [],
+  "marks": [],
+  "samples": [],
+  "failure": null,
+  "steps": [
+    {
+      "label": "configured_2",
+      "ms": 2015.333359375,
+      "UI_owner": "0x413071ea",
+      "consumed_owner": "0x413071ea",
+      "step_owner": "0x413071ea",
+      "slot": 1,
+      "fields": [
+        1,
+        16,
+        65535,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "held": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "arp_config": [
+        1,
+        3,
+        50,
+        0
+      ],
+      "settings_word": 44466
+    },
+    {
+      "label": "configured_1",
+      "ms": 4410.666640625,
+      "UI_owner": "0x41306862",
+      "consumed_owner": "0x41306862",
+      "step_owner": "0x413071ea",
+      "slot": 1,
+      "fields": [
+        1,
+        16,
+        65535,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "held": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "arp_config": [
+        1,
+        3,
+        50,
+        0
+      ],
+      "settings_word": 44466
+    },
+    {
+      "label": "A01_held",
+      "ms": 5072.0,
+      "UI_owner": "0x41306862",
+      "consumed_owner": "0x41306862",
+      "step_owner": "0x41306862",
+      "slot": 0,
+      "fields": [
+        1,
+        15,
+        65535,
+        2147483776,
+        "01000000000000000000000000000000"
+      ],
+      "held": [
+        1,
+        1,
+        3,
+        0
+      ],
+      "arp_config": [
+        1,
+        3,
+        50,
+        0
+      ],
+      "settings_word": 44466
+    },
+    {
+      "label": "A02_requested",
+      "ms": 5462.66665625,
+      "UI_owner": "0x41306862",
+      "consumed_owner": "0x41306862",
+      "step_owner": "0x41306862",
+      "slot": 0,
+      "fields": [
+        1,
+        15,
+        65535,
+        2147483776,
+        "01000000000000000000000000000000"
+      ],
+      "held": [
+        1,
+        1,
+        3,
+        0
+      ],
+      "arp_config": [
+        1,
+        3,
+        50,
+        0
+      ],
+      "settings_word": 44466
+    },
+    {
+      "label": "A02_consumed",
+      "ms": 6714.0,
+      "UI_owner": "0x413071ea",
+      "consumed_owner": "0x413071ea",
+      "step_owner": "0x413071ea",
+      "slot": 1,
+      "fields": [
+        1,
+        16,
+        65535,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "held": [
+        1,
+        1,
+        3,
+        0
+      ],
+      "arp_config": [
+        1,
+        3,
+        50,
+        0
+      ],
+      "settings_word": 44466
+    },
+    {
+      "label": "released_stop",
+      "ms": 7675.069859375,
+      "UI_owner": "0x413071ea",
+      "consumed_owner": "0x413071ea",
+      "step_owner": "0x413071ea",
+      "slot": 1,
+      "fields": [
+        1,
+        16,
+        65535,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "held": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "arp_config": [
+        1,
+        3,
+        50,
+        0
+      ],
+      "settings_word": 44466
+    }
+  ],
+  "consumed_recalls": [
+    {
+      "phase": "A01_held",
+      "owner": "0x41306862",
+      "held": 0,
+      "arena": 0
+    },
+    {
+      "phase": "A01_held",
+      "owner": "0x41306862",
+      "held": 1,
+      "arena": 0
+    },
+    {
+      "phase": "A01_held",
+      "owner": "0x41306862",
+      "held": 2,
+      "arena": 0
+    },
+    {
+      "phase": "handoff_A02",
+      "owner": "0x413071ea",
+      "held": 3,
+      "arena": 0
+    }
+  ],
+  "bank_host_written": false,
+  "startup_copier_source_reclaimed": true,
+  "input_gate_fixture": {
+    "before": 3,
+    "after": 3
+  },
+  "confirmed_held_handoff": true,
+  "passed": true,
+  "bank_preserved": true,
+  "matching_fields_after_consumed_handoff": true,
+  "limits": [
+    "Actual native PTN selection, backing replacement and consumed-owner recall; no code/bank/settings host writes. Input gate is the inherited emulator MIDI fixture.",
+    "One held-chord handoff and release/Stop. Physical timing, exceptional resets, copy/clear/undo and broader transition coverage remain separate."
+  ]
+}

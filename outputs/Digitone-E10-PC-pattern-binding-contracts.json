@@ -1,0 +1,26 @@
+{
+  "PC_only": true,
+  "passed": true,
+  "checks": [
+    "All 128 exact kit-array owners map to their own slots; misaligned, adjacent-track and out-of-array pointers refuse.",
+    "Native editor changes immediately commit checksummed records; two patterns recall distinct lengths/roots/offsets/enables; blank patterns receive disabled defaults.",
+    "Held-note consumed recall preserves held state; pending-panel edits refuse, while same-owner edits remain persistable.",
+    "Outstanding arena ownership defers recall and invalidates step ownership; retry succeeds after retirement without touching held notes.",
+    "Project-generation changes force fresh recall even when all runtime addresses are reused.",
+    "Missing captured-project ownership prevents editor writes and invalidates consumed step ownership.",
+    "A malformed saved record recalls disabled defaults without rewriting it; the next accepted edit creates a valid replacement.",
+    "Rejected complete settings never partially commit a bank record.",
+    "Nested recall/editor/commit restores the original interrupt mask and flags."
+  ],
+  "strict_ColdFire_checked": true,
+  "editor_to_bank_connected": true,
+  "slot_count": 128,
+  "limits": [
+    "PC-only adapters. Physical storage/cache/timing and enlarged RAM ownership remain unverified.",
+    "Pattern identity is an exact kit-array slot within the project captured by the native decoder, plus its generation.",
+    "UI rebinding refuses active/held/arena or a different running consumer owner. Existing-owner edits use the original publisher checks.",
+    "Consumed recall requires the selected owner and no outstanding arena; refusal invalidates step ownership and retains the stock arp route.",
+    "Copy/clear/undo, incremental saves and asynchronous project replacement are not certified.",
+    "Isolated owner/project/UI fixtures. Continuous native panel, transition and save/load tests are separate."
+  ]
+}

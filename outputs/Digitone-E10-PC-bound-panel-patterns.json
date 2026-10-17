@@ -1,0 +1,691 @@
+{
+  "PC_only": true,
+  "helpers_host_loaded": false,
+  "hooks_host_patched": false,
+  "M1_initializer_host_called": false,
+  "settings_host_written": false,
+  "candidate_sha256": "68f67aac272cfaa0b52763db150efddbf4654a6773e9604b627898c857fa1c3c",
+  "startup_snapshot": "<workspace>\\work\\E10-bound-startup-E10_restored\\snapshots\\E09A-PC-path-candidate\\gui-raw.snap",
+  "wire": [
+    {
+      "phase": "reload",
+      "ms": 94.795828125,
+      "bytes": [
+        176,
+        120,
+        0
+      ]
+    }
+  ],
+  "marks": [],
+  "samples": [],
+  "failure": null,
+  "steps": [
+    {
+      "label": "A01_blank",
+      "ms": 3504.00003125,
+      "owner": "0x41306862",
+      "bound_owner": "0x41306862",
+      "slot": 0,
+      "generation": 1,
+      "fields": [
+        0,
+        16,
+        65535,
+        2147483776,
+        "00000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "A01_edited",
+      "ms": 3865.33334375,
+      "owner": "0x41306862",
+      "bound_owner": "0x41306862",
+      "slot": 0,
+      "generation": 1,
+      "fields": [
+        1,
+        15,
+        65535,
+        2147483776,
+        "01000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "A02_blank",
+      "ms": 5840.000046875,
+      "owner": "0x413071ea",
+      "bound_owner": "0x413071ea",
+      "slot": 1,
+      "generation": 1,
+      "fields": [
+        0,
+        16,
+        65535,
+        2147483776,
+        "00000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "A02_edited",
+      "ms": 6200.666703125,
+      "owner": "0x413071ea",
+      "bound_owner": "0x413071ea",
+      "slot": 1,
+      "generation": 1,
+      "fields": [
+        1,
+        16,
+        65535,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "A01_recalled",
+      "ms": 7483.333390625,
+      "owner": "0x41306862",
+      "bound_owner": "0x41306862",
+      "slot": 0,
+      "generation": 1,
+      "fields": [
+        1,
+        15,
+        65535,
+        2147483776,
+        "01000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "A02_recalled",
+      "ms": 8766.000015625,
+      "owner": "0x413071ea",
+      "bound_owner": "0x413071ea",
+      "slot": 1,
+      "generation": 1,
+      "fields": [
+        1,
+        16,
+        65535,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "save_menu",
+      "ms": 9458.00003125,
+      "owner": "0x413071ea",
+      "bound_owner": "0x413071ea",
+      "slot": 1,
+      "generation": 1,
+      "fields": [
+        1,
+        16,
+        65535,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "save_name",
+      "ms": 11679.333390625,
+      "owner": "0x413071ea",
+      "bound_owner": "0x413071ea",
+      "slot": 1,
+      "generation": 1,
+      "fields": [
+        1,
+        16,
+        65535,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "saved",
+      "ms": 14460.402828125,
+      "owner": "0x413071ea",
+      "bound_owner": "0x413071ea",
+      "slot": 1,
+      "generation": 1,
+      "fields": [
+        1,
+        16,
+        65535,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "A01_unsaved_change",
+      "ms": 16144.0,
+      "owner": "0x41306862",
+      "bound_owner": "0x41306862",
+      "slot": 0,
+      "generation": 1,
+      "fields": [
+        1,
+        15,
+        65535,
+        2147483776,
+        "02000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "load_selector",
+      "ms": 17066.000015625,
+      "owner": "0x41306862",
+      "bound_owner": "0x41306862",
+      "slot": 0,
+      "generation": 1,
+      "fields": [
+        1,
+        15,
+        65535,
+        2147483776,
+        "02000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "load_selected",
+      "ms": 18346.666671875,
+      "owner": "0x41306862",
+      "bound_owner": "0x41306862",
+      "slot": 0,
+      "generation": 1,
+      "fields": [
+        1,
+        15,
+        65535,
+        2147483776,
+        "02000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "loaded",
+      "ms": 20608.0,
+      "owner": "0x41306862",
+      "bound_owner": "0x41306862",
+      "slot": 0,
+      "generation": 1,
+      "fields": [
+        1,
+        15,
+        65535,
+        2147483776,
+        "02000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "loaded",
+      "ms": 1980.000046875,
+      "owner": "0x41306862",
+      "bound_owner": "0x41306862",
+      "slot": 0,
+      "generation": 2,
+      "fields": [
+        1,
+        15,
+        65535,
+        2147483776,
+        "02000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "A01_loaded_recall",
+      "ms": 3515.333375,
+      "owner": "0x41306862",
+      "bound_owner": "0x41306862",
+      "slot": 0,
+      "generation": 2,
+      "fields": [
+        1,
+        15,
+        65535,
+        2147483776,
+        "01000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "A02_loaded_recall",
+      "ms": 4798.6666875,
+      "owner": "0x413071ea",
+      "bound_owner": "0x413071ea",
+      "slot": 1,
+      "generation": 2,
+      "fields": [
+        1,
+        16,
+        65535,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "native_calls": [
+    {
+      "kind": "recall",
+      "phase": "A01_edit",
+      "arg1": "0x41306862",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A01_edit",
+      "arg1": "0x41306862",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A01_edit",
+      "arg1": "0x41306862",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A01_edit",
+      "arg1": "0x41306862",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A01_edit",
+      "arg1": "0x41306862",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A01_edit",
+      "arg1": "0x41306862",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A01_edit",
+      "arg1": "0x41306862",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A01_edit",
+      "arg1": "0x41306862",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A01_edit",
+      "arg1": "0x41306862",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A01_edit",
+      "arg1": "0x41306862",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A01_edit",
+      "arg1": "0x41306862",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A01_edit",
+      "arg1": "0x41306862",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A02_edit",
+      "arg1": "0x413071ea",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A02_edit",
+      "arg1": "0x413071ea",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A02_edit",
+      "arg1": "0x413071ea",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A02_edit",
+      "arg1": "0x413071ea",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A02_edit",
+      "arg1": "0x413071ea",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A02_edit",
+      "arg1": "0x413071ea",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A02_edit",
+      "arg1": "0x413071ea",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A02_edit",
+      "arg1": "0x413071ea",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A02_edit",
+      "arg1": "0x413071ea",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A02_edit",
+      "arg1": "0x413071ea",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A02_edit",
+      "arg1": "0x413071ea",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A02_edit",
+      "arg1": "0x41306862",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A02_edit",
+      "arg1": "0x41306862",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A02_edit",
+      "arg1": "0x413071ea",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A02_edit",
+      "arg1": "0x413071ea",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "emit",
+      "phase": "save",
+      "arg1": "0x41641a94",
+      "arg2": 1082119160,
+      "generation": 1
+    },
+    {
+      "kind": "emit",
+      "phase": "save",
+      "arg1": "0x4139a684",
+      "arg2": 1082119160,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "unsaved_edit",
+      "arg1": "0x41306862",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "unsaved_edit",
+      "arg1": "0x41306862",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "unsaved_edit",
+      "arg1": "0x41306862",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "unsaved_edit",
+      "arg1": "0x41306862",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "unsaved_edit",
+      "arg1": "0x41306862",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "capture",
+      "phase": "reload",
+      "arg1": "0x41641a94",
+      "arg2": 1082119160,
+      "generation": 1
+    },
+    {
+      "kind": "emit",
+      "phase": "reload",
+      "arg1": "0x4139a684",
+      "arg2": 1082119160,
+      "generation": 2
+    },
+    {
+      "kind": "emit",
+      "phase": "reload",
+      "arg1": "0x40555ff4",
+      "arg2": 1082119160,
+      "generation": 2
+    },
+    {
+      "kind": "recall",
+      "phase": "reload",
+      "arg1": "0x41306862",
+      "arg2": 1,
+      "generation": 2
+    },
+    {
+      "kind": "recall",
+      "phase": "reload",
+      "arg1": "0x41306862",
+      "arg2": 1,
+      "generation": 2
+    },
+    {
+      "kind": "recall",
+      "phase": "reload",
+      "arg1": "0x413071ea",
+      "arg2": 1,
+      "generation": 2
+    },
+    {
+      "kind": "recall",
+      "phase": "reload",
+      "arg1": "0x413071ea",
+      "arg2": 1,
+      "generation": 2
+    }
+  ],
+  "checkpoints": {
+    "two-patterns-edited": "<workspace>\\work\\E10-bound-panel-patterns\\two-patterns-edited.snap",
+    "saved": "<workspace>\\work\\E10-bound-panel-patterns\\saved.snap",
+    "load-selected": "<workspace>\\work\\E10-bound-panel-patterns\\load-selected.snap",
+    "reloaded-two-patterns": "<workspace>\\work\\E10-bound-panel-patterns\\reloaded-two-patterns.snap"
+  },
+  "bank_host_written": false,
+  "diagnostic_record_host_injection": false,
+  "private_card": "<workspace>\\work\\E10-bound-panel-patterns\\plusdrive.img",
+  "startup_copier_source_reclaimed": true,
+  "two_pattern_panel_recall": true,
+  "expected_records": [
+    "4d53313001010f000100ffff0100000000000000000000000000000000000312",
+    "4d533130010110010100ffffff00000000000000000000000000000000000412"
+  ],
+  "expected_fields": [
+    [
+      1,
+      15,
+      65535,
+      2147483776,
+      "01000000000000000000000000000000"
+    ],
+    [
+      1,
+      16,
+      65535,
+      2147483777,
+      "ff000000000000000000000000000000"
+    ]
+  ],
+  "passed": true,
+  "limits": [
+    "Native panel-created records and native save/load on a private card, with copier-installed code. No bank/settings/helper/hook data are host-written.",
+    "Stopped pattern recall and project reload in this scenario. Running held-note handoff and physical behavior require separate checks.",
+    "Copy/clear/undo, incremental saves, physical cache/timing and automatic power-loss persistence remain unverified."
+  ],
+  "resumed_from_native_load_confirmation": true,
+  "saved_project_reloaded": true,
+  "project_generation_changed": true,
+  "post_reload_pattern_recall": true
+}

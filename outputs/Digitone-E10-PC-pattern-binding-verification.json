@@ -1,0 +1,38 @@
+{
+  "PC_only": true,
+  "passed": true,
+  "editor_changes_saved_to_bank": true,
+  "exact_pattern_slot_count": 128,
+  "two_panel_created_patterns_saved_and_recalled": true,
+  "project_replacement_generation_checked": true,
+  "confirmed_running_held_handoff": true,
+  "DIN_USB_matched_note_pairs": 23,
+  "copied_payload_bytes": 79904,
+  "E09A_unchanged": true,
+  "E09A_sha256": "68f67aac272cfaa0b52763db150efddbf4654a6773e9604b627898c857fa1c3c",
+  "firmware_container_created": false,
+  "hardware_ready": false,
+  "checks": {
+    "Digitone-E10-PC-pattern-binding-contracts": true,
+    "Digitone-E10-PC-bound-startup": true,
+    "Digitone-E10-PC-bound-panel-patterns": true,
+    "Digitone-E10-PC-bound-playback": true,
+    "Digitone-E10-PC-bound-running-handoff": true
+  },
+  "source_hash_normalization": "UTF-8 with LF newlines",
+  "source_sha256": {
+    "build-PC-E10-pattern-binding.py": "ee9220f431d0c49099264f1d1d40c6ceb3c80c716b046ef8e9215366c3603902",
+    "integrate-PC-E10-pattern-binding.py": "93b65e42a4520235247dd860580953d4f67602d138353c370cd1b8473821dd32",
+    "test-PC-E10-pattern-binding.py": "0bc1b060e015e7cb97b8852e46c884eaab2271d58009c822679394231b04e1ad",
+    "test-PC-E10-bound-startup.py": "825a0edb0411a78974102fd63f09e14a61b4da31984e907488649f1a023617b8",
+    "test-PC-E10-bound-panel-patterns.py": "8bd147f800a20ff31bed23fbdf78b2aaa03a6c619871cb331ab4c9759f8d41f0",
+    "test-PC-E10-bound-playback.py": "43879e05502b9e665f473dd0e0a0dbea19c2de62428bab709e5c49b642e8b138",
+    "test-PC-E10-bound-running-handoff.py": "608cb7fec87f76b770453421902f09d5f0beb9691b7f24e18ba1c83d07244291"
+  },
+  "limits": [
+    "Native save/load test resumed its own checkpoint at the load confirmation after a test-button error; no bank, settings, hook or executable bytes were inserted.",
+    "One held-chord handoff, not exhaustive transition/reset coverage. Outstanding arena refusal retries only on a subsequent eligible owner-selection call; no periodic retry hook is claimed.",
+    "Step settings are in the RAM bank and emitted by full project serialization. Incremental mirror updates and unsaved power-loss recovery remain unverified.",
+    "Copy/clear/undo, asynchronous project replacement, physical RAM ownership/cache/timing and E10 packaged loader continuity remain uncertified."
+  ]
+}
