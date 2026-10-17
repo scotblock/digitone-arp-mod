@@ -1,0 +1,14 @@
+{
+  "PC_only": true,
+  "passed": true,
+  "kit_count": 128,
+  "stock_runtime_decode_byte_identical": true,
+  "stock_decoder_ignores_candidate": true,
+  "stock_reencode_drops_candidate": true,
+  "only_candidate_serialized_bytes_changed": true,
+  "runtime_sha256": "df53562e3c98bd6924ac7e415eb202c0d85f8bd2339b380ab1a4b04673da7ff7",
+  "limits": [
+    "Restored native parameters cloned into 128 scratch source kits; isolated native conversion loops, not filesystem or hardware.",
+    "No automatic E10 record capture is implied. A separate decode bridge and encode bridge are both required, including working-cache rebuilds."
+  ]
+}

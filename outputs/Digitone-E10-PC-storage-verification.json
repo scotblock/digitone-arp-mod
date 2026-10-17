@@ -1,0 +1,34 @@
+{
+  "PC_only": true,
+  "passed": true,
+  "scope": "Candidate serialized storage verification; E10 helpers remain unconnected",
+  "candidate_kit_offset": [
+    "0x940",
+    "0x960"
+  ],
+  "candidate_bytes": 32,
+  "patterns": 128,
+  "named_project_native_save_reload_verified": true,
+  "named_project_cold_boot_then_reload_verified": true,
+  "native_cold_working_cache_preserves_records": false,
+  "cold_cache_zero_records": 128,
+  "stock_kit_decode_byte_identical": true,
+  "stock_decode_reencode_loses_extension": true,
+  "injection_only_at_first_save": true,
+  "executable_patch_used": false,
+  "E10_runtime_restoration_implemented": false,
+  "E09A_unchanged": true,
+  "E09A_sha256": "68f67aac272cfaa0b52763db150efddbf4654a6773e9604b627898c857fa1c3c",
+  "verdict": "Candidate survives named-project persistence, including a fresh cold boot and later native reload. It is not self-preserving through stock working-cache rebuilds. Both capture on decode and re-emission on encode are required before connecting E10.",
+  "required_integration": [
+    "Validate/capture each record during native project decode, before stock conversion discards it.",
+    "Emit records during both named saves and working-cache reconstruction, from the correctly bound per-project pattern bank.",
+    "Establish defaults for old/blank/malformed records and guard project replacement before changing bank ownership.",
+    "Keep copy/clear/undo, asynchronous replacement and physical behavior as separate validation scopes."
+  ],
+  "limits": [
+    "Initial diagnostic records are PC host fixtures inserted at actual native serialize completion; no machine-code persistence hook is claimed.",
+    "Cold boot and named reload use the saved private card with no record injection. The emulator storage/DMA/cache models remain in use.",
+    "Passing these storage checks does not certify every writer, automatic pattern ownership or hardware readiness."
+  ]
+}

@@ -1,0 +1,1157 @@
+{
+  "PC_only": true,
+  "cases": [
+    {
+      "image": "E09A_restored",
+      "events": [
+        {
+          "pc": "0x4029c4b0",
+          "estimated_instructions": 0,
+          "sr": "0x2504"
+        },
+        {
+          "pc": "0x4000055a",
+          "estimated_instructions": 12199512,
+          "sr": "0x2508"
+        },
+        {
+          "pc": "0x400fbd14",
+          "estimated_instructions": 12299508,
+          "sr": "0x2008",
+          "reference": 100,
+          "dtmr": "841b",
+          "vector_handler": "400fbc58",
+          "saved_d2": "00000000",
+          "return_to_delay_caller": "4008d038"
+        },
+        {
+          "pc": "0x400fbc58",
+          "estimated_instructions": 12399983,
+          "sr": "0x2204"
+        },
+        {
+          "pc": "0x400fbc86",
+          "estimated_instructions": 12399983,
+          "sr": "0x2204"
+        },
+        {
+          "pc": "0x400fbd14",
+          "estimated_instructions": 12800439,
+          "sr": "0x2008",
+          "reference": 1000,
+          "dtmr": "841b",
+          "vector_handler": "400fbc58",
+          "saved_d2": "00000000",
+          "return_to_delay_caller": "400f5266"
+        },
+        {
+          "pc": "0x400fbc58",
+          "estimated_instructions": 12905158,
+          "sr": "0x2209"
+        },
+        {
+          "pc": "0x400fbc86",
+          "estimated_instructions": 12905158,
+          "sr": "0x2200"
+        },
+        {
+          "pc": "0x400ffed0",
+          "estimated_instructions": 66507731,
+          "sr": "0x2004"
+        },
+        {
+          "pc": "0x400fbd14",
+          "estimated_instructions": 72907475,
+          "sr": "0x2008",
+          "reference": 1000,
+          "dtmr": "841b",
+          "vector_handler": "400fbc58",
+          "saved_d2": "000005e0",
+          "return_to_delay_caller": "4008d724"
+        },
+        {
+          "pc": "0x400fbc58",
+          "estimated_instructions": 73012194,
+          "sr": "0x2200"
+        },
+        {
+          "pc": "0x400fbc86",
+          "estimated_instructions": 73012194,
+          "sr": "0x2204"
+        }
+      ],
+      "delay_sem_writes": [
+        {
+          "pc": "0x400004d2",
+          "estimated_instructions": 5999760,
+          "address": "0x419eaeec",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "pc": "0x400004d2",
+          "estimated_instructions": 5999760,
+          "address": "0x419eaef0",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "pc": "0x400017e0",
+          "estimated_instructions": 12299508,
+          "address": "0x419eaeec",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "pc": "0x400017e4",
+          "estimated_instructions": 12299508,
+          "address": "0x419eaef0",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "pc": "0x40001876",
+          "estimated_instructions": 12299508,
+          "address": "0x419eaef0",
+          "size": 4,
+          "value": 1094141532
+        },
+        {
+          "pc": "0x4000163a",
+          "estimated_instructions": 12399983,
+          "address": "0x419eaeec",
+          "size": 4,
+          "value": 1
+        },
+        {
+          "pc": "0x40001644",
+          "estimated_instructions": 12399983,
+          "address": "0x419eaeec",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "pc": "0x40001646",
+          "estimated_instructions": 12399983,
+          "address": "0x419eaef0",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "pc": "0x40001876",
+          "estimated_instructions": 12800439,
+          "address": "0x419eaef0",
+          "size": 4,
+          "value": 1094141532
+        },
+        {
+          "pc": "0x4000163a",
+          "estimated_instructions": 12905158,
+          "address": "0x419eaeec",
+          "size": 4,
+          "value": 1
+        },
+        {
+          "pc": "0x40001644",
+          "estimated_instructions": 12905158,
+          "address": "0x419eaeec",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "pc": "0x40001646",
+          "estimated_instructions": 12905158,
+          "address": "0x419eaef0",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "pc": "0x40001876",
+          "estimated_instructions": 72907475,
+          "address": "0x419eaef0",
+          "size": 4,
+          "value": 1094174388
+        },
+        {
+          "pc": "0x4000163a",
+          "estimated_instructions": 73012194,
+          "address": "0x419eaeec",
+          "size": 4,
+          "value": 1
+        },
+        {
+          "pc": "0x40001644",
+          "estimated_instructions": 73012194,
+          "address": "0x419eaeec",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "pc": "0x40001646",
+          "estimated_instructions": 73012194,
+          "address": "0x419eaef0",
+          "size": 4,
+          "value": 0
+        }
+      ],
+      "failure": null,
+      "DSP_section_from_candidate_verified": true,
+      "strict_failures": [],
+      "strict_executed": {
+        "cold": 67430,
+        "intro": 77810
+      },
+      "phase_events": [
+        {
+          "pc": "0x4000053e",
+          "phase": "0x434f4c44"
+        },
+        {
+          "pc": "0x4009d0d8",
+          "phase": "0x494e4954"
+        },
+        {
+          "pc": "0x4008d3fa",
+          "phase": "0x4c495645"
+        }
+      ],
+      "copied_components_verified": true,
+      "cold_pc": "0x4008d3ec",
+      "estimated_instructions": 90016231,
+      "parked": true,
+      "halt_vec": null,
+      "timer_fired": {
+        "1": 3
+      },
+      "completion_kicks": 0,
+      "depack_clamps": 0,
+      "task_count": 10,
+      "phase_after_cold": "0x4c495645",
+      "READY": 1,
+      "DSP_model": "DspCpu",
+      "intro": {
+        "up": true,
+        "intro_done": 1,
+        "mainloop": 137,
+        "stand_ins": {
+          "idle_yield": 516
+        },
+        "general_satisfactions": 0
+      },
+      "ui_snapshot": "work\\E10-storage-cold-E09A_restored\\snapshots\\E09A-PC-path-candidate\\gui-raw.snap",
+      "packaged_helpers_host_loaded": false,
+      "passed": true,
+      "seconds": 36.78100000000268
+    }
+  ],
+  "limits": [
+    "Timer expiry is modeled at native basic-block boundaries with assumed clock costs; no physical timing proof.",
+    "Direct MAIN entry with loader-matching boot flags and identical initialized emulator cards, not a physical loader/storage dump.",
+    "Cold flash-read shortcut and scoped ISA emulation remain. No host writes satisfy the delay semaphore.",
+    "The unchanged firmware ignores this extension; observations test serialized storage survival, not E10 sequence restoration. No candidate bytes or helper instructions are seeded during cold startup."
+  ],
+  "passed": true,
+  "diagnostic_record_host_injection": false,
+  "code_overlay": false,
+  "loader_derived_E09A_state": true,
+  "serialized_candidate_observations": [
+    {
+      "stage": "cold",
+      "slot": 0,
+      "address": "0x407961f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 1,
+      "address": "0x40796bf4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 2,
+      "address": "0x407975f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 3,
+      "address": "0x40797ff4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 4,
+      "address": "0x407989f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 5,
+      "address": "0x407993f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 6,
+      "address": "0x40799df4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 7,
+      "address": "0x4079a7f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 8,
+      "address": "0x4079b1f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 9,
+      "address": "0x4079bbf4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 10,
+      "address": "0x4079c5f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 11,
+      "address": "0x4079cff4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 12,
+      "address": "0x4079d9f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 13,
+      "address": "0x4079e3f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 14,
+      "address": "0x4079edf4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 15,
+      "address": "0x4079f7f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 16,
+      "address": "0x407a01f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 17,
+      "address": "0x407a0bf4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 18,
+      "address": "0x407a15f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 19,
+      "address": "0x407a1ff4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 20,
+      "address": "0x407a29f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 21,
+      "address": "0x407a33f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 22,
+      "address": "0x407a3df4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 23,
+      "address": "0x407a47f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 24,
+      "address": "0x407a51f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 25,
+      "address": "0x407a5bf4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 26,
+      "address": "0x407a65f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 27,
+      "address": "0x407a6ff4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 28,
+      "address": "0x407a79f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 29,
+      "address": "0x407a83f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 30,
+      "address": "0x407a8df4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 31,
+      "address": "0x407a97f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 32,
+      "address": "0x407aa1f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 33,
+      "address": "0x407aabf4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 34,
+      "address": "0x407ab5f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 35,
+      "address": "0x407abff4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 36,
+      "address": "0x407ac9f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 37,
+      "address": "0x407ad3f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 38,
+      "address": "0x407addf4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 39,
+      "address": "0x407ae7f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 40,
+      "address": "0x407af1f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 41,
+      "address": "0x407afbf4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 42,
+      "address": "0x407b05f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 43,
+      "address": "0x407b0ff4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 44,
+      "address": "0x407b19f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 45,
+      "address": "0x407b23f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 46,
+      "address": "0x407b2df4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 47,
+      "address": "0x407b37f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 48,
+      "address": "0x407b41f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 49,
+      "address": "0x407b4bf4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 50,
+      "address": "0x407b55f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 51,
+      "address": "0x407b5ff4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 52,
+      "address": "0x407b69f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 53,
+      "address": "0x407b73f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 54,
+      "address": "0x407b7df4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 55,
+      "address": "0x407b87f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 56,
+      "address": "0x407b91f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 57,
+      "address": "0x407b9bf4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 58,
+      "address": "0x407ba5f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 59,
+      "address": "0x407baff4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 60,
+      "address": "0x407bb9f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 61,
+      "address": "0x407bc3f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 62,
+      "address": "0x407bcdf4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 63,
+      "address": "0x407bd7f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 64,
+      "address": "0x407be1f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 65,
+      "address": "0x407bebf4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 66,
+      "address": "0x407bf5f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 67,
+      "address": "0x407bfff4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 68,
+      "address": "0x407c09f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 69,
+      "address": "0x407c13f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 70,
+      "address": "0x407c1df4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 71,
+      "address": "0x407c27f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 72,
+      "address": "0x407c31f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 73,
+      "address": "0x407c3bf4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 74,
+      "address": "0x407c45f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 75,
+      "address": "0x407c4ff4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 76,
+      "address": "0x407c59f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 77,
+      "address": "0x407c63f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 78,
+      "address": "0x407c6df4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 79,
+      "address": "0x407c77f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 80,
+      "address": "0x407c81f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 81,
+      "address": "0x407c8bf4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 82,
+      "address": "0x407c95f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 83,
+      "address": "0x407c9ff4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 84,
+      "address": "0x407ca9f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 85,
+      "address": "0x407cb3f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 86,
+      "address": "0x407cbdf4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 87,
+      "address": "0x407cc7f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 88,
+      "address": "0x407cd1f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 89,
+      "address": "0x407cdbf4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 90,
+      "address": "0x407ce5f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 91,
+      "address": "0x407ceff4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 92,
+      "address": "0x407cf9f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 93,
+      "address": "0x407d03f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 94,
+      "address": "0x407d0df4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 95,
+      "address": "0x407d17f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 96,
+      "address": "0x407d21f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 97,
+      "address": "0x407d2bf4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 98,
+      "address": "0x407d35f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 99,
+      "address": "0x407d3ff4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 100,
+      "address": "0x407d49f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 101,
+      "address": "0x407d53f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 102,
+      "address": "0x407d5df4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 103,
+      "address": "0x407d67f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 104,
+      "address": "0x407d71f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 105,
+      "address": "0x407d7bf4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 106,
+      "address": "0x407d85f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 107,
+      "address": "0x407d8ff4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 108,
+      "address": "0x407d99f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 109,
+      "address": "0x407da3f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 110,
+      "address": "0x407dadf4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 111,
+      "address": "0x407db7f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 112,
+      "address": "0x407dc1f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 113,
+      "address": "0x407dcbf4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 114,
+      "address": "0x407dd5f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 115,
+      "address": "0x407ddff4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 116,
+      "address": "0x407de9f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 117,
+      "address": "0x407df3f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 118,
+      "address": "0x407dfdf4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 119,
+      "address": "0x407e07f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 120,
+      "address": "0x407e11f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 121,
+      "address": "0x407e1bf4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 122,
+      "address": "0x407e25f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 123,
+      "address": "0x407e2ff4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 124,
+      "address": "0x407e39f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 125,
+      "address": "0x407e43f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 126,
+      "address": "0x407e4df4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "stage": "cold",
+      "slot": 127,
+      "address": "0x407e57f4",
+      "matches": false,
+      "actual": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "all_128_slots_observed": true,
+  "all_observed_records_match": false
+}

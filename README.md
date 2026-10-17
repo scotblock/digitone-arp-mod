@@ -2,7 +2,7 @@
 
 Source and research archive for the original Elektron Digitone / Digitone Keys, focused on OS 1.44. Unofficial; not affiliated with Elektron.
 
-## Current status â€” 17 October 2026
+## Current status — 17 October 2026
 
 | Build | Change | Evidence |
 | --- | --- | --- |
@@ -14,14 +14,16 @@ Source and research archive for the original Elektron Digitone / Digitone Keys, 
 | E09A | Corrects M1 sequenced notes selecting parameter-lock lists as arp settings | User confirms physical synth/M1 arp DIN and USB output and M1 sequencer-triggered arp; installed hash not independently verified |
 | E10 prototype | M1 16-step scale-degree sequence, rests, root/scale controls and native encoder editor | Native copied startup/editor/playback and explicit 128-pattern RAM APIs pass on PC; no installable firmware or native project saving |
 
-M2â€“M4 arps are **not implemented**. A MIDI arp step editor now exists as an **E10 PC prototype**, with native startup/reset integration tested on PC. Automatic per-pattern recall and native project saving remain unfinished. E08F/E09 have a **confirmed M1 sequencer arp bug**: a sequenced note can disable the arp by selecting the wrong settings source. E09A corrects that source selection, with user-reported sequencer operation on hardware. Broader multi-note native sequence entry, transition ownership and saved-project persistence need further work. E08E contains a known menu regression and is superseded by E08F. E04 failed to finish startup on hardware; stock was restored successfully.
+M2–M4 arps are **not implemented**. A MIDI arp step editor now exists as an **E10 PC prototype**, with native startup/reset integration tested on PC. Automatic per-pattern recall and native project saving remain unfinished. E08F/E09 have a **confirmed M1 sequencer arp bug**: a sequenced note can disable the arp by selecting the wrong settings source. E09A corrects that source selection, with user-reported sequencer operation on hardware. Broader multi-note native sequence entry, transition ownership and saved-project persistence need further work. E08E contains a known menu regression and is superseded by E08F. E04 failed to finish startup on hardware; stock was restored successfully.
 
 ## Start here
 
+- [E10 storage verification](outputs/Digitone-E10-PC-storage-verification-notes.md) — 128 named-project records survive reboot/reload; the working-cache capture/emission bridge remains required.
+
 - [E10 startup and pattern-storage progress](outputs/Digitone-E10-PC-startup-and-pattern-storage-notes.md) — explicit RAM APIs and native kit-codec findings; native project saving remains unfinished.
-- [E10 step sequencer prototype and controls](outputs/Digitone-E10-PC-step-sequencer-notes.md) â€” source/tests only, no E10 download firmware.
+- [E10 step sequencer prototype and controls](outputs/Digitone-E10-PC-step-sequencer-notes.md) — source/tests only, no E10 download firmware.
 - [E09A sequencer arp correction](outputs/Digitone-E09A-sequence-notes.md)
-- [Download experimental patch packages](https://github.com/scotblock/digitone-arp-mod/releases) â€” supply your own stock OS 1.44 file; [instructions](docs/PATCH_RELEASE.md).
+- [Download experimental patch packages](https://github.com/scotblock/digitone-arp-mod/releases) — supply your own stock OS 1.44 file; [instructions](docs/PATCH_RELEASE.md).
 - [Latest routing change and remaining work](outputs/Digitone-E09-routing-and-next-features.md)
 - [Validation scope and limits](docs/VALIDATION.md)
 - [How the source archive is organized](docs/REPRODUCIBILITY.md)

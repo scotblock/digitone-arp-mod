@@ -13,7 +13,7 @@
 
 ## Pattern records: explicit APIs, not automatic recall
 
-The native `save(slot, owner)` and `load(slot, owner)` helpers cover M1 slots 0â€“127. Both are quiescent-only. All 128 records round-trip with varied lengths, masks, roots/scales and signed offsets. Slot bounds, stale save ownership, invalid fields, damaged records and outstanding playback ownership are tested. Stock MIDI parameter records are unchanged.
+The native `save(slot, owner)` and `load(slot, owner)` helpers cover M1 slots 0–127. Both are quiescent-only. All 128 records round-trip with varied lengths, masks, roots/scales and signed offsets. Slot bounds, stale save ownership, invalid fields, damaged records and outstanding playback ownership are tested. Stock MIDI parameter records are unchanged.
 
 Each 32-byte record contains `MS10`, schema 1, enable, length, root, scale, a reserved zero byte, the 16-bit enabled-step mask, 16 signed offsets and an unsigned byte sum. Pointers, playback/edit cursors, page state and counters are not serialized. Loading binds a new supplied owner and clears transient runtime state. The byte sum is a simple consistency check, not cryptographic integrity.
 
@@ -33,7 +33,7 @@ Also executed the actual project conversion loops at `0x4000ecd6..0x4000ecf6` an
 
 1. Trace the enclosing native project writer/reader and kit-slot initialization/copy/clear paths for the candidate space. Connect a versioned extension only after those contracts are understood.
 2. Bind accepted editor changes and completed pattern transitions to the correct project/pattern record. Handle blank/invalid records, pending transitions, copy/paste/undo and same-address project replacement explicitly.
-3. Execute native save â†’ edit â†’ reload â†’ cold restart without PC sidecar import. Then validate a packaged loader path and the enlarged RAM region before making a firmware candidate.
+3. Execute native save → edit → reload → cold restart without PC sidecar import. Then validate a packaged loader path and the enlarged RAM region before making a firmware candidate.
 
 Startup integration has advanced; **native per-pattern project saving remains unfinished**. Physical RAM ownership, cache coherence and timing for the enlarged E10 layout remain unverified.
 
@@ -48,3 +48,7 @@ Startup integration has advanced; **native per-pattern project saving remains un
 - `Digitone-E10-PC-native-kit-codec.json`
 
 E09A SHA-256: `68f67aac272cfaa0b52763db150efddbf4654a6773e9604b627898c857fa1c3c`.
+
+## Subsequent storage verification
+
+Native named-project save/reload and a fresh cold boot followed by named reload now preserve all 128 diagnostic records at `+0x940`. The stock working-cache path loses them; both decode capture and encode emission are required. The E10 helpers remain unconnected. See [the storage verification](Digitone-E10-PC-storage-verification-notes.md) for evidence and scope.
