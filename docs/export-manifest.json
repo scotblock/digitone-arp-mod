@@ -10113,8 +10113,29 @@
     {
       "source": "outputs/Digitone-E10-PC-powerfail-notes.md",
       "path": "outputs/Digitone-E10-PC-powerfail-notes.md",
-      "source_sha256": "36664ae320ee8526351ac600bcf88bd85636efe5904b1e08d7cdc4f6aa8acd48",
-      "export_sha256": "52941a90178bb0b73bb6e75a3b9e2916150245cea646e70d4878620be862f92c",
+      "source_sha256": "0c24a3ad2a3d4d021aa38715dd95124c7b801c5a9c8ec5a2708a3d03ca1ae6e3",
+      "export_sha256": "0671c4b10f72c614680700b7b7420ce7e0276c0fde1ea58c719dced7f2d5faec",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/analyze-PC-E10-hold-up-budget.py",
+      "path": "work/analyze-PC-E10-hold-up-budget.py",
+      "source_sha256": "b0d71dc9e2f3cb62169da2f2758ab11a3423a0317a25fa5adf64dd22fe3ad651",
+      "export_sha256": "a63a62b7700f75243bd5428a2963d33fbaee862e38620a3cef24ef238e573e0f",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-hold-up-budget.json",
+      "path": "outputs/Digitone-E10-PC-hold-up-budget.json",
+      "source_sha256": "74dbb0d228264b359865432e3cfb45cb83b8b6f227a8443dfa85bff877186194",
+      "export_sha256": "2189cc80a3060c3bb0c1155c957cfbe3cef9ac5d0d90b44fc2861f2ec371d8df",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-hold-up-assessment.md",
+      "path": "outputs/Digitone-E10-PC-hold-up-assessment.md",
+      "source_sha256": "f7f2662ebcf2b28ec8eeaaa4dcdb6abd3482f7750fe26b1ee770a97aa1d45fd2",
+      "export_sha256": "2f2f1452e8e09006b6b1d1be18dd60544d98002d2dda22d63608c744737c3484",
       "personal_paths_rewritten": false
     }
   ]

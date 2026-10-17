@@ -14,7 +14,7 @@ A separate interrupted-write control exposes a stock protocol limitation. With b
 - The stock enable-sense poll at 0x4008cdf2 reads GPIO 0xec09401e bit 3. Its accepted branch invokes 0x400a8448, which sets the shutdown cache-ready byte at 0x4139420c. Earlier PC snapshots left this input low and the byte unset; directly invoking the ordinary writer concealed that missing prerequisite. The physical board wiring and electrical thresholds have not been measured, so “power good” is a fixture name inferred from this use.
 - The external GPIO input fixture drives C2 low and injects external vector 66 at its stock programmed level 7. Native handler 0x40001e54 sets INTC2 force bit 30. Native vector 222 handler 0x40001e2a acknowledges it and calls the registered callback. No firmware guard, callback pointer, ready byte, bank selector, payload or executable code is host-written.
 - The callback checks the cache-ready byte and pending bank, then uses 0x400a7a6c to write fixed 32-KB transfers. There are 85 data commands for the retained image (the final transfer includes native padding), followed by one 32-KB old-header invalidation command. This differs from the ordinary writer tested earlier.
-- The test stops after the native cache loop finishes, before the final power-latch path. The resulting card is then used for fresh direct-MAIN cold startup and native E10 bank capture. All 128 records are recovered, without Save Project.
+- The test stops after the native cache loop finishes, before the post-cache reset tail. The resulting card is then used for fresh direct-MAIN cold startup and native E10 bank capture. All 128 records are recovered, without Save Project.
 
 ## Required PC model changes and limits
 
@@ -22,7 +22,7 @@ The synthetic idle-loop scheduler interrupt is disabled for this test. It would 
 
 The controller model lacked the acknowledgement semantics used by the polled shutdown driver. A narrow CC/TC adapter now retains one completion flag when the firmware acknowledges the other. It does not manufacture completion events: those still come from the existing controller/DMA command model. Native guest-store/read controls cover CC-first, TC-first, zero writes and later TC arrival. NXP defines IRQSTAT acknowledgements as write-one-to-clear in [MCF5441x Reference Manual, section 25.3.10 and Table 25-14](https://www.nxp.com/docs/en/reference-manual/MCF54418RM.pdf#page=638). The adapter is scoped to CC/TC; it is not a complete controller error, SDIO interrupt or timing implementation.
 
-The eMMC model copies a command payload and reports completion immediately. Physical busy time, write durability, bus contention, capacitor hold-up, supply thresholds, cache coherence and the final power latch remain unmeasured. Passing this path cannot certify physical power-loss recovery.
+The eMMC model copies a command payload and reports completion immediately. Physical busy time, write durability, bus contention, capacitor hold-up, supply thresholds, cache coherence and the post-cache reset/board power behavior remain unmeasured. Passing this path cannot certify physical power-loss recovery.
 
 ## Interrupted-write controls
 
@@ -43,3 +43,7 @@ Byte comparisons confirm that the external dispatch, enable-sense logic, shutdow
 `Digitone-E10-PC-powerfail-verification.json` records both the successful automatic modeled path and `mid_write_recovery_safe: false`; it must not be interpreted as an overall hardware-safety pass. Related reports contain the interrupt trace, 86 controller transfers, 128-record cold restore, and three cut controls. The earlier E10 lifecycle report remains the record of explicit-writer tests.
 
 The next useful check is the shutdown write/hold-up budget on stock hardware, or a separately reviewed PC-only commit-order design. Do not infer a safe abrupt power-cut trial from these results. No new installation or storage protocol change has been made.
+
+## Later closed-unit clarification
+
+The [hold-up assessment](Digitone-E10-PC-hold-up-assessment.md) corrects the earlier “power latch” label: 0xec090000 bit 7 requests a CPU software reset. It also records the nonmaskable level-7 interrupt caveat. The external input arriving during custom retained-image updates was not covered by the successful completed-write test. Physical hold-up remains unknown, and no internal measurements are planned with the current equipment.

@@ -1,0 +1,67 @@
+{
+  "PC_only": true,
+  "analysis_completed": true,
+  "firmware_modified": false,
+  "device_opened": false,
+  "hold_up_time_verified": false,
+  "shutdown_time_upper_bound_verified": false,
+  "stock_shutdown_code_byte_identical": true,
+  "retained_image_bytes": 2782484,
+  "chunk_bytes": 32768,
+  "new_image_commands": 85,
+  "new_image_wire_bytes": 2785280,
+  "native_final_padding_bytes": 2796,
+  "old_bank_invalidation_write_bytes": 32768,
+  "old_bank_header_read_bytes": 32768,
+  "total_write_bytes": 2818048,
+  "total_payload_wire_bytes": 2850816,
+  "additional_E10_shutdown_commands": 0,
+  "additional_E10_shutdown_wire_bytes": 0,
+  "captured_model_registers": {
+    "PROCTL": "0x22",
+    "SYSCTL": "0xe010c",
+    "MISCCR": "0x800"
+  },
+  "captured_bus_width": 4,
+  "captured_source": "oscillator output selected; physical frequency unknown",
+  "captured_card_clock_divisor": 2,
+  "conditional_scenarios": [
+    {
+      "card_clock_hz": 10000000,
+      "oscillator_hz_if_captured_source": 20000000,
+      "payload_only_lower_bound_ms": 570.1632
+    },
+    {
+      "card_clock_hz": 12500000,
+      "oscillator_hz_if_captured_source": 25000000,
+      "payload_only_lower_bound_ms": 456.13056
+    },
+    {
+      "card_clock_hz": 20000000,
+      "oscillator_hz_if_captured_source": 40000000,
+      "payload_only_lower_bound_ms": 285.0816
+    },
+    {
+      "card_clock_hz": 25000000,
+      "oscillator_hz_if_captured_source": 50000000,
+      "payload_only_lower_bound_ms": 228.06528
+    }
+  ],
+  "actual_card_clock_hz": null,
+  "actual_shutdown_ms": null,
+  "measured_hold_up_ms": null,
+  "physical_safety_margin_ms": null,
+  "post_cache_terminal_write": "0x80 to RCR 0xec090000 requests software reset; it does not establish a power-hold latch",
+  "assurance_limits": [
+    "Payload-only lower bounds exclude command/CRC overhead, CPU copies, input/interrupt latency, data-cache/memory timing, eMMC programming/busy time and durability. They are not required hold-up budgets or measured shutdown times.",
+    "E10 stores records in existing serialized slots; the shutdown writer has the same fixed count. Equal volume does not prove equal physical timing. Edge-sensitive level-7 requests are nonmaskable; IPL 7 alone does not protect custom updates from that input. The level-5 callback handoff and interrupted-update behavior need separate coverage.",
+    "Only captured PC register values are decoded; hardware bootstrap oscillator/source/divider state is not measured. No capacitance, rail current, minimum voltage or signal threshold is known.",
+    "Without opening/measuring the unit or obtaining authoritative board hold-up specifications, the available evidence cannot establish a positive physical margin. LEDs/audio stopping do not observe internal eMMC write completion."
+  ],
+  "references": [
+    "https://www.nxp.com/docs/en/reference-manual/MCF54418RM.pdf#page=236",
+    "https://www.nxp.com/docs/en/reference-manual/MCF54418RM.pdf#page=635",
+    "https://www.nxp.com/docs/en/reference-manual/MCF54418RM.pdf#page=637",
+    "https://www.nxp.com/docs/en/reference-manual/MCF54418RM.pdf#page=261"
+  ]
+}

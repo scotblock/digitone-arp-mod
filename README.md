@@ -18,6 +18,8 @@ M2–M4 arps are **not implemented**. A MIDI arp step editor now exists as an **
 
 ## Start here
 
+- [E10 closed-unit hold-up assessment](outputs/Digitone-E10-PC-hold-up-assessment.md) — unchanged shutdown transfer volume, conditional timing lower bounds, and why physical reserve remains unknown.
+
 - [E10 automatic shutdown and interrupted-write results](outputs/Digitone-E10-PC-powerfail-notes.md) — modeled automatic recovery passes after a complete write; a mid-write cut exposes a stock selection limitation.
 
 - [E10 copy, reset and unsaved working-cache checks](outputs/Digitone-E10-PC-lifecycle-notes.md) — native clipboard/undo and incremental retained-image synchronization; unsaved records survive an explicitly invoked stock write and cold PC restore.
