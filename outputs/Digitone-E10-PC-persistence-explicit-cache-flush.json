@@ -1,0 +1,30 @@
+{
+  "PC_only": true,
+  "passed": true,
+  "explicit_host_entry": true,
+  "power_loss_interrupt_emulated": false,
+  "cache_contents_host_written": false,
+  "writes": [
+    {
+      "sector": 507904,
+      "length": 2782484,
+      "source": "0x40555ee4"
+    },
+    {
+      "sector": 499712,
+      "length": 512,
+      "source": "0x41393c08"
+    }
+  ],
+  "failure": null,
+  "pending_bank": 1,
+  "selected_bank": 0,
+  "destination": "0xf800000",
+  "old_bank_magic": "004f4b49",
+  "records_match": 128,
+  "card": "<workspace>\\work\\E10-persistence-explicit-cache-flush\\plusdrive.img",
+  "limits": [
+    "The stock writer entry is invoked explicitly in a PC fixture. Automatic shutdown/power-fail dispatch and physical persistence are not established.",
+    "Input records come from the preceding native load/save session; no record/bank/cache data are host-inserted in this control."
+  ]
+}

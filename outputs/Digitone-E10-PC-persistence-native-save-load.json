@@ -1,0 +1,822 @@
+{
+  "PC_only": true,
+  "helpers_host_loaded": false,
+  "hooks_host_patched": false,
+  "M1_initializer_host_called": false,
+  "settings_host_written": false,
+  "candidate_sha256": "68f67aac272cfaa0b52763db150efddbf4654a6773e9604b627898c857fa1c3c",
+  "startup_snapshot": "<workspace>\\work\\E10-persistence-startup-E10_restored\\snapshots\\E09A-PC-path-candidate\\gui-raw.snap",
+  "wire": [],
+  "marks": [],
+  "samples": [],
+  "failure": null,
+  "steps": [
+    {
+      "label": "ready",
+      "ms": 1300.000046875,
+      "records": 0
+    },
+    {
+      "label": "settings",
+      "ms": 1700.00746875,
+      "records": 0
+    },
+    {
+      "label": "menu",
+      "ms": 2100.0089375,
+      "records": 0
+    },
+    {
+      "label": "selector",
+      "ms": 2500.010390625,
+      "records": 0
+    },
+    {
+      "label": "slot_002",
+      "ms": 2900.01184375,
+      "records": 0
+    },
+    {
+      "label": "selected",
+      "ms": 5000.0194375,
+      "records": 0
+    },
+    {
+      "label": "discard_confirm",
+      "ms": 5400.020921875,
+      "records": 0
+    },
+    {
+      "label": "confirm",
+      "ms": 6550.6666875,
+      "records": 128
+    },
+    {
+      "label": "save_menu",
+      "ms": 8100.734125,
+      "records": 128
+    },
+    {
+      "label": "save_name",
+      "ms": 10500.803921875,
+      "records": 128
+    },
+    {
+      "label": "saved",
+      "ms": 13600.894125,
+      "records": 128
+    }
+  ],
+  "load_records": [
+    {
+      "slot": 0,
+      "matches": true,
+      "actual": "4d5331300100010000000000e8e9eaebecedeeeff0f1f2f3f4f5f6f700000ffb"
+    },
+    {
+      "slot": 1,
+      "matches": true,
+      "actual": "4d53313001010201010001f7e9eaebecedeeeff0f1f2f3f4f5f6f7f800001107"
+    },
+    {
+      "slot": 2,
+      "matches": true,
+      "actual": "4d53313001000302020003eeeaebecedeeeff0f1f2f3f4f5f6f7f8f900001112"
+    },
+    {
+      "slot": 3,
+      "matches": true,
+      "actual": "4d53313001010403030005e5ebecedeeeff0f1f2f3f4f5f6f7f8f9fa0000111f"
+    },
+    {
+      "slot": 4,
+      "matches": true,
+      "actual": "4d53313001000504040007dcecedeeeff0f1f2f3f4f5f6f7f8f9fafb0000112a"
+    },
+    {
+      "slot": 5,
+      "matches": true,
+      "actual": "4d53313001010605050009d3edeeeff0f1f2f3f4f5f6f7f8f9fafbfc00001137"
+    },
+    {
+      "slot": 6,
+      "matches": true,
+      "actual": "4d5331300100070606000bcaeeeff0f1f2f3f4f5f6f7f8f9fafbfcfd00001142"
+    },
+    {
+      "slot": 7,
+      "matches": true,
+      "actual": "4d5331300101080707000dc1eff0f1f2f3f4f5f6f7f8f9fafbfcfdfe0000114f"
+    },
+    {
+      "slot": 8,
+      "matches": true,
+      "actual": "4d5331300100090808000fb8f0f1f2f3f4f5f6f7f8f9fafbfcfdfeff0000115a"
+    },
+    {
+      "slot": 9,
+      "matches": true,
+      "actual": "4d53313001010a09090011aff1f2f3f4f5f6f7f8f9fafbfcfdfeff0000001067"
+    },
+    {
+      "slot": 10,
+      "matches": true,
+      "actual": "4d53313001000b0a0a0013a6f2f3f4f5f6f7f8f9fafbfcfdfeff000100000f72"
+    },
+    {
+      "slot": 11,
+      "matches": true,
+      "actual": "4d53313001010c0b0b00159df3f4f5f6f7f8f9fafbfcfdfeff00010200000e7f"
+    },
+    {
+      "slot": 12,
+      "matches": true,
+      "actual": "4d53313001000d000c001794f4f5f6f7f8f9fafbfcfdfeff0001020300000d7e"
+    },
+    {
+      "slot": 13,
+      "matches": true,
+      "actual": "4d53313001010e010d00198bf5f6f7f8f9fafbfcfdfeff000102030400000c8b"
+    },
+    {
+      "slot": 14,
+      "matches": true,
+      "actual": "4d53313001000f020e001b82f6f7f8f9fafbfcfdfeff00010203040500000b96"
+    },
+    {
+      "slot": 15,
+      "matches": true,
+      "actual": "4d533130010110030f001d79f7f8f9fafbfcfdfeff0001020304050600000aa3"
+    },
+    {
+      "slot": 16,
+      "matches": true,
+      "actual": "4d5331300100010410001f70f8f9fafbfcfdfeff00010203040506070000099e"
+    },
+    {
+      "slot": 17,
+      "matches": true,
+      "actual": "4d5331300101020511002167f9fafbfcfdfeff000102030405060708000008ab"
+    },
+    {
+      "slot": 18,
+      "matches": true,
+      "actual": "4d533130010003061200235efafbfcfdfeff00010203040506070809000007b6"
+    },
+    {
+      "slot": 19,
+      "matches": true,
+      "actual": "4d5331300101040713002555fbfcfdfeff000102030405060708090a000006c3"
+    },
+    {
+      "slot": 20,
+      "matches": true,
+      "actual": "4d533130010005081400274cfcfdfeff000102030405060708090a0b000005ce"
+    },
+    {
+      "slot": 21,
+      "matches": true,
+      "actual": "4d5331300101060915002943fdfeff000102030405060708090a0b0c000004db"
+    },
+    {
+      "slot": 22,
+      "matches": true,
+      "actual": "4d5331300100070a16002b3afeff000102030405060708090a0b0c0d000003e6"
+    },
+    {
+      "slot": 23,
+      "matches": true,
+      "actual": "4d5331300101080b17002d31ff000102030405060708090a0b0c0d0e000002f3"
+    },
+    {
+      "slot": 24,
+      "matches": true,
+      "actual": "4d5331300100090018002f28000102030405060708090a0b0c0d0e0f000001f2"
+    },
+    {
+      "slot": 25,
+      "matches": true,
+      "actual": "4d53313001010a011900311f0102030405060708090a0b0c0d0e0f10000001ff"
+    },
+    {
+      "slot": 26,
+      "matches": true,
+      "actual": "4d53313001000b021a00331602030405060708090a0b0c0d0e0f10110000020a"
+    },
+    {
+      "slot": 27,
+      "matches": true,
+      "actual": "4d53313001010c031b00350d030405060708090a0b0c0d0e0f10111200000217"
+    },
+    {
+      "slot": 28,
+      "matches": true,
+      "actual": "4d53313001000d041c0037040405060708090a0b0c0d0e0f1011121300000222"
+    },
+    {
+      "slot": 29,
+      "matches": true,
+      "actual": "4d53313001010e051d0038fb05060708090a0b0c0d0e0f10111213140000032e"
+    },
+    {
+      "slot": 30,
+      "matches": true,
+      "actual": "4d53313001000f061e003af2060708090a0b0c0d0e0f10111213141500000339"
+    },
+    {
+      "slot": 31,
+      "matches": true,
+      "actual": "4d533130010110071f003ce90708090a0b0c0d0e0f1011121314151600000346"
+    },
+    {
+      "slot": 32,
+      "matches": true,
+      "actual": "4d5331300100010820003ee008090a0b0c0d0e0f101112131415161700000341"
+    },
+    {
+      "slot": 33,
+      "matches": true,
+      "actual": "4d53313001010209210040d7090a0b0c0d0e0f1011121314151617180000034e"
+    },
+    {
+      "slot": 34,
+      "matches": true,
+      "actual": "4d5331300100030a220042ce0a0b0c0d0e0f101112131415161718e800000428"
+    },
+    {
+      "slot": 35,
+      "matches": true,
+      "actual": "4d5331300101040b230044c50b0c0d0e0f101112131415161718e8e900000504"
+    },
+    {
+      "slot": 36,
+      "matches": true,
+      "actual": "4d53313001000500000046bc0c0d0e0f101112131415161718e8e9ea000005ae"
+    },
+    {
+      "slot": 37,
+      "matches": true,
+      "actual": "4d53313001010601010048b30d0e0f101112131415161718e8e9eaeb0000068a"
+    },
+    {
+      "slot": 38,
+      "matches": true,
+      "actual": "4d5331300100070202004aaa0e0f101112131415161718e8e9eaebec00000764"
+    },
+    {
+      "slot": 39,
+      "matches": true,
+      "actual": "4d5331300101080303004ca10f101112131415161718e8e9eaebeced00000840"
+    },
+    {
+      "slot": 40,
+      "matches": true,
+      "actual": "4d5331300100090404004e98101112131415161718e8e9eaebecedee0000091a"
+    },
+    {
+      "slot": 41,
+      "matches": true,
+      "actual": "4d53313001010a050500508f1112131415161718e8e9eaebecedeeef000009f6"
+    },
+    {
+      "slot": 42,
+      "matches": true,
+      "actual": "4d53313001000b060600528612131415161718e8e9eaebecedeeeff000000ad0"
+    },
+    {
+      "slot": 43,
+      "matches": true,
+      "actual": "4d53313001010c070700547d131415161718e8e9eaebecedeeeff0f100000bac"
+    },
+    {
+      "slot": 44,
+      "matches": true,
+      "actual": "4d53313001000d08080056741415161718e8e9eaebecedeeeff0f1f200000c86"
+    },
+    {
+      "slot": 45,
+      "matches": true,
+      "actual": "4d53313001010e090900586b15161718e8e9eaebecedeeeff0f1f2f300000d62"
+    },
+    {
+      "slot": 46,
+      "matches": true,
+      "actual": "4d53313001000f0a0a005a62161718e8e9eaebecedeeeff0f1f2f3f400000e3c"
+    },
+    {
+      "slot": 47,
+      "matches": true,
+      "actual": "4d5331300101100b0b005c591718e8e9eaebecedeeeff0f1f2f3f4f500000f18"
+    },
+    {
+      "slot": 48,
+      "matches": true,
+      "actual": "4d533130010001000c005e5018e8e9eaebecedeeeff0f1f2f3f4f5f600000fd6"
+    },
+    {
+      "slot": 49,
+      "matches": true,
+      "actual": "4d533130010102010d006047e8e9eaebecedeeeff0f1f2f3f4f5f6f7000010b2"
+    },
+    {
+      "slot": 50,
+      "matches": true,
+      "actual": "4d533130010003020e00623ee9eaebecedeeeff0f1f2f3f4f5f6f7f8000010bd"
+    },
+    {
+      "slot": 51,
+      "matches": true,
+      "actual": "4d533130010104030f006435eaebecedeeeff0f1f2f3f4f5f6f7f8f9000010ca"
+    },
+    {
+      "slot": 52,
+      "matches": true,
+      "actual": "4d533130010005041000662cebecedeeeff0f1f2f3f4f5f6f7f8f9fa000010d5"
+    },
+    {
+      "slot": 53,
+      "matches": true,
+      "actual": "4d5331300101060511006823ecedeeeff0f1f2f3f4f5f6f7f8f9fafb000010e2"
+    },
+    {
+      "slot": 54,
+      "matches": true,
+      "actual": "4d5331300100070612006a1aedeeeff0f1f2f3f4f5f6f7f8f9fafbfc000010ed"
+    },
+    {
+      "slot": 55,
+      "matches": true,
+      "actual": "4d5331300101080713006c11eeeff0f1f2f3f4f5f6f7f8f9fafbfcfd000010fa"
+    },
+    {
+      "slot": 56,
+      "matches": true,
+      "actual": "4d5331300100090814006e08eff0f1f2f3f4f5f6f7f8f9fafbfcfdfe00001105"
+    },
+    {
+      "slot": 57,
+      "matches": true,
+      "actual": "4d53313001010a0915006ffff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff00001211"
+    },
+    {
+      "slot": 58,
+      "matches": true,
+      "actual": "4d53313001000b0a160071f6f1f2f3f4f5f6f7f8f9fafbfcfdfeff000000111c"
+    },
+    {
+      "slot": 59,
+      "matches": true,
+      "actual": "4d53313001010c0b170073edf2f3f4f5f6f7f8f9fafbfcfdfeff000100001029"
+    },
+    {
+      "slot": 60,
+      "matches": true,
+      "actual": "4d53313001000d00180075e4f3f4f5f6f7f8f9fafbfcfdfeff00010200000f28"
+    },
+    {
+      "slot": 61,
+      "matches": true,
+      "actual": "4d53313001010e01190077dbf4f5f6f7f8f9fafbfcfdfeff0001020300000e35"
+    },
+    {
+      "slot": 62,
+      "matches": true,
+      "actual": "4d53313001000f021a0079d2f5f6f7f8f9fafbfcfdfeff000102030400000d40"
+    },
+    {
+      "slot": 63,
+      "matches": true,
+      "actual": "4d533130010110031b007bc9f6f7f8f9fafbfcfdfeff00010203040500000c4d"
+    },
+    {
+      "slot": 64,
+      "matches": true,
+      "actual": "4d533130010001041c007dc0f7f8f9fafbfcfdfeff0001020304050600000b48"
+    },
+    {
+      "slot": 65,
+      "matches": true,
+      "actual": "4d533130010102051d007fb7f8f9fafbfcfdfeff000102030405060700000a55"
+    },
+    {
+      "slot": 66,
+      "matches": true,
+      "actual": "4d533130010003061e0081aef9fafbfcfdfeff00010203040506070800000960"
+    },
+    {
+      "slot": 67,
+      "matches": true,
+      "actual": "4d533130010104071f0083a5fafbfcfdfeff000102030405060708090000086d"
+    },
+    {
+      "slot": 68,
+      "matches": true,
+      "actual": "4d533130010005082000859cfbfcfdfeff000102030405060708090a00000778"
+    },
+    {
+      "slot": 69,
+      "matches": true,
+      "actual": "4d5331300101060921008793fcfdfeff000102030405060708090a0b00000685"
+    },
+    {
+      "slot": 70,
+      "matches": true,
+      "actual": "4d5331300100070a2200898afdfeff000102030405060708090a0b0c00000590"
+    },
+    {
+      "slot": 71,
+      "matches": true,
+      "actual": "4d5331300101080b23008b81feff000102030405060708090a0b0c0d0000049d"
+    },
+    {
+      "slot": 72,
+      "matches": true,
+      "actual": "4d5331300100090000008d78ff000102030405060708090a0b0c0d0e00000378"
+    },
+    {
+      "slot": 73,
+      "matches": true,
+      "actual": "4d53313001010a0101008f6f000102030405060708090a0b0c0d0e0f00000285"
+    },
+    {
+      "slot": 74,
+      "matches": true,
+      "actual": "4d53313001000b02020091660102030405060708090a0b0c0d0e0f1000000290"
+    },
+    {
+      "slot": 75,
+      "matches": true,
+      "actual": "4d53313001010c030300935d02030405060708090a0b0c0d0e0f10110000029d"
+    },
+    {
+      "slot": 76,
+      "matches": true,
+      "actual": "4d53313001000d0404009554030405060708090a0b0c0d0e0f101112000002a8"
+    },
+    {
+      "slot": 77,
+      "matches": true,
+      "actual": "4d53313001010e050500974b0405060708090a0b0c0d0e0f10111213000002b5"
+    },
+    {
+      "slot": 78,
+      "matches": true,
+      "actual": "4d53313001000f060600994205060708090a0b0c0d0e0f1011121314000002c0"
+    },
+    {
+      "slot": 79,
+      "matches": true,
+      "actual": "4d5331300101100707009b39060708090a0b0c0d0e0f101112131415000002cd"
+    },
+    {
+      "slot": 80,
+      "matches": true,
+      "actual": "4d5331300100010808009d300708090a0b0c0d0e0f10111213141516000002c8"
+    },
+    {
+      "slot": 81,
+      "matches": true,
+      "actual": "4d5331300101020909009f2708090a0b0c0d0e0f1011121314151617000002d5"
+    },
+    {
+      "slot": 82,
+      "matches": true,
+      "actual": "4d5331300100030a0a00a11e090a0b0c0d0e0f101112131415161718000002e0"
+    },
+    {
+      "slot": 83,
+      "matches": true,
+      "actual": "4d5331300101040b0b00a3150a0b0c0d0e0f101112131415161718e8000003bc"
+    },
+    {
+      "slot": 84,
+      "matches": true,
+      "actual": "4d533130010005000c00a50c0b0c0d0e0f101112131415161718e8e90000048a"
+    },
+    {
+      "slot": 85,
+      "matches": true,
+      "actual": "4d533130010106010d00a7030c0d0e0f101112131415161718e8e9ea00000566"
+    },
+    {
+      "slot": 86,
+      "matches": true,
+      "actual": "4d533130010007020e00a8fa0d0e0f101112131415161718e8e9eaeb0000073f"
+    },
+    {
+      "slot": 87,
+      "matches": true,
+      "actual": "4d533130010108030f00aaf10e0f101112131415161718e8e9eaebec0000081b"
+    },
+    {
+      "slot": 88,
+      "matches": true,
+      "actual": "4d533130010009041000ace80f101112131415161718e8e9eaebeced000008f5"
+    },
+    {
+      "slot": 89,
+      "matches": true,
+      "actual": "4d53313001010a051100aedf101112131415161718e8e9eaebecedee000009d1"
+    },
+    {
+      "slot": 90,
+      "matches": true,
+      "actual": "4d53313001000b061200b0d61112131415161718e8e9eaebecedeeef00000aab"
+    },
+    {
+      "slot": 91,
+      "matches": true,
+      "actual": "4d53313001010c071300b2cd12131415161718e8e9eaebecedeeeff000000b87"
+    },
+    {
+      "slot": 92,
+      "matches": true,
+      "actual": "4d53313001000d081400b4c4131415161718e8e9eaebecedeeeff0f100000c61"
+    },
+    {
+      "slot": 93,
+      "matches": true,
+      "actual": "4d53313001010e091500b6bb1415161718e8e9eaebecedeeeff0f1f200000d3d"
+    },
+    {
+      "slot": 94,
+      "matches": true,
+      "actual": "4d53313001000f0a1600b8b215161718e8e9eaebecedeeeff0f1f2f300000e17"
+    },
+    {
+      "slot": 95,
+      "matches": true,
+      "actual": "4d5331300101100b1700baa9161718e8e9eaebecedeeeff0f1f2f3f400000ef3"
+    },
+    {
+      "slot": 96,
+      "matches": true,
+      "actual": "4d533130010001001800bca01718e8e9eaebecedeeeff0f1f2f3f4f500000fb1"
+    },
+    {
+      "slot": 97,
+      "matches": true,
+      "actual": "4d533130010102011900be9718e8e9eaebecedeeeff0f1f2f3f4f5f60000108d"
+    },
+    {
+      "slot": 98,
+      "matches": true,
+      "actual": "4d533130010003021a00c08ee8e9eaebecedeeeff0f1f2f3f4f5f6f700001167"
+    },
+    {
+      "slot": 99,
+      "matches": true,
+      "actual": "4d533130010104031b00c285e9eaebecedeeeff0f1f2f3f4f5f6f7f800001174"
+    },
+    {
+      "slot": 100,
+      "matches": true,
+      "actual": "4d533130010005041c00c47ceaebecedeeeff0f1f2f3f4f5f6f7f8f90000117f"
+    },
+    {
+      "slot": 101,
+      "matches": true,
+      "actual": "4d533130010106051d00c673ebecedeeeff0f1f2f3f4f5f6f7f8f9fa0000118c"
+    },
+    {
+      "slot": 102,
+      "matches": true,
+      "actual": "4d533130010007061e00c86aecedeeeff0f1f2f3f4f5f6f7f8f9fafb00001197"
+    },
+    {
+      "slot": 103,
+      "matches": true,
+      "actual": "4d533130010108071f00ca61edeeeff0f1f2f3f4f5f6f7f8f9fafbfc000011a4"
+    },
+    {
+      "slot": 104,
+      "matches": true,
+      "actual": "4d533130010009082000cc58eeeff0f1f2f3f4f5f6f7f8f9fafbfcfd000011af"
+    },
+    {
+      "slot": 105,
+      "matches": true,
+      "actual": "4d53313001010a092100ce4feff0f1f2f3f4f5f6f7f8f9fafbfcfdfe000011bc"
+    },
+    {
+      "slot": 106,
+      "matches": true,
+      "actual": "4d53313001000b0a2200d046f0f1f2f3f4f5f6f7f8f9fafbfcfdfeff000011c7"
+    },
+    {
+      "slot": 107,
+      "matches": true,
+      "actual": "4d53313001010c0b2300d23df1f2f3f4f5f6f7f8f9fafbfcfdfeff00000010d4"
+    },
+    {
+      "slot": 108,
+      "matches": true,
+      "actual": "4d53313001000d000000d434f2f3f4f5f6f7f8f9fafbfcfdfeff000100000faf"
+    },
+    {
+      "slot": 109,
+      "matches": true,
+      "actual": "4d53313001010e010100d62bf3f4f5f6f7f8f9fafbfcfdfeff00010200000ebc"
+    },
+    {
+      "slot": 110,
+      "matches": true,
+      "actual": "4d53313001000f020200d822f4f5f6f7f8f9fafbfcfdfeff0001020300000dc7"
+    },
+    {
+      "slot": 111,
+      "matches": true,
+      "actual": "4d533130010110030300da19f5f6f7f8f9fafbfcfdfeff000102030400000cd4"
+    },
+    {
+      "slot": 112,
+      "matches": true,
+      "actual": "4d533130010001040400dc10f6f7f8f9fafbfcfdfeff00010203040500000bcf"
+    },
+    {
+      "slot": 113,
+      "matches": true,
+      "actual": "4d533130010102050500de07f7f8f9fafbfcfdfeff0001020304050600000adc"
+    },
+    {
+      "slot": 114,
+      "matches": true,
+      "actual": "4d533130010003060600dffef8f9fafbfcfdfeff000102030405060700000ae6"
+    },
+    {
+      "slot": 115,
+      "matches": true,
+      "actual": "4d533130010104070700e1f5f9fafbfcfdfeff000102030405060708000009f3"
+    },
+    {
+      "slot": 116,
+      "matches": true,
+      "actual": "4d533130010005080800e3ecfafbfcfdfeff00010203040506070809000008fe"
+    },
+    {
+      "slot": 117,
+      "matches": true,
+      "actual": "4d533130010106090900e5e3fbfcfdfeff000102030405060708090a0000080b"
+    },
+    {
+      "slot": 118,
+      "matches": true,
+      "actual": "4d5331300100070a0a00e7dafcfdfeff000102030405060708090a0b00000716"
+    },
+    {
+      "slot": 119,
+      "matches": true,
+      "actual": "4d5331300101080b0b00e9d1fdfeff000102030405060708090a0b0c00000623"
+    },
+    {
+      "slot": 120,
+      "matches": true,
+      "actual": "4d533130010009000c00ebc8feff000102030405060708090a0b0c0d00000522"
+    },
+    {
+      "slot": 121,
+      "matches": true,
+      "actual": "4d53313001010a010d00edbfff000102030405060708090a0b0c0d0e0000042f"
+    },
+    {
+      "slot": 122,
+      "matches": true,
+      "actual": "4d53313001000b020e00efb6000102030405060708090a0b0c0d0e0f0000033a"
+    },
+    {
+      "slot": 123,
+      "matches": true,
+      "actual": "4d53313001010c030f00f1ad0102030405060708090a0b0c0d0e0f1000000347"
+    },
+    {
+      "slot": 124,
+      "matches": true,
+      "actual": "4d53313001000d041000f3a402030405060708090a0b0c0d0e0f101100000352"
+    },
+    {
+      "slot": 125,
+      "matches": true,
+      "actual": "4d53313001010e051100f59b030405060708090a0b0c0d0e0f1011120000035f"
+    },
+    {
+      "slot": 126,
+      "matches": true,
+      "actual": "4d53313001000f061200f7920405060708090a0b0c0d0e0f101112130000036a"
+    },
+    {
+      "slot": 127,
+      "matches": true,
+      "actual": "4d533130010110071300f98905060708090a0b0c0d0e0f101112131400000377"
+    }
+  ],
+  "diagnostic_record_host_injection": false,
+  "code_overlay": false,
+  "firmware_container_created": false,
+  "startup_copier_source_reclaimed": true,
+  "persistence_calls": [
+    {
+      "kind": "capture",
+      "phase": "load",
+      "serialized": "0x41641a94",
+      "runtime_owner": "0x407fd3f8",
+      "bank_owner": "0x407fd3f8",
+      "valid": 1
+    },
+    {
+      "kind": "emit",
+      "phase": "save_named",
+      "serialized": "0x4139a684",
+      "runtime_owner": "0x407fd3f8",
+      "bank_owner": "0x407fd3f8",
+      "valid": 1
+    },
+    {
+      "kind": "emit",
+      "phase": "save_named",
+      "serialized": "0x40555ff4",
+      "runtime_owner": "0x407fd3f8",
+      "bank_owner": "0x407fd3f8",
+      "valid": 1
+    },
+    {
+      "kind": "emit",
+      "phase": "save_named",
+      "serialized": "0x41641a94",
+      "runtime_owner": "0x407fd3f8",
+      "bank_owner": "0x407fd3f8",
+      "valid": 1
+    },
+    {
+      "kind": "emit",
+      "phase": "save_named",
+      "serialized": "0x4139a684",
+      "runtime_owner": "0x407fd3f8",
+      "bank_owner": "0x407fd3f8",
+      "valid": 1
+    }
+  ],
+  "stock_cache_calls": [],
+  "preload_save_prompt_answer": "NO",
+  "discard_confirmation_answer": "YES",
+  "all_128_slots_reached": true,
+  "all_records_recovered": true,
+  "halted": null,
+  "metadata_after_load": [
+    1297305649,
+    1,
+    1082119160,
+    2,
+    128,
+    0,
+    0,
+    0
+  ],
+  "metadata_after_save": [
+    1297305649,
+    1,
+    1082119160,
+    2,
+    128,
+    0,
+    128,
+    0
+  ],
+  "native_retained_mirror_records_match": 128,
+  "cache_bank_state_after_save": {
+    "pending": 1,
+    "selected": 0
+  },
+  "post_save_snapshot": "work/E10-persistence-save-load/post-save.snap",
+  "persistence_helpers_host_loaded": false,
+  "persistence_hooks_host_patched": false,
+  "bank_host_written": false,
+  "native_load_capture_verified": true,
+  "native_named_save_emission_verified": true,
+  "passed": true,
+  "limits": [
+    "Native copier-installed PC image; input named file contains prior diagnostic records, but this test injects no records, bank data, hooks or helper code.",
+    "Device editor publication and automatic pattern recall are not connected to the bank.",
+    "Physical storage/cache/timing, incremental kit writes, copy/clear and asynchronous project replacement are not certified."
+  ],
+  "serialized_project_images": [
+    {
+      "base": "0xf400110",
+      "matching_records": 0
+    },
+    {
+      "base": "0xfc00000",
+      "matching_records": 128
+    },
+    {
+      "base": "0x10000000",
+      "matching_records": 0
+    },
+    {
+      "base": "0x10400000",
+      "matching_records": 128
+    }
+  ],
+  "native_named_save_encode_calls": 4,
+  "native_serialized_records_match": 128,
+  "cold_working_cache_restoration_pending": true
+}

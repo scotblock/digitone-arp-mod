@@ -1,0 +1,23 @@
+{
+  "PC_only": true,
+  "passed": true,
+  "strict_ColdFire_checked": true,
+  "checks": [
+    "All 128 valid records capture and emit through actual machine code.",
+    "Malformed/blank records become absent defaults without carrying the previous project.",
+    "A different project receives zero records, including reused serialized buffers; original ownership remains bound.",
+    "Active/live/held/arena capture refuses before bank mutation and invalidates stale ownership.",
+    "Cold and LIVE quiescent loads are admitted; invalid admission refuses.",
+    "Serialized spans and runtime-owner bounds are checked.",
+    "Caller interrupt mask and flags survive the atomic record loop.",
+    "The actual hooked native project decode and encode loops preserve all records through a fresh buffer rebuild."
+  ],
+  "patterns": 128,
+  "native_MAIN_hooks_executed": true,
+  "limits": [
+    "PC-only native persistence bridge. Editor-to-pattern binding and runtime pattern recall are separate.",
+    "Capture is quiescent-only; refusal invalidates bank ownership but does not certify outer project replacement or change active notes.",
+    "Full interrupt masking bounds atomic helper publication; physical cost/ownership of the expanded region is not certified.",
+    "Isolated project-array fixtures; complete UI/storage/startup continuity is tested separately."
+  ]
+}

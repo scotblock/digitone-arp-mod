@@ -1,0 +1,43 @@
+{
+  "PC_only": true,
+  "passed": true,
+  "patterns": 128,
+  "code_bytes_added": 670,
+  "copied_payload_bytes": 69664,
+  "native_helpers_installed": true,
+  "bank_records_host_injected_in_integration_tests": false,
+  "initial_named_file_is_prior_diagnostic_fixture": true,
+  "explicit_cache_flush_entry_is_fixture": true,
+  "automatic_power_fail_persistence_verified": false,
+  "editor_to_pattern_bank_connected": false,
+  "automatic_pattern_recall": false,
+  "E09A_sha256": "68f67aac272cfaa0b52763db150efddbf4654a6773e9604b627898c857fa1c3c",
+  "E09A_unchanged": true,
+  "firmware_container_created": false,
+  "hardware_ready": false,
+  "checks": {
+    "bridge-contracts": true,
+    "startup": true,
+    "native-save-load": true,
+    "explicit-cache-flush": true,
+    "cache-reboot": true,
+    "playback": true
+  },
+  "source_sha256": {
+    "build-PC-E10-persistence-bridge.py": "0fd6b4f194b669f1748d67b08741e5d5a2a2437034a1ad7506b8a984fbf271e4",
+    "integrate-PC-E10-persistence.py": "76f3d41a88318d460244f083b7a5d1d882e8753f0fe3c333ae1766871421fb19",
+    "test-PC-E10-persistence-bridge.py": "bd7de9be1063b93d34a337823a5d0d15f1cf9de7315a1e347a01c2b4a3c048a8",
+    "test-PC-E10-persistence-startup.py": "93e96a74c123daec86fe8f01b43787f5d4fc0e20206f3509ddf9eea94e910311",
+    "test-PC-E10-persistence-native-save-load.py": "06fd20ae38de04be2a6e93674a986d7691d8885abe65570db929f2449acc4f04",
+    "test-PC-E10-persistence-explicit-cache-flush.py": "bfce522cee73822c5240c44007641d8720ed2da7b0ec5631318f7f71492d80d4",
+    "test-PC-E10-persistence-cache-reboot.py": "9561ca23838e928b68d7bd5c42eabdcf4cf6bf77a2e488e82ea1685e4c8bcdd8",
+    "test-PC-E10-persistence-playback.py": "27b710e0b0bd25a9bc02eb38684e02c3b7d80bba2fc6664a7da6105af24c21d7"
+  },
+  "limits": [
+    "Input named file has 128 prior diagnostic records. The integrated tests insert no bank records, helper bytes or MAIN hooks; the native copier installs code.",
+    "The retained-cache writer is explicitly invoked on a separate PC card; physical power-loss dispatch, timing and persistence are not established.",
+    "Direct MAIN startup with unchanged E09A DSP/resources, not an E10 packaged loader path.",
+    "Editor publication, automatic pattern recall, copy/clear/undo and asynchronous replacement remain unconnected or uncertified.",
+    "Expanded RAM ownership and physical cache/timing are not certified."
+  ]
+}

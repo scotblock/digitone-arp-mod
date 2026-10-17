@@ -1,0 +1,274 @@
+{
+  "PC_only": true,
+  "cases": [
+    {
+      "image": "E10_restored",
+      "events": [
+        {
+          "pc": "0x4029c4b0",
+          "estimated_instructions": 0,
+          "sr": "0x2704"
+        },
+        {
+          "pc": "0x4000055a",
+          "estimated_instructions": 12199512,
+          "sr": "0x2708"
+        },
+        {
+          "pc": "0x400fbd14",
+          "estimated_instructions": 12299508,
+          "sr": "0x2008",
+          "reference": 100,
+          "dtmr": "841b",
+          "vector_handler": "400fbc58",
+          "saved_d2": "00000000",
+          "return_to_delay_caller": "4008d038"
+        },
+        {
+          "pc": "0x400fbc58",
+          "estimated_instructions": 12399983,
+          "sr": "0x2204"
+        },
+        {
+          "pc": "0x400fbc86",
+          "estimated_instructions": 12399983,
+          "sr": "0x2204"
+        },
+        {
+          "pc": "0x400fbd14",
+          "estimated_instructions": 12800439,
+          "sr": "0x2008",
+          "reference": 1000,
+          "dtmr": "841b",
+          "vector_handler": "400fbc58",
+          "saved_d2": "00000000",
+          "return_to_delay_caller": "400f5266"
+        },
+        {
+          "pc": "0x400fbc58",
+          "estimated_instructions": 12905158,
+          "sr": "0x2200"
+        },
+        {
+          "pc": "0x400fbc86",
+          "estimated_instructions": 12905158,
+          "sr": "0x2200"
+        },
+        {
+          "pc": "0x400ffed0",
+          "estimated_instructions": 66507731,
+          "sr": "0x2004"
+        },
+        {
+          "pc": "0x400fbd14",
+          "estimated_instructions": 72907475,
+          "sr": "0x2008",
+          "reference": 1000,
+          "dtmr": "841b",
+          "vector_handler": "400fbc58",
+          "saved_d2": "000005e0",
+          "return_to_delay_caller": "4008d724"
+        },
+        {
+          "pc": "0x400fbc58",
+          "estimated_instructions": 73012194,
+          "sr": "0x2200"
+        },
+        {
+          "pc": "0x400fbc86",
+          "estimated_instructions": 73012194,
+          "sr": "0x2208"
+        }
+      ],
+      "delay_sem_writes": [
+        {
+          "pc": "0x400004d2",
+          "estimated_instructions": 6099756,
+          "address": "0x419eaeec",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "pc": "0x400004d2",
+          "estimated_instructions": 6099756,
+          "address": "0x419eaef0",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "pc": "0x400017e0",
+          "estimated_instructions": 12299508,
+          "address": "0x419eaeec",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "pc": "0x400017e4",
+          "estimated_instructions": 12299508,
+          "address": "0x419eaef0",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "pc": "0x40001876",
+          "estimated_instructions": 12299508,
+          "address": "0x419eaef0",
+          "size": 4,
+          "value": 1094141532
+        },
+        {
+          "pc": "0x4000163a",
+          "estimated_instructions": 12399983,
+          "address": "0x419eaeec",
+          "size": 4,
+          "value": 1
+        },
+        {
+          "pc": "0x40001644",
+          "estimated_instructions": 12399983,
+          "address": "0x419eaeec",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "pc": "0x40001646",
+          "estimated_instructions": 12399983,
+          "address": "0x419eaef0",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "pc": "0x40001876",
+          "estimated_instructions": 12800439,
+          "address": "0x419eaef0",
+          "size": 4,
+          "value": 1094141532
+        },
+        {
+          "pc": "0x4000163a",
+          "estimated_instructions": 12905158,
+          "address": "0x419eaeec",
+          "size": 4,
+          "value": 1
+        },
+        {
+          "pc": "0x40001644",
+          "estimated_instructions": 12905158,
+          "address": "0x419eaeec",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "pc": "0x40001646",
+          "estimated_instructions": 12905158,
+          "address": "0x419eaef0",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "pc": "0x40001876",
+          "estimated_instructions": 72907475,
+          "address": "0x419eaef0",
+          "size": 4,
+          "value": 1094174388
+        },
+        {
+          "pc": "0x4000163a",
+          "estimated_instructions": 73012194,
+          "address": "0x419eaeec",
+          "size": 4,
+          "value": 1
+        },
+        {
+          "pc": "0x40001644",
+          "estimated_instructions": 73012194,
+          "address": "0x419eaeec",
+          "size": 4,
+          "value": 0
+        },
+        {
+          "pc": "0x40001646",
+          "estimated_instructions": 73012194,
+          "address": "0x419eaef0",
+          "size": 4,
+          "value": 0
+        }
+      ],
+      "failure": null,
+      "DSP_section_from_candidate_verified": true,
+      "strict_failures": [],
+      "strict_executed": {
+        "cold": 107684,
+        "intro": 77810
+      },
+      "phase_events": [
+        {
+          "pc": "0x4000053e",
+          "phase": "0x434f4c44"
+        },
+        {
+          "pc": "0x4009d0d8",
+          "phase": "0x494e4954"
+        },
+        {
+          "pc": "0x4008d3fa",
+          "phase": "0x4c495645"
+        }
+      ],
+      "copied_components_verified": true,
+      "cold_pc": "0x4008d3ec",
+      "estimated_instructions": 90016231,
+      "parked": true,
+      "halt_vec": null,
+      "timer_fired": {
+        "1": 3
+      },
+      "completion_kicks": 0,
+      "depack_clamps": 0,
+      "task_count": 10,
+      "phase_after_cold": "0x4c495645",
+      "READY": 1,
+      "MIDI_header_after_cold": "0x53414d31",
+      "E10_startup_status": 1,
+      "DSP_model": "DspCpu",
+      "intro": {
+        "up": true,
+        "intro_done": 1,
+        "mainloop": 137,
+        "stand_ins": {
+          "idle_yield": 516
+        },
+        "general_satisfactions": 0
+      },
+      "ui_snapshot": "<workspace>\\work\\E10-persistence-startup-E10_restored\\snapshots\\E09A-PC-path-candidate\\gui-raw.snap",
+      "packaged_helpers_host_loaded": false,
+      "passed": true,
+      "seconds": 44.51600000000326
+    }
+  ],
+  "limits": [
+    "Timer expiry is modeled at native basic-block boundaries with assumed clock costs; no physical timing proof.",
+    "Direct MAIN entry with loader-matching boot flags and identical initialized emulator cards, not a physical loader/storage dump.",
+    "Cold flash-read shortcut and scoped ISA emulation remain. No host writes satisfy the delay semaphore.",
+    "Unchanged E09A container supplies DSP/resources; E10 MAIN is directly loaded. This does not prove an E10 packaged loader path.",
+    "The input working cache is the previously verified zero-extension cache. Named-file load/cache preservation is tested in the next scenario."
+  ],
+  "passed": true,
+  "firmware_container_created": false,
+  "loader_derived_E10_state": false,
+  "helpers_host_loaded": false,
+  "native_project_persistence": true,
+  "persistence_helpers_host_loaded": false,
+  "persistence_hooks_host_patched": false,
+  "native_cold_capture_executed": true,
+  "persistence_metadata": [
+    1297305649,
+    1,
+    1082119160,
+    1,
+    0,
+    0,
+    0,
+    0
+  ]
+}
