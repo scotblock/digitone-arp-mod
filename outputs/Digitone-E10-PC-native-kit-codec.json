@@ -1,0 +1,32 @@
+{
+  "PC_only": true,
+  "passed": true,
+  "stock_encode_entry": "0x400095f4",
+  "stock_decode_entry": "0x400093d0",
+  "runtime_kit_bytes": 2440,
+  "serialized_version": 11,
+  "serialized_write_end": "0x90e",
+  "serialized_read_end": "0x902",
+  "untouched_after_write_end": true,
+  "native_project_persistence": false,
+  "record_embedding_implemented": false,
+  "findings": [
+    "The entire stock kit encoder/decoder execute with native restored-project parameters. MIDI records begin at serialized +0x548 and runtime +0x5ce; these are body offsets, not unverified third-party image offsets.",
+    "Untouched trailing bytes alone do not prove project ownership: enclosing record lengths, initialization, save/load, copy/clear and compatibility still need tracing.",
+    "The native project conversion loops independently confirm 128 records at serialized stride 0xa00 and runtime stride 0x988. +0x940..+0x95f is untouched in these controls; no extension is installed there."
+  ],
+  "limits": [
+    "One restored kit and normal success paths, with stock code and scoped ISA adapters; not the filesystem/project writer.",
+    "The output is an isolated scratch buffer. No stock project, firmware or existing candidate is modified."
+  ],
+  "native_project_array_loops_executed": true,
+  "kit_count": 128,
+  "serialized_stride": 2560,
+  "runtime_stride": 2440,
+  "source_kits_are_cloned_fixtures": true,
+  "possible_serialized_extension": [
+    "0x940",
+    "0x960"
+  ],
+  "extension_ownership_verified": false
+}

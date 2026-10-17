@@ -1,0 +1,47 @@
+{
+  "PC_only": true,
+  "passed": true,
+  "cases": [
+    {
+      "case": "cold_poisoned",
+      "passed": true,
+      "stop_pc": "0x40001df4",
+      "native_calls": [
+        "0x47be4ee0",
+        "0x47be4c14",
+        "0x47bec600",
+        "0x47beba00"
+      ],
+      "exact_code_and_labels_copied": true
+    },
+    {
+      "case": "wrong_caller",
+      "passed": true,
+      "stop_pc": "0x47be3b00",
+      "native_calls": [],
+      "exact_code_and_labels_copied": true
+    },
+    {
+      "case": "initializer_refusal",
+      "passed": true,
+      "stop_pc": "0x40001df4",
+      "native_calls": [
+        "0x47be4ee0",
+        "0x47be4c14",
+        "0x47bec600",
+        "0x47beba00"
+      ],
+      "exact_code_and_labels_copied": true
+    }
+  ],
+  "payload_bytes": 61440,
+  "extra_bytes_over_E09A": 26720,
+  "strict_ColdFire_checked": true,
+  "state_initialized_by_native_code": true,
+  "firmware_container_created": false,
+  "native_project_persistence": false,
+  "limits": [
+    "This executes the actual copier through cold success and the cache-handoff entry, not the loader or full application/playback.",
+    "Data poisoning and the refused-initializer condition are deliberate PC fixtures. Physical cache coherence and expanded RAM ownership remain unverified."
+  ]
+}

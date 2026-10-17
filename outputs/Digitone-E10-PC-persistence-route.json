@@ -1,0 +1,42 @@
+{
+  "PC_only": true,
+  "passed": true,
+  "E09A_unchanged": true,
+  "E09A_sha256": "68f67aac272cfaa0b52763db150efddbf4654a6773e9604b627898c857fa1c3c",
+  "native_MIDI_record": {
+    "runtime_bytes": 164,
+    "serialized_bytes": 172,
+    "tail_clear_site": "0x40008228",
+    "zeroed_tail": [
+      166,
+      172
+    ],
+    "existing_E09A_tag": [
+      166,
+      168
+    ],
+    "remaining_bytes": 4,
+    "stock_flag_source": [
+      164,
+      166
+    ],
+    "stock_runtime_flags": [
+      160,
+      164
+    ]
+  },
+  "sequence_information_lower_bound_bits": 120,
+  "findings": [
+    "Four remaining MIDI-tail bytes cannot hold sixteen independent -24..24 offsets plus rests, length, root/scale and enable.",
+    "The runtime flag field at +0xa0 is stock-owned, not extra storage.",
+    "Native project record padding described by DNX is a candidate for investigation only; zero-filled bytes do not establish ownership or survival through native codecs.",
+    "The explicit slot/owner bank API has no automatic publisher or project save/load adapter. It must not be keyed from a UI pointer or queued panel request without a consumed-pattern witness."
+  ],
+  "native_project_persistence": false,
+  "automatic_pattern_binding": false,
+  "next_native_targets": [
+    "Trace the kit serializer and complete project-image writer/reader; establish a versioned extension location or an owned separate-file route.",
+    "Connect exact pattern identity, accepted editor publication, copy/clear and quiescent replacement to the bank before claiming automatic per-pattern recall.",
+    "Run an actual native save -> change -> reload -> cold restart test, with no PC sidecar import."
+  ]
+}

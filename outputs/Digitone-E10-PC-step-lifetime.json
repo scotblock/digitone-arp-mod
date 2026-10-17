@@ -1,0 +1,24 @@
+{
+  "PC_only": true,
+  "passed": true,
+  "strict_ColdFire_checked": true,
+  "checks": [
+    "Cold initialization clears all 128 records and all 64 runtime bytes, then publishes disabled defaults; canaries intact.",
+    "LIVE, invalid admission, active, retained-source, held and outstanding-arena reset requests refuse before mutation.",
+    "All 128 independent pattern records round-trip natively with varied flags, lengths, masks, roots/scales and signed offsets; owner/cursors are not persisted; stock MIDI record untouched.",
+    "Out-of-range slots, stale save owner and invalid load owner refuse without mutation.",
+    "A single-byte corruption at each of the 32 record positions rejects without touching runtime state.",
+    "Saving and loading are explicitly quiescent-only, including outstanding descriptor ownership.",
+    "Full-width fields are checked before narrowing to the stored representation.",
+    "Publication retains the caller interrupt mask and flags."
+  ],
+  "patterns_round_tripped": 128,
+  "corruption_cases": 32,
+  "native_project_persistence": false,
+  "automatic_pattern_binding": false,
+  "limits": [
+    "Explicit slot/owner APIs only; adapters to actual pattern publication, native save/load and copy/clear are not installed.",
+    "The byte sum detects simple corruption, not malicious edits or all multi-byte corruption.",
+    "RAM ownership and physical cache/timing for the enlarged region remain unverified."
+  ]
+}

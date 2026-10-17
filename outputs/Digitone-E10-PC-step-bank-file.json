@@ -1,0 +1,20 @@
+{
+  "PC_only": true,
+  "passed": true,
+  "patterns": 128,
+  "native_record_round_trip": true,
+  "PC_file_survives_cold_reset": true,
+  "PC_import_is_host_fixture": true,
+  "native_project_save_load": false,
+  "automatic_pattern_binding": false,
+  "checks": [
+    "Truncation, appended data and another project identity reject before any emulated state write.",
+    "Header/schema and bank digest failures reject.",
+    "Malformed version, fields and signed offsets reject even when both checksums have been recomputed.",
+    "An empty project bank is a valid disabled/default state."
+  ],
+  "limits": [
+    "This is a separate PC sidecar, not native Digitone project persistence. No native save/load or pattern-change callback invokes it.",
+    "Project identity is supplied by the PC caller; matching an actual project and maintaining it after native edits are not integrated."
+  ]
+}
