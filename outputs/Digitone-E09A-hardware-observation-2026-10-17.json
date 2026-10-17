@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-17",
+  "evidence_type": "user-reported physical Digitone observation",
+  "user_report": "tested in digitone midi from synth arp and midi arp going out on both usb and midi",
+  "build_context": "E09A, inferred from the immediately preceding E09A download and test discussion",
+  "installed_build_or_hash_independently_verified": false,
+  "confirmed_by_report": [
+    "Synth arp MIDI output reaches both USB and DIN MIDI",
+    "MIDI-track arp output reaches both USB and DIN MIDI"
+  ],
+  "not_explicitly_confirmed": [
+    "Whether the M1 arp was driven by keyboard notes or sequencer trigs",
+    "Note-off/Stop behavior on both physical outputs",
+    "Pattern changes, project save/load and M2\u2013M4 arp support"
+  ],
+  "scope": "This report establishes observed physical routing, not comprehensive hardware certification."
+}

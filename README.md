@@ -11,7 +11,7 @@ Source and research archive for the original Elektron Digitone / Digitone Keys, 
 | E07 | Synth arp notes sent over DIN MIDI | User recorded output in Ableton on hardware |
 | E08F | M1 MIDI-track UP arp, MODE/RATE/GATE controls, corrected menu routing | User reported working on Digitone; exact installed hash not independently verified |
 | E09 | Synth arp follows normal DIN / USB / both selection, independent note ownership per port | PC tests only; physical dual-port validation outstanding |
-| E09A | Corrects M1 sequenced notes selecting parameter-lock lists as arp settings | PC candidate; see the sequence regression notes |
+| E09A | Corrects M1 sequenced notes selecting parameter-lock lists as arp settings | User reports synth and MIDI arp output on physical DIN and USB; sequencer-driven playback and installed hash not explicitly confirmed |
 
 M2–M4 arps and a synth-style MIDI arp step editor are **not implemented**. E08F/E09 have a **confirmed M1 sequencer arp bug**: a sequenced note can disable the arp by selecting the wrong settings source. E09A corrects that source selection in PC tests. Broader multi-note native sequence entry, transition ownership and saved-project persistence need further work. E08E contains a known menu regression and is superseded by E08F. E04 failed to finish startup on hardware; stock was restored successfully.
 

@@ -11,3 +11,7 @@ The separate sequenced-M1 diagnostic produced no output using a host-written cho
 User-reported hardware observations for E05–E08F are distinguished from PC execution results. E09 has not been reported tested on the physical device. Original/modified firmware images are omitted from this repository; SHA-256 identifiers remain in the reports.
 
 Repository export checks validate file integrity, Python syntax and excluded file types. They do not validate firmware behavior.
+
+## Hardware follow-up — 17 October 2026
+
+Following the E09A download, the user reports both synth arp and MIDI-track arp output on the physical Digitone through DIN and USB. The installed hash was not independently verified. The report does not specify keyboard versus sequencer input, or confirm physical note-off/Stop behavior. Those remain distinct checks. See outputs/Digitone-E09A-hardware-observation-2026-10-17.json.
