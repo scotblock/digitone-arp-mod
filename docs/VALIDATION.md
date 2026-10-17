@@ -19,3 +19,7 @@ Following the E09A download, the user reports both synth arp and MIDI-track arp 
 ## E10 lifecycle continuation (17 October 2026)
 
 See [the scoped lifecycle report](../outputs/Digitone-E10-PC-lifecycle-verification.json) and [notes](../outputs/Digitone-E10-PC-lifecycle-notes.md). This covers native stopped pattern copy/paste/undo, trig clear/undo preserving settings, ten guarded reset-entry fixtures, 128 synchronized retained records and explicit stock write/cold restoration of unsaved editor changes. The stock writer is invoked through a disclosed test call frame. Automatic power-fail dispatch, physical persistence and interrupted-write recovery are not verified. No installable E10 is produced.
+
+## E10 modeled automatic power fail (17 October 2026)
+
+[The new evidence](../outputs/Digitone-E10-PC-powerfail-verification.json) records completed verification, not an overall safety pass: `automatic_modeled_dispatch_and_cold_restore_passed` is true while `mid_write_recovery_safe` is false. A complete interrupt-dispatched write followed by fresh cold startup restores all 128 records. A synthetic first-command cut makes the actual stock reader choose a partial image. The board pin, external interrupt, INTC2 force delivery and narrow CC/TC W1C model are disclosed fixtures; physical hold-up, final power latch and eMMC durability remain untested. See [the notes](../outputs/Digitone-E10-PC-powerfail-notes.md).

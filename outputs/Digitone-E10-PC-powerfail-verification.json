@@ -1,0 +1,42 @@
+{
+  "PC_only": true,
+  "verification_completed": true,
+  "automatic_modeled_dispatch_and_cold_restore_passed": true,
+  "unsaved_records_recovered": 128,
+  "physical_power_loss_verified": false,
+  "mid_write_recovery_safe": false,
+  "partial_write_counterexample_observed": true,
+  "stock_dispatch_writer_reader_checksum_bytes_unchanged": true,
+  "E10_main_payload_unchanged": true,
+  "E09A_unchanged": true,
+  "E09A_sha256": "68f67aac272cfaa0b52763db150efddbf4654a6773e9604b627898c857fa1c3c",
+  "firmware_container_created": false,
+  "hardware_ready": false,
+  "checks": {
+    "powerfail-status": true,
+    "powergood-startup": true,
+    "auto-powerfail": true,
+    "auto-powerfail-reboot": true,
+    "powerfail-cut-first-command": true,
+    "powerfail-cut-first-command-0": true,
+    "powerfail-cut-first-command-2785280": true
+  },
+  "source_hash_normalization": "UTF-8 with LF newlines",
+  "source_sha256": {
+    "E10_powerfail_fixture.py": "943ebd18c4f2d5205fd02c7b5b0a91f8b1de936acb03b453391cdb1f1696dbcc",
+    "E10_powerfail_startup_template.py": "da01fc3a82233c9aebe8c872c309a1b39f94262299dfc17d9ed80ea993e1ff66",
+    "test-PC-E10-powerfail-status.py": "8ab365a55b8d57d6aa6b8d86fc7a8eb7c49d48d054f00c5da9d4cf71b9322829",
+    "test-PC-E10-powergood-startup.py": "985dc5b8ff7c52a2eed40d98ebe59140bbbc78963d26708a19a3b31d6483d8eb",
+    "test-PC-E10-auto-powerfail.py": "a982a5b659c79ca4e0640a4cc817984fbbd78aa3e9cdc240f9179fc666822c95",
+    "test-PC-E10-auto-powerfail-reboot.py": "060f601e5dd28c2611daefbebe078964a8a663d68180f95bf076bf71c82af7a1",
+    "test-PC-E10-powerfail-cut.py": "2368f000a98f58244a6361a84d96137dfb69851ae3e289dcf26fd0a7aa8b6a3b",
+    "verify-PC-E10-powerfail.py": "ba68d9006b3cf49b5cbb4848d9ff8823768bfc73b35f5164f5d9c564ff5d3e25"
+  },
+  "limits": [
+    "Board-sense high input, pin C2 low plus external vector 66 are PC fixtures; physical wiring/thresholds are not measured.",
+    "INTC2 source 30 delivery uses the generic forced-interrupt model, synthetic idle scheduler yield is disabled, and CC/TC acknowledgements use a narrow W1C adapter. eMMC payload copy and completion are immediate.",
+    "The completed-write path reaches cache-loop completion before a fresh native cold boot; final power-latch hardware is not tested.",
+    "The cut controls reconstruct zero/one/all completed commands before old-bank invalidation and invoke the actual stock cold reader in a stopped entry fixture. No torn sector or physical brownout is simulated.",
+    "Only pending bank 0 with old bank 1 is covered. It exposes a counterexample, not an exhaustive storage-fault proof."
+  ]
+}

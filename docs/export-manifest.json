@@ -9997,6 +9997,125 @@
       "source_sha256": "990825e7a0589d704f56881855273361c4693dcd510fb19e0f5dbee8e5cd9454",
       "export_sha256": "709a402eafc8744c6fe462cb2429ab39043f463bad9db40fc516b0f1a3101d54",
       "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/E10_powerfail_fixture.py",
+      "path": "work/E10_powerfail_fixture.py",
+      "source_sha256": "d34c70a2dd56dfce75aca1ca0b49ac92086509a4ac1fa279d756058c1d17740c",
+      "export_sha256": "943ebd18c4f2d5205fd02c7b5b0a91f8b1de936acb03b453391cdb1f1696dbcc",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/E10_powerfail_startup_template.py",
+      "path": "work/E10_powerfail_startup_template.py",
+      "source_sha256": "1cf62dd2385c6c353e15087408cedcbf19126469b211e1180d984fabca9e3b25",
+      "export_sha256": "da01fc3a82233c9aebe8c872c309a1b39f94262299dfc17d9ed80ea993e1ff66",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E10-powerfail-status.py",
+      "path": "work/test-PC-E10-powerfail-status.py",
+      "source_sha256": "95dfbe919b3097f8273a1616b0b6b25450b3c4efd1b7ab6e93138e92d8df92c1",
+      "export_sha256": "8ab365a55b8d57d6aa6b8d86fc7a8eb7c49d48d054f00c5da9d4cf71b9322829",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E10-powergood-startup.py",
+      "path": "work/test-PC-E10-powergood-startup.py",
+      "source_sha256": "4c1260d2a2dd3f498c707aa6c8f99b0bb44b5681dbe3de1d162f6f2dc681019f",
+      "export_sha256": "985dc5b8ff7c52a2eed40d98ebe59140bbbc78963d26708a19a3b31d6483d8eb",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E10-auto-powerfail.py",
+      "path": "work/test-PC-E10-auto-powerfail.py",
+      "source_sha256": "e9536bf3e501aeb72389a35ad37698a66d9144e4537fb2be4d8680a5ecd28977",
+      "export_sha256": "a982a5b659c79ca4e0640a4cc817984fbbd78aa3e9cdc240f9179fc666822c95",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E10-auto-powerfail-reboot.py",
+      "path": "work/test-PC-E10-auto-powerfail-reboot.py",
+      "source_sha256": "3c715d3fe36e7a6459c42e04b16ab38e7ee8e40cc598a990b50bfd3dabe03537",
+      "export_sha256": "060f601e5dd28c2611daefbebe078964a8a663d68180f95bf076bf71c82af7a1",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E10-powerfail-cut.py",
+      "path": "work/test-PC-E10-powerfail-cut.py",
+      "source_sha256": "5d1061c0405ffe252618a8322d5a36a66b73bd5cf4ad28a7860fa295053a34d9",
+      "export_sha256": "2368f000a98f58244a6361a84d96137dfb69851ae3e289dcf26fd0a7aa8b6a3b",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/verify-PC-E10-powerfail.py",
+      "path": "work/verify-PC-E10-powerfail.py",
+      "source_sha256": "73997becf46dd9a502a9e64bbaf2e6ccfe1d95e1b7cd2ebb4afecc0453f79449",
+      "export_sha256": "ba68d9006b3cf49b5cbb4848d9ff8823768bfc73b35f5164f5d9c564ff5d3e25",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-powerfail-status.json",
+      "path": "outputs/Digitone-E10-PC-powerfail-status.json",
+      "source_sha256": "1aff3cac9736d9c85e8740f077866ec3c4ba56965458f8cf578495a482d2927d",
+      "export_sha256": "6b16577b40b932285819a607ca557e87e3eb81c5228e4afc7e37b082b5d2c33d",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-powergood-startup.json",
+      "path": "outputs/Digitone-E10-PC-powergood-startup.json",
+      "source_sha256": "dc1a119a180948d5022298385750cbe86dd64d3c477d0231fb48f4454b46e4a7",
+      "export_sha256": "6a435a08c6113521f8e2893a022374b274038a3e396d8fe563cc4a9f535995a3",
+      "personal_paths_rewritten": true
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-auto-powerfail.json",
+      "path": "outputs/Digitone-E10-PC-auto-powerfail.json",
+      "source_sha256": "7fbd356e2099058b131ec5eab0ece70c3736705a14491cc8911a98cd906d2c30",
+      "export_sha256": "a556eee2ffaab45d314559246cd09755270dfdaef0b50ef3fab791082f910de0",
+      "personal_paths_rewritten": true
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-auto-powerfail-reboot.json",
+      "path": "outputs/Digitone-E10-PC-auto-powerfail-reboot.json",
+      "source_sha256": "0d2e3ea8d28599a04f53696114c3513ea14843b04908644745fb3e1aab67f92f",
+      "export_sha256": "c4ea7996f5154cd87a0ba6b928f802fcece4d88e477d0074d75576e7786228fc",
+      "personal_paths_rewritten": true
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-powerfail-cut-first-command.json",
+      "path": "outputs/Digitone-E10-PC-powerfail-cut-first-command.json",
+      "source_sha256": "b623087900d937f15d2914a1888c821bf2c49cc40ea92c79ffda2b5df4e6fb57",
+      "export_sha256": "23e330deae56d6eaecdb7df8575af0cf9a551d2773ba721d21725320af561003",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-powerfail-cut-first-command-0.json",
+      "path": "outputs/Digitone-E10-PC-powerfail-cut-first-command-0.json",
+      "source_sha256": "c6e088d9e0d725eed8334d1ac17224afd2d1c8bbb18d95c2f07b7c8b9a06e860",
+      "export_sha256": "248f2123ae2db36836112649336469d9056c40e605603244b77c510b00ed2282",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-powerfail-cut-first-command-2785280.json",
+      "path": "outputs/Digitone-E10-PC-powerfail-cut-first-command-2785280.json",
+      "source_sha256": "cef296a23b100d6baba4131d6e32cf09e4fb51e515da0d9ceb45a5e77d78bb25",
+      "export_sha256": "0b0aa350b3befc1578a046d4314414bc395a6e9770034ea9072cb3570f3e07a9",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-powerfail-verification.json",
+      "path": "outputs/Digitone-E10-PC-powerfail-verification.json",
+      "source_sha256": "ce6697c41c82024a71a6cacb466352d2cb2dec0c449889c463061dc612f1d1b9",
+      "export_sha256": "ce643b0b53d89ece0be9612946bdfa52c61731000a93e66ce74b8648fe9ca522",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-powerfail-notes.md",
+      "path": "outputs/Digitone-E10-PC-powerfail-notes.md",
+      "source_sha256": "36664ae320ee8526351ac600bcf88bd85636efe5904b1e08d7cdc4f6aa8acd48",
+      "export_sha256": "52941a90178bb0b73bb6e75a3b9e2916150245cea646e70d4878620be862f92c",
+      "personal_paths_rewritten": false
     }
   ]
 }

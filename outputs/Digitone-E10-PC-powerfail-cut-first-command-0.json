@@ -1,0 +1,31 @@
+{
+  "PC_only": true,
+  "synthetic_power_cut": true,
+  "completed_command_prefix_bytes": 0,
+  "writer_injected": false,
+  "reader_entry_fixture": true,
+  "pending_bank": 0,
+  "previous_bank": 1,
+  "old_bank_untouched": true,
+  "source_actual_shutdown_report": "outputs/Digitone-E10-PC-auto-powerfail.json",
+  "failure": null,
+  "bank_magics": [
+    "004f4b49",
+    "434f4b49"
+  ],
+  "selected_bank": 1,
+  "all_new_records": false,
+  "all_previous_records": true,
+  "new_record_matches": 127,
+  "actual_records": "4d53313001010f000100ffff03000000000000000000000000000000000003144d53313001010f000100ffff0200000000000000000000000000000000000313",
+  "expected_new_records": "4d53313001010f000100ffff04000000000000000000000000000000000003154d53313001010f000100ffff0200000000000000000000000000000000000313",
+  "expected_previous_records": "4d53313001010f000100ffff03000000000000000000000000000000000003144d53313001010f000100ffff0200000000000000000000000000000000000313",
+  "balanced_reader_return": true,
+  "observed_partial_new_bank_selection": false,
+  "test_completed": true,
+  "limits": [
+    "One synthetic command-boundary loss of remaining writes, constructed from actual controller payload and the untouched prior card. Not physical flash failure.",
+    "Native cold reader runs in a stopped entry fixture with an existing boot snapshot, not a full cold reboot of the interrupted card.",
+    "This audits the stock two-bank protocol; the E10 firmware bytes are unchanged."
+  ]
+}

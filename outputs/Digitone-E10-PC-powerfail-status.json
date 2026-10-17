@@ -1,0 +1,11 @@
+{
+  "PC_only": true,
+  "passed": true,
+  "native_guest_stores_and_reads": true,
+  "CC_ack_retains_TC": true,
+  "TC_ack_retains_CC": true,
+  "zero_write_preserves_status": true,
+  "later_TC_arrival_preserved": true,
+  "scope": "Narrow CC/TC adapter only, not an eSDHC timing/error/full-interrupt implementation.",
+  "reference": "https://www.nxp.com/docs/en/reference-manual/MCF54418RM.pdf#page=638"
+}
