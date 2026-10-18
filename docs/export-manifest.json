@@ -10179,6 +10179,83 @@
       "source_sha256": "3ad4d86203e243e7882dca4387e4d8901d0d764d8627f1268b3d67eb769f491b",
       "export_sha256": "d4bd3b20e2a7032e1ceae16dd5d2a4fd20ebc9aad50ff68ffd1a4f0ed5ade900",
       "personal_paths_rewritten": true
+    },
+    {
+      "source": "work/build-PC-E10-package.py",
+      "path": "work/build-PC-E10-package.py",
+      "source_sha256": "39c740bf4ceda15f64fb077a5291e58462098014db44e66f3f83f025e3895eaa",
+      "export_sha256": "50d8d33d420b458e59dbb36e4aeb8c9d6b761340157af7455e28432234a6821c",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E10-package-loader.py",
+      "path": "work/test-PC-E10-package-loader.py",
+      "source_sha256": "60de883da326cf4a1d7d51b0cab4ae0bde401bee1cf4302429ee0a2ac231d580",
+      "export_sha256": "da2ce20ec3416d1c0f2c0e39cf1a95d94a4074fe770d7fbe0c5db3e7f25394d8",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E10-package-startup.py",
+      "path": "work/test-PC-E10-package-startup.py",
+      "source_sha256": "85d762e958b8b67797692efe978bc2921858c01a2f3c8425d66ef05a06edc23d",
+      "export_sha256": "47773bdb1b0d3867ee3056416795c66f478ac59d28b6292f13e7922702bdfbad",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E10-package-playback.py",
+      "path": "work/test-PC-E10-package-playback.py",
+      "source_sha256": "dd93c056f4fe05f2754b3dee382d49b102c7bb9e37114c80ab0389dee76baaff",
+      "export_sha256": "cffffaaa5c0886afea2a635d6a31cf36271e9f31ca18008d7009c64a7f306483",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/verify-PC-E10-package-integration.py",
+      "path": "work/verify-PC-E10-package-integration.py",
+      "source_sha256": "231b31f74bcddf3435b967ec13cdace61b2d0cacb58fef3c453f142f53bd8ac0",
+      "export_sha256": "302760c46d2d42d2271a69fbb10bbd0bcefa02e76433e25f4def8334decec21b",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-package-container.json",
+      "path": "outputs/Digitone-E10-PC-package-container.json",
+      "source_sha256": "3f3d2a2569ce3a4213d0419dcf90909a7f6dafbddcb3e006c26eb14d41172bfa",
+      "export_sha256": "93716adfbd3c75a618be74e36eafc3c12c7acfca636fd6cecc66a35b07a49dd1",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-package-loader.json",
+      "path": "outputs/Digitone-E10-PC-package-loader.json",
+      "source_sha256": "22614251fa3cee743a4b2016526e18c89fa26e4258a05f3d0eb605deca162bf3",
+      "export_sha256": "589b7e0e71c3a1cb928edb9350ecbfc0bf32b24fa0e422d0ff0c992bbf108bd8",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-package-startup.json",
+      "path": "outputs/Digitone-E10-PC-package-startup.json",
+      "source_sha256": "5c35448d9a1853ab89e463a01cfde4b49d5ec21ee73bc1e01f29921599de8216",
+      "export_sha256": "6590663258c5189323819411c64e2cd9490a36f804d8cd43161c24713a929574",
+      "personal_paths_rewritten": true
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-package-playback.json",
+      "path": "outputs/Digitone-E10-PC-package-playback.json",
+      "source_sha256": "88817e3398f96df9b689d979c172db51bcbc8ae4fe9d0f273f5db03aef501952",
+      "export_sha256": "746a494aebcaa770d0c1e6a58a31c2f2baf42b87bc95cd65e230bb7b662d5c17",
+      "personal_paths_rewritten": true
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-package-integration.json",
+      "path": "outputs/Digitone-E10-PC-package-integration.json",
+      "source_sha256": "e5932a302705c3ef77f3190f263c1b17f5557c8bd16b652b6baba9382544ad15",
+      "export_sha256": "dce4000146899d3299db15bab123a8a5f02c76dc794a577080a3cf8f3d5088f1",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-package-integration-notes.md",
+      "path": "outputs/Digitone-E10-PC-package-integration-notes.md",
+      "source_sha256": "1bbf279a1eab3f8c0d6b53904914293e4683898274f7a399394558d5afe42f83",
+      "export_sha256": "9ac9cf68c77a3383366138a64525a5b4d24080ab34ca3ddd525e52e531fd96cc",
+      "personal_paths_rewritten": false
     }
   ]
 }

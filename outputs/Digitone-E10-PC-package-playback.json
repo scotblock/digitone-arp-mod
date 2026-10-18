@@ -1,0 +1,2096 @@
+{
+  "PC_only": true,
+  "helpers_host_loaded": false,
+  "hooks_host_patched": false,
+  "M1_initializer_host_called": false,
+  "settings_host_written": false,
+  "candidate_sha256": "bec5b8bbb71a17a96a5acd30962166e6d38b57e0f4c72c7a81ccf7d8e082b4c7",
+  "startup_snapshot": "<workspace>\\work\\E10-package-startup-E10_restored\\snapshots\\PC_ONLY-E10-package-loader-test\\gui-raw.snap",
+  "wire": [
+    {
+      "phase": "native_play",
+      "ms": 14921.736390625,
+      "bytes": [
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "native_play",
+      "ms": 14934.404125,
+      "bytes": [
+        144,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "native_play",
+      "ms": 14961.8005,
+      "bytes": [
+        144,
+        62,
+        100
+      ]
+    },
+    {
+      "phase": "native_play",
+      "ms": 14973.333375,
+      "bytes": [
+        144,
+        62,
+        0
+      ]
+    },
+    {
+      "phase": "native_play",
+      "ms": 15004.020890625,
+      "bytes": [
+        144,
+        65,
+        100
+      ]
+    },
+    {
+      "phase": "native_play",
+      "ms": 15016.00003125,
+      "bytes": [
+        144,
+        65,
+        0
+      ]
+    },
+    {
+      "phase": "native_play",
+      "ms": 15026.000015625,
+      "bytes": [
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "native_play",
+      "ms": 15039.7375,
+      "bytes": [
+        144,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "native_play",
+      "ms": 16920.4030625,
+      "bytes": [
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "native_play",
+      "ms": 16932.66671875,
+      "bytes": [
+        144,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "native_play",
+      "ms": 16961.80046875,
+      "bytes": [
+        144,
+        62,
+        100
+      ]
+    },
+    {
+      "phase": "native_play",
+      "ms": 16973.33334375,
+      "bytes": [
+        144,
+        62,
+        0
+      ]
+    },
+    {
+      "phase": "native_play",
+      "ms": 17004.0,
+      "bytes": [
+        144,
+        65,
+        100
+      ]
+    },
+    {
+      "phase": "native_play",
+      "ms": 17016.000046875,
+      "bytes": [
+        144,
+        65,
+        0
+      ]
+    },
+    {
+      "phase": "native_play",
+      "ms": 17025.333375,
+      "bytes": [
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "native_play",
+      "ms": 17039.7375,
+      "bytes": [
+        144,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18233.06990625,
+      "bytes": [
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18243.73765625,
+      "bytes": [
+        144,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18253.072515625,
+      "bytes": [
+        144,
+        62,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18265.333390625,
+      "bytes": [
+        144,
+        62,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18295.73659375,
+      "bytes": [
+        144,
+        65,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18306.6666875,
+      "bytes": [
+        144,
+        65,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18316.666671875,
+      "bytes": [
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18328.66671875,
+      "bytes": [
+        144,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18339.33334375,
+      "bytes": [
+        144,
+        62,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18351.333375,
+      "bytes": [
+        144,
+        62,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18378.40325,
+      "bytes": [
+        144,
+        65,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18390.000046875,
+      "bytes": [
+        144,
+        65,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18400.000046875,
+      "bytes": [
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18411.33334375,
+      "bytes": [
+        144,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18420.666671875,
+      "bytes": [
+        144,
+        62,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18433.333375,
+      "bytes": [
+        144,
+        62,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18461.80028125,
+      "bytes": [
+        144,
+        65,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18474.00003125,
+      "bytes": [
+        144,
+        65,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18481.8029375,
+      "bytes": [
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18493.07078125,
+      "bytes": [
+        144,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18504.6666875,
+      "bytes": [
+        144,
+        62,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18516.6666875,
+      "bytes": [
+        144,
+        62,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18546.000015625,
+      "bytes": [
+        144,
+        65,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18558.0,
+      "bytes": [
+        144,
+        65,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18564.666671875,
+      "bytes": [
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18576.40375,
+      "bytes": [
+        144,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18588.6666875,
+      "bytes": [
+        144,
+        62,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18601.776296875,
+      "bytes": [
+        144,
+        62,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18629.070078125,
+      "bytes": [
+        144,
+        65,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18639.070640625,
+      "bytes": [
+        144,
+        65,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "ms": 18648.0,
+      "bytes": [
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_release",
+      "ms": 18651.333390625,
+      "bytes": [
+        144,
+        60,
+        0
+      ]
+    }
+  ],
+  "marks": [],
+  "samples": [],
+  "failure": null,
+  "USB_packets": [
+    {
+      "phase": "native_play",
+      "bytes": [
+        9,
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "native_play",
+      "bytes": [
+        9,
+        144,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "native_play",
+      "bytes": [
+        9,
+        144,
+        62,
+        100
+      ]
+    },
+    {
+      "phase": "native_play",
+      "bytes": [
+        9,
+        144,
+        62,
+        0
+      ]
+    },
+    {
+      "phase": "native_play",
+      "bytes": [
+        9,
+        144,
+        65,
+        100
+      ]
+    },
+    {
+      "phase": "native_play",
+      "bytes": [
+        9,
+        144,
+        65,
+        0
+      ]
+    },
+    {
+      "phase": "native_play",
+      "bytes": [
+        9,
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "native_play",
+      "bytes": [
+        9,
+        144,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "native_play",
+      "bytes": [
+        9,
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "native_play",
+      "bytes": [
+        9,
+        144,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "native_play",
+      "bytes": [
+        9,
+        144,
+        62,
+        100
+      ]
+    },
+    {
+      "phase": "native_play",
+      "bytes": [
+        9,
+        144,
+        62,
+        0
+      ]
+    },
+    {
+      "phase": "native_play",
+      "bytes": [
+        9,
+        144,
+        65,
+        100
+      ]
+    },
+    {
+      "phase": "native_play",
+      "bytes": [
+        9,
+        144,
+        65,
+        0
+      ]
+    },
+    {
+      "phase": "native_play",
+      "bytes": [
+        9,
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "native_play",
+      "bytes": [
+        9,
+        144,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        62,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        62,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        65,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        65,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        62,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        62,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        65,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        65,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        62,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        62,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        65,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        65,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        62,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        62,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        65,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        65,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        60,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        62,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        62,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        65,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        65,
+        0
+      ]
+    },
+    {
+      "phase": "keyboard_regression",
+      "bytes": [
+        9,
+        144,
+        60,
+        100
+      ]
+    },
+    {
+      "phase": "keyboard_release",
+      "bytes": [
+        9,
+        144,
+        60,
+        0
+      ]
+    }
+  ],
+  "owner_fix_host_overlay": false,
+  "native_descriptors": [
+    {
+      "phase": "native_play",
+      "ms": 14921.736390625,
+      "pointer": "0x419f1fb4",
+      "words": [
+        1,
+        0,
+        1,
+        197633,
+        1,
+        1006632960,
+        0,
+        2700000,
+        100,
+        644486400,
+        1100946064,
+        1,
+        0
+      ],
+      "source_parameter_word": 0,
+      "ui_data": "0x41307b72",
+      "ui_word": 44722,
+      "state": [
+        1,
+        0,
+        0,
+        0,
+        900000,
+        225000,
+        1093696370,
+        1093696370
+      ]
+    },
+    {
+      "phase": "native_play",
+      "ms": 14921.736390625,
+      "pointer": "0x419f1fb4",
+      "words": [
+        1,
+        0,
+        1,
+        197633,
+        0,
+        1006632960,
+        0,
+        2700000,
+        100,
+        644486400,
+        1100946064,
+        1,
+        0
+      ],
+      "source_parameter_word": 0,
+      "ui_data": "0x41307b72",
+      "ui_word": 44722,
+      "state": [
+        1,
+        1,
+        0,
+        1,
+        900000,
+        225000,
+        1093696370,
+        1093696370
+      ]
+    },
+    {
+      "phase": "native_play",
+      "ms": 16919.747953125,
+      "pointer": "0x419bfd3c",
+      "words": [
+        2,
+        1093694884,
+        1082390358,
+        1082390370,
+        1082304858,
+        1082305834,
+        1082306810,
+        1082307786,
+        1094251228,
+        0,
+        0,
+        0,
+        1100741896
+      ],
+      "source_parameter_word": null,
+      "ui_data": "0x41307b72",
+      "ui_word": 44722,
+      "state": [
+        1,
+        0,
+        0,
+        1,
+        900000,
+        225000,
+        1093696370,
+        1093696370
+      ]
+    },
+    {
+      "phase": "native_play",
+      "ms": 16919.747953125,
+      "pointer": "0x419bfd08",
+      "words": [
+        0,
+        0,
+        1,
+        197633,
+        1,
+        1006632960,
+        0,
+        2700000,
+        100,
+        730886400,
+        1100745228,
+        1,
+        1100742000
+      ],
+      "source_parameter_word": 0,
+      "ui_data": "0x41307b72",
+      "ui_word": 44722,
+      "state": [
+        1,
+        0,
+        0,
+        1,
+        900000,
+        225000,
+        1093696370,
+        1093696370
+      ]
+    },
+    {
+      "phase": "native_play",
+      "ms": 16919.747953125,
+      "pointer": "0x419bfd08",
+      "words": [
+        0,
+        0,
+        1,
+        197633,
+        0,
+        1006632960,
+        0,
+        2700000,
+        100,
+        730886400,
+        1100745228,
+        1,
+        1100742000
+      ],
+      "source_parameter_word": 0,
+      "ui_data": "0x41307b72",
+      "ui_word": 44722,
+      "state": [
+        1,
+        1,
+        0,
+        1,
+        900000,
+        225000,
+        1093696370,
+        1093696370
+      ]
+    }
+  ],
+  "dispatch_counts": {
+    "native_program:3": 38,
+    "native_play:3": 137,
+    "native_play:1": 2,
+    "native_play:2": 1,
+    "native_play:0": 2,
+    "native_stop:3": 28
+  },
+  "firmware_container_created": true,
+  "loader_derived_E10_state": true,
+  "native_project_persistence": true,
+  "automatic_pattern_binding": true,
+  "startup_copier_source_reclaimed": true,
+  "native_selected_test_pattern": "A03",
+  "arp_rate_set_through_native_UI": "1/96",
+  "step_config_is_fixture": false,
+  "state_initialization_is_fixture": false,
+  "native_panel_editor_used": true,
+  "native_step_program": {
+    "offsets": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 4,
+    "rests_zero_based": [
+      2
+    ],
+    "root": "C",
+    "scale": "Ionian"
+  },
+  "observed_DIN_notes": [
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ]
+  ],
+  "observed_USB_notes": [
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ]
+  ],
+  "keyboard_arp_pitches": [
+    60,
+    62,
+    65
+  ],
+  "keyboard_and_sequence_covered": true,
+  "native_step_state": {
+    "4": 1,
+    "8": 4,
+    "12": 0,
+    "48": 7,
+    "52": 0,
+    "60": 24
+  },
+  "sequenced_arp_pulses": [
+    {
+      "ms": 16920.4030625,
+      "note": 60
+    },
+    {
+      "ms": 16961.80046875,
+      "note": 62
+    },
+    {
+      "ms": 17004.0,
+      "note": 65
+    },
+    {
+      "ms": 17025.333375,
+      "note": 60
+    }
+  ],
+  "sequenced_pulse_count": 4,
+  "restored_A01_A02_preserved": true,
+  "A03_native_editor_record_valid": true,
+  "passed": true,
+  "DIN_notes": [
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ]
+  ],
+  "USB_notes": [
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ],
+    [
+      144,
+      62,
+      100
+    ],
+    [
+      144,
+      62,
+      0
+    ],
+    [
+      144,
+      65,
+      100
+    ],
+    [
+      144,
+      65,
+      0
+    ],
+    [
+      144,
+      60,
+      100
+    ],
+    [
+      144,
+      60,
+      0
+    ]
+  ],
+  "matching_note_pairs": 24,
+  "route_and_USB_state_are_fixtures": true,
+  "USB_endpoint_handoff_is_fixture": true,
+  "physical_port_delivery_verified": false,
+  "internal_loader_test_only": true,
+  "firmware_release_created": false,
+  "hardware_ready": false,
+  "limits": [
+    "Source snapshot is the actual internal E10 package loader/handoff/native copier/init/logo path. Keyboard and native sequencer use native panel-created A03 steps.",
+    "Inherited MIDI input/routing/USB endpoint handoff fixtures remain; no physical port/timing guarantee. No E10 bank/settings/helper/hook bytes are host-inserted.",
+    "Stock power handling is the accepted inherited assumption. Abrupt-loss recovery is not guaranteed."
+  ]
+}

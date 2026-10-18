@@ -1,0 +1,48 @@
+{
+  "PC_only": true,
+  "passed": true,
+  "package_loader_startup_playback_connected": true,
+  "main_payload_identical_to_lifecycle_candidate": true,
+  "loader_derived_state": true,
+  "SYX_packet_checksums_verified": true,
+  "logical_container_checksum_verified": true,
+  "loader_MAIN_exact": true,
+  "flash_writes_observed": 0,
+  "strict_ColdFire_startup_passed": true,
+  "restored_pattern_records": 128,
+  "native_A03_editor_program_verified": true,
+  "restored_A01_A02_preserved": true,
+  "keyboard_and_sequence_covered": true,
+  "DIN_USB_matching_note_pairs": 24,
+  "candidate_sha256": "bec5b8bbb71a17a96a5acd30962166e6d38b57e0f4c72c7a81ccf7d8e082b4c7",
+  "main_sha256": "3d14605204182fd35678bd8510d2a329f8f079b5ee71facccebfc1643436fc27",
+  "payload_sha256": "de2ad4d689d67ce713be87a675bec7545290d97b514d239e2443e1fc070ec08a",
+  "copied_payload_bytes": 90320,
+  "E09A_unchanged": true,
+  "E09A_sha256": "68f67aac272cfaa0b52763db150efddbf4654a6773e9604b627898c857fa1c3c",
+  "internal_test_container_created": true,
+  "firmware_release_created": false,
+  "hardware_ready": false,
+  "stock_power_handling": "Accepted inherited assumption; no abrupt-loss guarantee or physical hold-up measurement gate.",
+  "checks": {
+    "container": true,
+    "loader": true,
+    "startup": true,
+    "playback": true
+  },
+  "source_hash_normalization": "UTF-8 with LF newlines",
+  "source_sha256": {
+    "build-PC-E10-package.py": "50d8d33d420b458e59dbb36e4aeb8c9d6b761340157af7455e28432234a6821c",
+    "test-PC-E10-package-loader.py": "da2ce20ec3416d1c0f2c0e39cf1a95d94a4074fe770d7fbe0c5db3e7f25394d8",
+    "test-PC-E10-package-startup.py": "47773bdb1b0d3867ee3056416795c66f478ac59d28b6292f13e7922702bdfbad",
+    "test-PC-E10-package-playback.py": "cffffaaa5c0886afea2a635d6a31cf36271e9f31ca18008d7009c64a7f306483",
+    "verify-PC-E10-package-integration.py": "302760c46d2d42d2271a69fbb10bbd0bcefa02e76433e25f4def8334decec21b"
+  },
+  "limits": [
+    "Stock bootstrap, serialized loader handoff, native cold start, logo/UI snapshot, then native playback session; not one uninterrupted machine. No helper/hook/state initialization or sequence settings are host-inserted into the tested application.",
+    "Loader flash/PLL/DDR, scoped ISA, DSP/peripheral and board input models remain; stock flash-read shortcut and synthetic idle scheduling remain. No physical cache coherence or timing claim.",
+    "MIDI input, routing and USB endpoint handoff use inherited disclosed fixtures; no physical port certification.",
+    "The input private card contains previously native-created records. All 128 restore; A03 is programmed for this run without modifying the first two. No named save/reload, copy/reset or new failure-injection workload is added here.",
+    "The internal SYX is not a hardware-ready release or proof of the MIDI update receiver. No device update, new project format, stock power redesign or install recommendation is made."
+  ]
+}
