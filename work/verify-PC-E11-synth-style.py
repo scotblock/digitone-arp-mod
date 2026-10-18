@@ -1,0 +1,21 @@
+"""Scope and exact-byte evidence for the E11 synth-style M1 editor candidate."""
+from pathlib import Path
+import json,hashlib,ast
+folder=Path('work/os144');sha=lambda b:hashlib.sha256(b).hexdigest()
+reports={k:json.loads(Path(v).read_text(encoding='utf-8')) for k,v in {'editor':'outputs/Digitone-E11-PC-synth-style-editor.json','overlay_playback':'outputs/Digitone-E11-PC-synth-style-playback.json','container':'outputs/Digitone-E11-PC-package-container.json','loader':'outputs/Digitone-E11-PC-package-loader.json','startup':'outputs/Digitone-E11-PC-package-startup.json','packaged_playback':'outputs/Digitone-E11-PC-packaged-playback.json'}.items()}
+assert all(r['passed'] for r in reports.values())
+c=json.loads((folder/'PC_ONLY-E11-package-layout.json').read_text());old=json.loads((folder/'PC_ONLY-E10-package-layout.json').read_text());ui=c['E11_UI'];before=(folder/'PC_ONLY-E10-package-payload.bin').read_bytes();after=(folder/'PC_ONLY-E11-package-payload.bin').read_bytes();patched=bytearray(before)
+for p in ui['patches']:
+ off=p['site']-old['base'];assert before[off:off+6].hex()==p['before'];patched[off:off+6]=bytes.fromhex(p['after'])
+assert after[:len(before)]==patched and c['E10']==old['E10'] and c['persistence']==old['persistence'] and c['binding']==old['binding'] and c['lifecycle']==old['lifecycle']
+m0=bytearray((folder/'PC_ONLY-E10-package-main.bin').read_bytes());m1=(folder/'PC_ONLY-E11-package-main.bin').read_bytes();off=0x4029c4be-0x40000400;m0[off:off+4]=m1[off:off+4];prefix=0x4029c5b0-0x40000400;assert m0[:prefix]==m1[:prefix]
+assert c['copy_destination_end']<=0x47c00000 and c['payload_bytes']==98112
+candidate=Path(c['candidate']);digest=sha(candidate.read_bytes());assert digest==reports['container']['candidate_sha256']==reports['loader']['candidate_sha256']==reports['startup']['candidate_sha256']
+play=reports['packaged_playback'];assert play['E11_UI_startup_copied'] and not play['helpers_host_loaded'] and not play['hooks_host_patched'] and play['matching_note_pairs']>=12 and play['observed_DIN_notes']==play['observed_USB_notes']
+assert reports['startup']['restored_records_match']==128 and reports['startup']['cases'][0]['copied_components_verified'] and not reports['startup']['cases'][0]['strict_failures']
+assert not reports['loader']['flash_writes'] and reports['loader']['main_matches']
+e10=Path('outputs/E10-hardware-trial/Digitone_OS1.44E10_M1_STEPS_HARDWARE_TRIAL.syx');assert sha(e10.read_bytes())=='bec5b8bbb71a17a96a5acd30962166e6d38b57e0f4c72c7a81ccf7d8e082b4c7'
+files=['build-PC-E11-synth-style-editor.py','integrate-PC-E11-synth-style-editor.py','build-PC-E11-package.py','test-PC-E11-synth-style-editor.py','test-PC-E11-synth-style-playback.py','test-PC-E11-package-loader.py','test-PC-E11-package-startup.py','test-PC-E11-packaged-playback.py','verify-PC-E11-synth-style.py']
+for name in files:ast.parse(Path('work',name).read_text(encoding='utf-8-sig'))
+r=dict(passed=True,PC_only=True,candidate_sha256=digest,candidate=str(candidate),controls=ui['controls'],M1_only=True,additional_RAM_state_bytes=0,E10_record_format_and_persistence_unchanged=True,E10_trial_unchanged=True,only_three_existing_RAM_UI_handlers_patched=True,MAIN_changes_only_copy_count_and_appended_payload=True,copied_payload_bytes=len(after),restored_records=128,matching_note_pairs=play['matching_note_pairs'],E11_UI_native_startup_copied=True,helpers_host_loaded=False,hooks_host_patched=False,hardware_ready=False,physical_trial_pending=True,firmware_release_created=False,checks={k:v['passed'] for k,v in reports.items()},source_sha256={n:sha(Path('work',n).read_bytes()) for n in files},limits=['Changed control workflow, not all synth arp features or pixel-identical artwork. Existing FUNC+SYN2 entry and root/scale/enable controls retained; MODE remains OFF/UP.','Packaged staged PC loader/startup/playback and inherited peripheral/routing/USB fixtures; physical cache/timing and copied-code placement remain unverified on hardware.','Native editing/pattern recall and retained mirror use unchanged E10 APIs. No new E11 named-save/restart/copy/reset suite is claimed.','M2-M4 are not extended. No device update performed.'])
+Path('outputs/Digitone-E11-PC-verification.json').write_text(json.dumps(r,indent=2),encoding='utf-8');print('E11 packaged UI passes:',play['matching_note_pairs'],'matching pairs; E10 unchanged.')

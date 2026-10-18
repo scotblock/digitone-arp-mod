@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "PC_only": true,
+  "candidate_sha256": "d7d3776054093b8a9b2999fc5b100c4cb88d436ab62685b6cd44770a6e4ecf75",
+  "candidate": "<workspace>\\work\\os144\\PC_ONLY-E11-package-loader-test.syx",
+  "controls": {
+    "LEFT_RIGHT": "Select step",
+    "E": "Scale-degree offset",
+    "F": "Length 1..16",
+    "UP": "Enable selected step",
+    "DOWN": "Rest selected step",
+    "A_B": "Explicit root/scale retained",
+    "D": "Back to main arp controls",
+    "H": "Step sequence on/off",
+    "C": "Unused on step page",
+    "G": "Legacy rest encoder retained"
+  },
+  "M1_only": true,
+  "additional_RAM_state_bytes": 0,
+  "E10_record_format_and_persistence_unchanged": true,
+  "E10_trial_unchanged": true,
+  "only_three_existing_RAM_UI_handlers_patched": true,
+  "MAIN_changes_only_copy_count_and_appended_payload": true,
+  "copied_payload_bytes": 98112,
+  "restored_records": 128,
+  "matching_note_pairs": 25,
+  "E11_UI_native_startup_copied": true,
+  "helpers_host_loaded": false,
+  "hooks_host_patched": false,
+  "hardware_ready": false,
+  "physical_trial_pending": true,
+  "firmware_release_created": false,
+  "checks": {
+    "editor": true,
+    "overlay_playback": true,
+    "container": true,
+    "loader": true,
+    "startup": true,
+    "packaged_playback": true
+  },
+  "source_sha256": {
+    "build-PC-E11-synth-style-editor.py": "62c212859aa72ff724bf75fea3727c83c16c068e763b79228c58e41c152d29e6",
+    "integrate-PC-E11-synth-style-editor.py": "a513c6bfbb2eb4aabd1f153d36d2e749afbd0722cdf9d52eafc39b70a7125867",
+    "build-PC-E11-package.py": "fc074994471d157cec940f15232c9b787bd3aa5c4188fa5f958fdaad8a1ef3bb",
+    "test-PC-E11-synth-style-editor.py": "e49fea9b44706bb4c91cd81409e4106a834dd46301649060b9a51513d036190d",
+    "test-PC-E11-synth-style-playback.py": "b63514fd49976f8b74aceb42cc134ff7b9db63cf16a96ea5bd2a487844f58630",
+    "test-PC-E11-package-loader.py": "95211f586e9a957838f46dada747c3c446dbf45ea8ceabafbd1a4832ee876b79",
+    "test-PC-E11-package-startup.py": "51574ab80f036a59d726e82c9ee74e6e59a3d17bd4fe5d698e49893effcfbeb4",
+    "test-PC-E11-packaged-playback.py": "9207a999262959026e78666b10c08064bc7293fdc1895dca1a2775bf91302bbb",
+    "verify-PC-E11-synth-style.py": "bb7b294a52d1bd4400b6b91417eafce09bc19cea1ae62ba7c4441d77accf99e0"
+  },
+  "limits": [
+    "Changed control workflow, not all synth arp features or pixel-identical artwork. Existing FUNC+SYN2 entry and root/scale/enable controls retained; MODE remains OFF/UP.",
+    "Packaged staged PC loader/startup/playback and inherited peripheral/routing/USB fixtures; physical cache/timing and copied-code placement remain unverified on hardware.",
+    "Native editing/pattern recall and retained mirror use unchanged E10 APIs. No new E11 named-save/restart/copy/reset suite is claimed.",
+    "M2-M4 are not extended. No device update performed."
+  ]
+}

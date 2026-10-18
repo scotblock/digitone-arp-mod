@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-18",
+  "source": "Direct user reports in this chat",
+  "build_context": "E10 trial; installed hash not independently verified",
+  "user_confirmed": [
+    "MIDI arp pattern is saved",
+    "Both patterns recover their own offsets and rests after project reload"
+  ],
+  "cold_shutdown_restart_recall_confirmed": false,
+  "M1_only_requested": true,
+  "E11_hardware_tested": false
+}

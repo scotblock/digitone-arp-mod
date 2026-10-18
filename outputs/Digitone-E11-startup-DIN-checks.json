@@ -1,0 +1,52 @@
+{
+  "image_sha256": "d7d3776054093b8a9b2999fc5b100c4cb88d436ab62685b6cd44770a6e4ecf75",
+  "PC_only": true,
+  "cases": [
+    {
+      "name": "valid_E11",
+      "phase": 3,
+      "completion_state": 2,
+      "error_flag": 0,
+      "exact_received_stream": true,
+      "erase_calls": 5,
+      "program_calls": 2489,
+      "program_end": "0x1b7200"
+    },
+    {
+      "name": "bad_whole_checksum",
+      "phase": 3,
+      "completion_state": 2,
+      "error_flag": 0,
+      "exact_received_stream": true,
+      "erase_calls": 0,
+      "program_calls": 0,
+      "program_end": null
+    },
+    {
+      "name": "missing_end",
+      "phase": 2,
+      "completion_state": 1,
+      "error_flag": 0,
+      "exact_received_stream": true,
+      "erase_calls": 0,
+      "program_calls": 0,
+      "program_end": null
+    },
+    {
+      "name": "bad_packet_checksum",
+      "phase": 0,
+      "completion_state": 1,
+      "error_flag": 1,
+      "exact_received_stream": false,
+      "erase_calls": 0,
+      "program_calls": 0,
+      "program_end": null
+    }
+  ],
+  "failure": null,
+  "limits": [
+    "SRAM bootstrap instructions execute. First/end frames traverse stock UART9 IRQ byte parser; data frames start at its recovered receiver callback. Full UART pacing/overrun and panel selection are not joined in one continuous run.",
+    "Display/flash identity/geometry/erase/program are fixtures. No hardware writes or physical recovery trial."
+  ],
+  "passed": true
+}

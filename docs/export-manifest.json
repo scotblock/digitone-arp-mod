@@ -10410,6 +10410,167 @@
       "source_sha256": "5099c6df303af9ee0db8601b2ee1a7fc74785b79434e99c261ee551893b061d3",
       "export_sha256": "5099c6df303af9ee0db8601b2ee1a7fc74785b79434e99c261ee551893b061d3",
       "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/build-PC-E11-synth-style-editor.py",
+      "path": "work/build-PC-E11-synth-style-editor.py",
+      "source_sha256": "62c212859aa72ff724bf75fea3727c83c16c068e763b79228c58e41c152d29e6",
+      "export_sha256": "9fbc1f1a8d2042a14a3d5cc020a8baeb0c7a63eb872c0018f1499c6dd2413e46",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E11-synth-style-editor.py",
+      "path": "work/test-PC-E11-synth-style-editor.py",
+      "source_sha256": "e49fea9b44706bb4c91cd81409e4106a834dd46301649060b9a51513d036190d",
+      "export_sha256": "9ca02937b7a8f96464ed53038760f2163ab11f42707c523d580cb232cbcfa8c7",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E11-synth-style-playback.py",
+      "path": "work/test-PC-E11-synth-style-playback.py",
+      "source_sha256": "b63514fd49976f8b74aceb42cc134ff7b9db63cf16a96ea5bd2a487844f58630",
+      "export_sha256": "2795fdebcec8e41a709df49e1f2883bf40fb2fc62f8d1ed991ae11a6722b1fb2",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/integrate-PC-E11-synth-style-editor.py",
+      "path": "work/integrate-PC-E11-synth-style-editor.py",
+      "source_sha256": "a513c6bfbb2eb4aabd1f153d36d2e749afbd0722cdf9d52eafc39b70a7125867",
+      "export_sha256": "566f3ca6e21a9431529dde23be9aee0085a00219c85f35d5bf9f89b87bc0a508",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/build-PC-E11-package.py",
+      "path": "work/build-PC-E11-package.py",
+      "source_sha256": "fc074994471d157cec940f15232c9b787bd3aa5c4188fa5f958fdaad8a1ef3bb",
+      "export_sha256": "9686901f9152e58281b1646edf1b1e5161143d43d62a5be0d7585d30999aa3a2",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E11-package-loader.py",
+      "path": "work/test-PC-E11-package-loader.py",
+      "source_sha256": "95211f586e9a957838f46dada747c3c446dbf45ea8ceabafbd1a4832ee876b79",
+      "export_sha256": "cb40ecd68c047746c31c781e5d5e4ae276351c7a44320399b85f3a3c5996e094",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E11-package-startup.py",
+      "path": "work/test-PC-E11-package-startup.py",
+      "source_sha256": "51574ab80f036a59d726e82c9ee74e6e59a3d17bd4fe5d698e49893effcfbeb4",
+      "export_sha256": "f5a654d0b9dd82a88de91fa023f25a612502a8de9f8aed6d87f1a2cce60643e4",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E11-packaged-playback.py",
+      "path": "work/test-PC-E11-packaged-playback.py",
+      "source_sha256": "9207a999262959026e78666b10c08064bc7293fdc1895dca1a2775bf91302bbb",
+      "export_sha256": "1a68c7bdc5ccd1b98e5fc4f5a76a40e5004cb1244a040bc60ab09f9a21704812",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/verify-PC-E11-synth-style.py",
+      "path": "work/verify-PC-E11-synth-style.py",
+      "source_sha256": "bb7b294a52d1bd4400b6b91417eafce09bc19cea1ae62ba7c4441d77accf99e0",
+      "export_sha256": "3183751a8aa22fb592bb9b490781839485f48ad0feb2ef8cd9f3620ef89ffdac",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-E11-startup-DIN-route.py",
+      "path": "work/test-E11-startup-DIN-route.py",
+      "source_sha256": "118014a03e43474f7119f0f43647754a50d6979f27d2b9e27aa9709231d1197c",
+      "export_sha256": "e865aa3f872963bd22cf3b44a8888baca5294dbe7b9c953aefa05abf2442334c",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/prepare-E11-synth-style-candidate.py",
+      "path": "work/prepare-E11-synth-style-candidate.py",
+      "source_sha256": "89d54d054d573bc0a5165cc100f8e904e771cd15ae3a3f9eb75688fe0fa293af",
+      "export_sha256": "fe0b1fee1bde5d0a114112ea6507f7598beb21450b44bfbccb92c1f23184b883",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E11-PC-synth-style-editor.json",
+      "path": "outputs/Digitone-E11-PC-synth-style-editor.json",
+      "source_sha256": "1016ee446b4484507f2ec89b441757e89b3dd851bfba009576a8f0ed1c00bad6",
+      "export_sha256": "c8f8dff53498b0933016e9038b5d054d2d677b8da48a956416741046e9514873",
+      "personal_paths_rewritten": true
+    },
+    {
+      "source": "outputs/Digitone-E11-PC-synth-style-playback.json",
+      "path": "outputs/Digitone-E11-PC-synth-style-playback.json",
+      "source_sha256": "033b1a5d994c59a766758d75ac2fd8006f854bf3887e71183a195ac964f49675",
+      "export_sha256": "7ff4fd0f69ea389f5705a096e7bd7d44ddca6ce63c9addcb2a2448835e92af35",
+      "personal_paths_rewritten": true
+    },
+    {
+      "source": "outputs/Digitone-E11-PC-package-container.json",
+      "path": "outputs/Digitone-E11-PC-package-container.json",
+      "source_sha256": "6c4d0828465b11806c691d882e72ebe0760717cc5e220ee525a38bb7af2fdb63",
+      "export_sha256": "09c4672dbd7063b74998e55cc926ad7a0ad8794cd1c436914475f3a6c9308596",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E11-PC-package-loader.json",
+      "path": "outputs/Digitone-E11-PC-package-loader.json",
+      "source_sha256": "d943bf0ac8d65b243f3672da297a4aad222354c2e86c18d9fe28dbf6bf462122",
+      "export_sha256": "4bc46ffc4ee730030dcc31b43f1c4841b530ffd93b425b785714a6d8619e5060",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E11-PC-package-startup.json",
+      "path": "outputs/Digitone-E11-PC-package-startup.json",
+      "source_sha256": "6ff70449b27abb5eaa0da44df16a3ae24f96246fab4b0201975afeaa23534c93",
+      "export_sha256": "bd36f95092e942bb7682bb23b53294d4dd5750f099f6e23fdf11ed2d68042111",
+      "personal_paths_rewritten": true
+    },
+    {
+      "source": "outputs/Digitone-E11-PC-packaged-playback.json",
+      "path": "outputs/Digitone-E11-PC-packaged-playback.json",
+      "source_sha256": "a5b9a5b642473bee2cec95e3f7d48f671bb8406620f1df6f6c7ae2103ea888df",
+      "export_sha256": "396008493f3795671386fcf5e1f33a00472676b071e1c3641853056a7c7e4148",
+      "personal_paths_rewritten": true
+    },
+    {
+      "source": "outputs/Digitone-E11-PC-verification.json",
+      "path": "outputs/Digitone-E11-PC-verification.json",
+      "source_sha256": "ca3f07b3c8673597994e86a12e664246f902ba720f07392aa7496b725264ff93",
+      "export_sha256": "07d332d4bc62c7235d93163883f064fe713125541f640165c6ea049e97bbde7c",
+      "personal_paths_rewritten": true
+    },
+    {
+      "source": "outputs/Digitone-E11-startup-DIN-checks.json",
+      "path": "outputs/Digitone-E11-startup-DIN-checks.json",
+      "source_sha256": "4e56a5d23c08203446db86eff6787f3ab491d18f7ca2b70f2f821f3645e893e4",
+      "export_sha256": "a59d835f07500dece5723b1aa783149537de8792671c8e0410109da987b3669b",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E11-candidate-preparation.json",
+      "path": "outputs/Digitone-E11-candidate-preparation.json",
+      "source_sha256": "dbc7837822aa67c7b067edcb208a78cd03fd5bad348b82060d47b023fcc1ae03",
+      "export_sha256": "7f4df0bf9cda7ebb7e7c78344da1b52c15f3820d8b25eb3d5cc22f72c39e63b7",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E11-synth-style-notes.md",
+      "path": "outputs/Digitone-E11-synth-style-notes.md",
+      "source_sha256": "139dc13ab696e255ba6ce340d2a80f51404a0cf10516eb66f347af2af072b374",
+      "export_sha256": "a30bef97a46b27ed99ac70d5fbc5adf510ea5f44fbadbaee230c5dc808f7a11f",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E10-hardware-observation-2026-10-18.json",
+      "path": "outputs/Digitone-E10-hardware-observation-2026-10-18.json",
+      "source_sha256": "ec4bbe6507896a6965d6da61eb8705e9f3932b0b4bc97f792af34e251cf7ce70",
+      "export_sha256": "92548fb4eab936fa31372159065800e19192af4414f2870c80d80fe696253fdd",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/E11-synth-style-candidate/README.md",
+      "path": "outputs/Digitone-E11-control-guide.md",
+      "source_sha256": "4b28bd1e91a116ce2b08d426f738718afea225e3eedcbff6e16205ee24005d7c",
+      "export_sha256": "4b28bd1e91a116ce2b08d426f738718afea225e3eedcbff6e16205ee24005d7c",
+      "personal_paths_rewritten": false
     }
   ]
 }

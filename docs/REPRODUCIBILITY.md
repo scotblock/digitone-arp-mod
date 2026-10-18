@@ -41,3 +41,7 @@ The `test-PC-E10-package-workflow*.py` drivers and `verify-PC-E10-package-workfl
 ### E10 trial artifact preparation
 
 `work/test-E10-startup-DIN-route.py` adapts the existing stock-bootstrap receiver driver to the exact unchanged E10 container and bounds every modeled flash operation. `work/prepare-E10-hardware-trial.py` requires the private tested container, verified stock 1.44 input and preceding passing reports, then freezes local trial files, builds a stock-dependent ZIP with the existing release tools and tests its extracted CLI. These generated files remain outside the source archive. It neither flashes a device nor publishes a GitHub release.
+
+### E11 synth-style UI
+
+Build the UI, run overlay controls/playback, integrate/build the separate package, then run the E11 loader/startup/packaged-playback and startup-DIN drivers before the consolidated verifier and candidate preparation. Scripts require E10 generated driver definitions, prior reports, stock-derived inputs, private snapshots/cards and the existing compiler/runtime. Private binary state is excluded. No device update or GitHub publication is automated.

@@ -1,0 +1,92 @@
+{
+  "PC_only": true,
+  "helpers_host_loaded": false,
+  "hooks_host_patched": false,
+  "M1_initializer_host_called": false,
+  "settings_host_written": false,
+  "candidate_sha256": "bec5b8bbb71a17a96a5acd30962166e6d38b57e0f4c72c7a81ccf7d8e082b4c7",
+  "startup_snapshot": "<workspace>\\work\\E10-package-startup-E10_restored\\snapshots\\PC_ONLY-E10-package-loader-test\\gui-raw.snap",
+  "wire": [],
+  "marks": [],
+  "samples": [],
+  "failure": null,
+  "passed": true,
+  "overlay_installed_by_host": true,
+  "steps": [
+    {
+      "label": "opened",
+      "fields": [
+        1,
+        15,
+        0,
+        65535,
+        2147483776,
+        "01000000000000000000000000000000"
+      ],
+      "slot": 2,
+      "owner": "0x41307b72",
+      "bound_owner": "0x41307b72"
+    },
+    {
+      "label": "arrows_E_offset",
+      "fields": [
+        1,
+        15,
+        1,
+        65535,
+        2147483776,
+        "02ff0000000000000000000000000000"
+      ],
+      "slot": 2,
+      "owner": "0x41307b72",
+      "bound_owner": "0x41307b72"
+    },
+    {
+      "label": "C_D_rest_F_program",
+      "fields": [
+        1,
+        4,
+        3,
+        65531,
+        2147483776,
+        "00010203000000000000000000000000"
+      ],
+      "slot": 2,
+      "owner": "0x41307b72",
+      "bound_owner": "0x41307b72"
+    },
+    {
+      "label": "pattern_recalled",
+      "fields": [
+        1,
+        4,
+        0,
+        65531,
+        2147483776,
+        "00010203000000000000000000000000"
+      ],
+      "slot": 2,
+      "owner": "0x41307b72",
+      "bound_owner": "0x41307b72"
+    }
+  ],
+  "checks": [
+    "Native Left/Right select; E edits only the selected offset; Up/Down are idempotent enable/rest.",
+    "F sets length; programmed 0/1/2/3 with third-step rest is checksummed and mirrored through unchanged E10 persistence.",
+    "Selected-step bounds/length clamp and native pattern recall preserve the expected program.",
+    "M2 keeps its stock page and does not edit the M1 bank; original A01/A02/A04 records remain unchanged."
+  ],
+  "startup_copier_source_reclaimed": true,
+  "strict_ColdFire_decode_passed": true,
+  "additional_state_bytes": 0,
+  "E10_format_preserved": true,
+  "native_panel_events": true,
+  "program_record": "4d533130010104000100fffb0001020300000000000000000000000000000308",
+  "firmware_container_created": false,
+  "hardware_ready": false,
+  "limits": [
+    "Host-installed PC overlay only; startup copying/cache handoff and hardware not tested.",
+    "M1 only. Main arp UP mode/rate/gate and E10 persistence/ownership APIs retained; no new synth arp modes or range engine.",
+    "Grid uses + enabled, - rest, X selected enabled, * selected rest, . outside length. This is not pixel-identical stock artwork."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "candidate": "outputs\\E11-synth-style-candidate\\Digitone_OS1.44E11_M1_SYNTH_STYLE_EXPERIMENTAL.syx",
+  "candidate_sha256": "d7d3776054093b8a9b2999fc5b100c4cb88d436ab62685b6cd44770a6e4ecf75",
+  "identical_to_PC_tested_container": true,
+  "patch_reconstruction_exact": true,
+  "hardware_ready": false,
+  "physical_trial_pending": true,
+  "device_contacted": false,
+  "E10_unchanged": true
+}

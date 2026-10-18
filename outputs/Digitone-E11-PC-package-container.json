@@ -1,0 +1,27 @@
+{
+  "PC_only": true,
+  "passed": true,
+  "internal_loader_test_only": true,
+  "firmware_release_created": false,
+  "hardware_ready": false,
+  "candidate": "work\\os144\\PC_ONLY-E11-package-loader-test.syx",
+  "candidate_sha256": "d7d3776054093b8a9b2999fc5b100c4cb88d436ab62685b6cd44770a6e4ecf75",
+  "main_sha256": "d5452916d0c30cbc97fb52b3b3802bcc60a56bfd5c2e79abf83ebea60bb3eae2",
+  "payload_sha256": "461ae9a335c1912c287554235243bb4cc1f657810b0ad402cede782b29017b94",
+  "main_identical_to_E11_startup_image": true,
+  "stock_writer_byte_exact": true,
+  "independent_MAIN_decompression_exact": true,
+  "non_MAIN_sections_byte_exact": true,
+  "container_bytes": 1274368,
+  "syx_bytes": 1615136,
+  "packed_MAIN_bytes": 993903,
+  "logical_container_512_aligned": true,
+  "source_copy_bytes": 98112,
+  "E09A_unchanged": true,
+  "E09A_sha256": "68f67aac272cfaa0b52763db150efddbf4654a6773e9604b627898c857fa1c3c",
+  "limits": [
+    "Internal PC-only container for loader/startup/playback integration. Not a hardware-ready release.",
+    "Stock power mechanism is an accepted inherited assumption; abrupt-loss recovery is not guaranteed.",
+    "Physical RAM ownership/cache/timing and complete device update receiver are not certified by packaging."
+  ]
+}
