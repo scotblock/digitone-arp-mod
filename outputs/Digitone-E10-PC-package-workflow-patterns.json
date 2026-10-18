@@ -1,0 +1,1146 @@
+{
+  "PC_only": true,
+  "helpers_host_loaded": false,
+  "hooks_host_patched": false,
+  "M1_initializer_host_called": false,
+  "settings_host_written": false,
+  "candidate_sha256": "bec5b8bbb71a17a96a5acd30962166e6d38b57e0f4c72c7a81ccf7d8e082b4c7",
+  "startup_snapshot": "<workspace>\\work\\E10-package-startup-E10_restored\\snapshots\\PC_ONLY-E10-package-loader-test\\gui-raw.snap",
+  "wire": [
+    {
+      "phase": "reload",
+      "ms": 10255.52659375,
+      "bytes": [
+        176,
+        120,
+        0
+      ]
+    },
+    {
+      "phase": "reload",
+      "ms": 11895.4625,
+      "bytes": [
+        176,
+        120,
+        0
+      ]
+    }
+  ],
+  "marks": [],
+  "samples": [],
+  "failure": null,
+  "steps": [
+    {
+      "label": "A03_blank",
+      "ms": 3506.0,
+      "owner": "0x41307b72",
+      "bound_owner": "0x41307b72",
+      "slot": 2,
+      "generation": 1,
+      "fields": [
+        0,
+        16,
+        65535,
+        2147483776,
+        "00000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "A03_edited",
+      "ms": 3866.40815625,
+      "owner": "0x41307b72",
+      "bound_owner": "0x41307b72",
+      "slot": 2,
+      "generation": 1,
+      "fields": [
+        1,
+        15,
+        65535,
+        2147483776,
+        "01000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "A04_blank",
+      "ms": 5841.4625,
+      "owner": "0x413084fa",
+      "bound_owner": "0x413084fa",
+      "slot": 3,
+      "generation": 1,
+      "fields": [
+        0,
+        16,
+        65535,
+        2147483776,
+        "00000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "A04_edited",
+      "ms": 6201.46253125,
+      "owner": "0x413084fa",
+      "bound_owner": "0x413084fa",
+      "slot": 3,
+      "generation": 1,
+      "fields": [
+        1,
+        16,
+        65535,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "A03_recalled",
+      "ms": 7484.00003125,
+      "owner": "0x41307b72",
+      "bound_owner": "0x41307b72",
+      "slot": 2,
+      "generation": 1,
+      "fields": [
+        1,
+        15,
+        65535,
+        2147483776,
+        "01000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "A04_recalled",
+      "ms": 8766.0,
+      "owner": "0x413084fa",
+      "bound_owner": "0x413084fa",
+      "slot": 3,
+      "generation": 1,
+      "fields": [
+        1,
+        16,
+        65535,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "save_menu",
+      "ms": 9456.6666875,
+      "owner": "0x413084fa",
+      "bound_owner": "0x413084fa",
+      "slot": 3,
+      "generation": 1,
+      "fields": [
+        1,
+        16,
+        65535,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "save_name",
+      "ms": 11679.0696875,
+      "owner": "0x413084fa",
+      "bound_owner": "0x413084fa",
+      "slot": 3,
+      "generation": 1,
+      "fields": [
+        1,
+        16,
+        65535,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "saved",
+      "ms": 14460.000046875,
+      "owner": "0x413084fa",
+      "bound_owner": "0x413084fa",
+      "slot": 3,
+      "generation": 1,
+      "fields": [
+        1,
+        16,
+        65535,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "save_menu",
+      "ms": 690.6666875,
+      "owner": "0x413084fa",
+      "bound_owner": "0x413084fa",
+      "slot": 3,
+      "generation": 1,
+      "fields": [
+        1,
+        16,
+        65535,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "save_name",
+      "ms": 2913.0696875,
+      "owner": "0x413084fa",
+      "bound_owner": "0x413084fa",
+      "slot": 3,
+      "generation": 1,
+      "fields": [
+        1,
+        16,
+        65535,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "saved",
+      "ms": 6274.666671875,
+      "owner": "0x413084fa",
+      "bound_owner": "0x413084fa",
+      "slot": 3,
+      "generation": 1,
+      "fields": [
+        1,
+        16,
+        65535,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "A03_unsaved_change",
+      "ms": 7957.333390625,
+      "owner": "0x41307b72",
+      "bound_owner": "0x41307b72",
+      "slot": 2,
+      "generation": 1,
+      "fields": [
+        1,
+        15,
+        65535,
+        2147483776,
+        "02000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "load_selector",
+      "ms": 8880.00003125,
+      "owner": "0x41307b72",
+      "bound_owner": "0x41307b72",
+      "slot": 2,
+      "generation": 1,
+      "fields": [
+        1,
+        15,
+        65535,
+        2147483776,
+        "02000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "load_selected",
+      "ms": 10160.000046875,
+      "owner": "0x41307b72",
+      "bound_owner": "0x41307b72",
+      "slot": 2,
+      "generation": 1,
+      "fields": [
+        1,
+        15,
+        65535,
+        2147483776,
+        "02000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "loaded",
+      "ms": 12140.66671875,
+      "owner": "0x41307b72",
+      "bound_owner": "0x41307b72",
+      "slot": 2,
+      "generation": 2,
+      "fields": [
+        1,
+        15,
+        65535,
+        2147483776,
+        "02000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "A03_loaded_recall",
+      "ms": 13675.333359375,
+      "owner": "0x41307b72",
+      "bound_owner": "0x41307b72",
+      "slot": 2,
+      "generation": 2,
+      "fields": [
+        1,
+        15,
+        65535,
+        2147483776,
+        "01000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "A04_loaded_recall",
+      "ms": 14958.000015625,
+      "owner": "0x413084fa",
+      "bound_owner": "0x413084fa",
+      "slot": 3,
+      "generation": 2,
+      "fields": [
+        1,
+        16,
+        65535,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "A04_rest_programmed",
+      "ms": 1633.333359375,
+      "owner": "0x413084fa",
+      "bound_owner": "0x413084fa",
+      "slot": 3,
+      "generation": 1,
+      "fields": [
+        1,
+        16,
+        65533,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "save_menu",
+      "ms": 2324.000015625,
+      "owner": "0x413084fa",
+      "bound_owner": "0x413084fa",
+      "slot": 3,
+      "generation": 1,
+      "fields": [
+        1,
+        16,
+        65533,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "save_name",
+      "ms": 4545.333359375,
+      "owner": "0x413084fa",
+      "bound_owner": "0x413084fa",
+      "slot": 3,
+      "generation": 1,
+      "fields": [
+        1,
+        16,
+        65533,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "saved",
+      "ms": 7907.0700625,
+      "owner": "0x413084fa",
+      "bound_owner": "0x413084fa",
+      "slot": 3,
+      "generation": 1,
+      "fields": [
+        1,
+        16,
+        65533,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "A03_unsaved_change",
+      "ms": 9591.333359375,
+      "owner": "0x41307b72",
+      "bound_owner": "0x41307b72",
+      "slot": 2,
+      "generation": 1,
+      "fields": [
+        1,
+        15,
+        65535,
+        2147483776,
+        "02000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "load_selector",
+      "ms": 10513.333359375,
+      "owner": "0x41307b72",
+      "bound_owner": "0x41307b72",
+      "slot": 2,
+      "generation": 1,
+      "fields": [
+        1,
+        15,
+        65535,
+        2147483776,
+        "02000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "load_selected",
+      "ms": 11793.333390625,
+      "owner": "0x41307b72",
+      "bound_owner": "0x41307b72",
+      "slot": 2,
+      "generation": 1,
+      "fields": [
+        1,
+        15,
+        65535,
+        2147483776,
+        "02000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "loaded",
+      "ms": 13774.000015625,
+      "owner": "0x41307b72",
+      "bound_owner": "0x41307b72",
+      "slot": 2,
+      "generation": 2,
+      "fields": [
+        1,
+        15,
+        65535,
+        2147483776,
+        "02000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "A03_loaded_recall",
+      "ms": 15306.666703125,
+      "owner": "0x41307b72",
+      "bound_owner": "0x41307b72",
+      "slot": 2,
+      "generation": 2,
+      "fields": [
+        1,
+        15,
+        65535,
+        2147483776,
+        "01000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "A04_loaded_recall",
+      "ms": 16589.73678125,
+      "owner": "0x413084fa",
+      "bound_owner": "0x413084fa",
+      "slot": 3,
+      "generation": 2,
+      "fields": [
+        1,
+        16,
+        65533,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "view": 1,
+      "held": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "native_calls": [
+    {
+      "kind": "recall",
+      "phase": "A03_edit",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A03_edit",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A03_edit",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A03_edit",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A03_edit",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A03_edit",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A03_edit",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A03_edit",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A03_edit",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A03_edit",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A03_edit",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A03_edit",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A04_edit",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A04_edit",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A04_edit",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A04_edit",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A04_edit",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A04_edit",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A04_edit",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A04_edit",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A04_edit",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A04_edit",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A04_edit",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A04_edit",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A04_edit",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A04_edit",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A04_edit",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "emit",
+      "phase": "save",
+      "arg1": "0x41641a94",
+      "arg2": 1082119160,
+      "generation": 1
+    },
+    {
+      "kind": "emit",
+      "phase": "save",
+      "arg1": "0x4139a684",
+      "arg2": 1082119160,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "unsaved_edit",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "unsaved_edit",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "unsaved_edit",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "unsaved_edit",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "unsaved_edit",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "capture",
+      "phase": "reload",
+      "arg1": "0x41641a94",
+      "arg2": 1082119160,
+      "generation": 1
+    },
+    {
+      "kind": "emit",
+      "phase": "reload",
+      "arg1": "0x4139a684",
+      "arg2": 1082119160,
+      "generation": 2
+    },
+    {
+      "kind": "emit",
+      "phase": "reload",
+      "arg1": "0x40555ff4",
+      "arg2": 1082119160,
+      "generation": 2
+    },
+    {
+      "kind": "recall",
+      "phase": "reload",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 2
+    },
+    {
+      "kind": "recall",
+      "phase": "reload",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 2
+    },
+    {
+      "kind": "recall",
+      "phase": "reload",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 2
+    },
+    {
+      "kind": "recall",
+      "phase": "reload",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 2
+    },
+    {
+      "kind": "recall",
+      "phase": "reload",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 2
+    },
+    {
+      "kind": "recall",
+      "phase": "A04_native_rest",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A04_native_rest",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A04_native_rest",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A04_native_rest",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A04_native_rest",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A04_native_rest",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A04_native_rest",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A04_native_rest",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A04_native_rest",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A04_native_rest",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A04_native_rest",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "A04_native_rest",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "emit",
+      "phase": "save",
+      "arg1": "0x41641a94",
+      "arg2": 1082119160,
+      "generation": 1
+    },
+    {
+      "kind": "emit",
+      "phase": "save",
+      "arg1": "0x4139a684",
+      "arg2": 1082119160,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "unsaved_edit",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "unsaved_edit",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "unsaved_edit",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "unsaved_edit",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "recall",
+      "phase": "unsaved_edit",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 1
+    },
+    {
+      "kind": "capture",
+      "phase": "reload",
+      "arg1": "0x41641a94",
+      "arg2": 1082119160,
+      "generation": 1
+    },
+    {
+      "kind": "emit",
+      "phase": "reload",
+      "arg1": "0x4139a684",
+      "arg2": 1082119160,
+      "generation": 2
+    },
+    {
+      "kind": "emit",
+      "phase": "reload",
+      "arg1": "0x40555ff4",
+      "arg2": 1082119160,
+      "generation": 2
+    },
+    {
+      "kind": "recall",
+      "phase": "reload",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 2
+    },
+    {
+      "kind": "recall",
+      "phase": "reload",
+      "arg1": "0x41307b72",
+      "arg2": 1,
+      "generation": 2
+    },
+    {
+      "kind": "recall",
+      "phase": "reload",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 2
+    },
+    {
+      "kind": "recall",
+      "phase": "reload",
+      "arg1": "0x413084fa",
+      "arg2": 1,
+      "generation": 2
+    }
+  ],
+  "checkpoints": {
+    "two-patterns-edited": "<workspace>\\work\\E10-package-workflow\\two-patterns-edited.snap",
+    "saved": "<workspace>\\work\\E10-package-workflow\\saved.snap",
+    "load-selected": "<workspace>\\work\\E10-package-workflow\\load-selected.snap",
+    "reloaded-two-patterns": "<workspace>\\work\\E10-package-workflow\\reloaded-two-patterns.snap"
+  },
+  "bank_host_written": false,
+  "diagnostic_record_host_injection": false,
+  "private_card": "<workspace>\\work\\E10-package-workflow\\plusdrive.img",
+  "startup_copier_source_reclaimed": true,
+  "two_pattern_panel_recall": true,
+  "expected_records": [
+    "4d53313001010f000100ffff0100000000000000000000000000000000000312",
+    "4d533130010110010100fffdff00000000000000000000000000000000000410"
+  ],
+  "expected_fields": [
+    [
+      1,
+      15,
+      65535,
+      2147483776,
+      "01000000000000000000000000000000"
+    ],
+    [
+      1,
+      16,
+      65533,
+      2147483777,
+      "ff000000000000000000000000000000"
+    ]
+  ],
+  "passed": true,
+  "packaged_loader_state": true,
+  "test_patterns": [
+    "A03",
+    "A04"
+  ],
+  "limits": [
+    "Native panel-created records and native save/load on a private card, with copier-installed code. No bank/settings/helper/hook data are host-written.",
+    "Stopped pattern recall and project reload in this scenario. Running held-note handoff and physical behavior require separate checks.",
+    "Copy/clear/undo, incremental saves, physical cache/timing and automatic power-loss persistence remain unverified."
+  ],
+  "resumed_from_native_load_confirmation": true,
+  "saved_project_reloaded": true,
+  "project_generation_changed": true,
+  "post_reload_pattern_recall": true
+}

@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-10-17",
+  "snapshot_date": "2026-10-18",
   "kind": "source-only archive",
   "files": [
     {
@@ -10255,6 +10255,111 @@
       "path": "outputs/Digitone-E10-PC-package-integration-notes.md",
       "source_sha256": "1bbf279a1eab3f8c0d6b53904914293e4683898274f7a399394558d5afe42f83",
       "export_sha256": "9ac9cf68c77a3383366138a64525a5b4d24080ab34ca3ddd525e52e531fd96cc",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E10-package-workflow-copy.py",
+      "path": "work/test-PC-E10-package-workflow-copy.py",
+      "source_sha256": "c347aca35fee80a566bbdb7dbf60c745d5eb63aab5a0bfa02d5654af0b35dd3a",
+      "export_sha256": "51edb5791dd64accbe86988305282f80f5ed33f0d6de7dd09287a2d26a1a2a65",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E10-package-workflow-handoff.py",
+      "path": "work/test-PC-E10-package-workflow-handoff.py",
+      "source_sha256": "1d89b6d227e61982d9a7a9e4882398efaced2a6e24bb12bc379aa7dc937bdd4d",
+      "export_sha256": "ddda6b4b3f8168cbd6cf75d0528160e48074dcc6046e5e8024a688ed04ecb390",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E10-package-workflow-recall.py",
+      "path": "work/test-PC-E10-package-workflow-recall.py",
+      "source_sha256": "abf3418e4ed0dcb3e34f179f54624c34f66f598c5e1a4d7e3c383980fa4280cf",
+      "export_sha256": "3a91ebd40f89da5a8efd489a9223d49ae921846940521873083b780e963d41c5",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E10-package-workflow-reset.py",
+      "path": "work/test-PC-E10-package-workflow-reset.py",
+      "source_sha256": "d65fa2612d8e10b80c4cca01c45ffb3e25ddf2a0da5d650465f61b98852f8b61",
+      "export_sha256": "67cab9a1a37eff2c797f4f95d8ce795de58789de6bd1742444241c7964ca2bb7",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E10-package-workflow-restart.py",
+      "path": "work/test-PC-E10-package-workflow-restart.py",
+      "source_sha256": "9de72ccb8d53fdd84f30b32836183443cb02707698010182bfdf27214ea2d3e2",
+      "export_sha256": "fc5d49aaa43906a165dff2f94ed09cbba33fa82b334fe5994926b80477be8304",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-PC-E10-package-workflow.py",
+      "path": "work/test-PC-E10-package-workflow.py",
+      "source_sha256": "62d137bd06e1e27ce9a3bcf62810ece654ce9888feea2a5805a486b20af4c0d6",
+      "export_sha256": "a8a5408b85f27e446a33fe88523b2d198091583727ecdd198d718624a2e4e016",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/verify-PC-E10-package-workflow.py",
+      "path": "work/verify-PC-E10-package-workflow.py",
+      "source_sha256": "12b2412cdf375d91e9430af533bfc6ffd21b3aefa0eeacca59243be2b1b97640",
+      "export_sha256": "f3563567ccc4b44b5f0fba48654291c372f99e8429b71c6a7bbb983853c0b4c8",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-package-workflow-patterns.json",
+      "path": "outputs/Digitone-E10-PC-package-workflow-patterns.json",
+      "source_sha256": "d4c5dc53dc7522ee2dbdace4803e6371b230916245e46fe6ee035ea2e7394ad2",
+      "export_sha256": "9f51d870997b8a9923583cec6a975322eb652c16d1a68fa1ccde2241d8fff44c",
+      "personal_paths_rewritten": true
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-package-workflow-restart.json",
+      "path": "outputs/Digitone-E10-PC-package-workflow-restart.json",
+      "source_sha256": "3e632ff518fb802114c9f71c440dd8574024dc5a7acca4d77f74d85610e72e38",
+      "export_sha256": "e5afd857a83b83789945531f81b70a0dc1886b304a5abffce45a7fd1306d6ed6",
+      "personal_paths_rewritten": true
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-package-workflow-recall.json",
+      "path": "outputs/Digitone-E10-PC-package-workflow-recall.json",
+      "source_sha256": "a77798f30f40830893b5b63f075a9412fde458826e589db2471ec4380e46a9a3",
+      "export_sha256": "15701df46e0a81bf12d1482dcc3a09ad8099d7c757ad1a2c6683c32d7303b1f4",
+      "personal_paths_rewritten": true
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-package-workflow-handoff.json",
+      "path": "outputs/Digitone-E10-PC-package-workflow-handoff.json",
+      "source_sha256": "37f1ac24babc168c2518ed1a07c9e5fcad1fbbafa3f7ea2119d75c9f5ae2b195",
+      "export_sha256": "e9c057d7e552d402af976e3dd8375d407b759917329b2f5140d0f71ac667792b",
+      "personal_paths_rewritten": true
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-package-workflow-copy.json",
+      "path": "outputs/Digitone-E10-PC-package-workflow-copy.json",
+      "source_sha256": "064170d7e53ff4e2c8a1ab95962982503bc32fb9f29862bd31648cb7ac80b250",
+      "export_sha256": "ea40d43675613e56d7e4d07a51e20236c0b3dda7d3a09117c6f9f6ec72c2112a",
+      "personal_paths_rewritten": true
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-package-workflow-reset.json",
+      "path": "outputs/Digitone-E10-PC-package-workflow-reset.json",
+      "source_sha256": "cc592266169b111d8b9eb1368225b7479331838697fb6caf91680d6d45b159ca",
+      "export_sha256": "41a68f3850de3f115eaa7fe60bd1d7615f0d1da6eea1ea85b564bb777615f938",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-package-workflow-verification.json",
+      "path": "outputs/Digitone-E10-PC-package-workflow-verification.json",
+      "source_sha256": "7de682687fd452ddc2d64dde61806a9a8913f1cd5394364b53e05d1a307d3fc8",
+      "export_sha256": "c27221829016fb3a62f9c4e7d664e91b2d5d68797cf9aeb098bd427d12552a0a",
+      "personal_paths_rewritten": true
+    },
+    {
+      "source": "outputs/Digitone-E10-PC-package-workflow-notes.md",
+      "path": "outputs/Digitone-E10-PC-package-workflow-notes.md",
+      "source_sha256": "64e0a5564aee68533f31b7768ef02057e22cdc12ca1c350d46c26077bc555f82",
+      "export_sha256": "46a7600548579dce765a617daa788f866b2a37813bc516dac7d5476cf17e1fdb",
       "personal_paths_rewritten": false
     }
   ]

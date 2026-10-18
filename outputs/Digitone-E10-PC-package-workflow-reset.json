@@ -1,0 +1,102 @@
+{
+  "PC_only": true,
+  "cases": [
+    {
+      "name": "diagnostic_0x0",
+      "entry": "0x4009c6d0",
+      "admission_fixture": "0x0",
+      "writes": [],
+      "passed": true,
+      "balanced_return": true,
+      "nonempty_bank_and_all_new_storage_unchanged": true
+    },
+    {
+      "name": "diagnostic_0x434f4c44",
+      "entry": "0x4009c6d0",
+      "admission_fixture": "0x434f4c44",
+      "writes": [],
+      "passed": true,
+      "balanced_return": true,
+      "nonempty_bank_and_all_new_storage_unchanged": true
+    },
+    {
+      "name": "diagnostic_0x494e4954",
+      "entry": "0x4009c6d0",
+      "admission_fixture": "0x494e4954",
+      "writes": [],
+      "passed": true,
+      "balanced_return": true,
+      "nonempty_bank_and_all_new_storage_unchanged": true
+    },
+    {
+      "name": "diagnostic_0x4c495645",
+      "entry": "0x4009c6d0",
+      "admission_fixture": "0x4c495645",
+      "writes": [],
+      "passed": true,
+      "balanced_return": true,
+      "nonempty_bank_and_all_new_storage_unchanged": true
+    },
+    {
+      "name": "diagnostic_0x4641494c",
+      "entry": "0x4009c6d0",
+      "admission_fixture": "0x4641494c",
+      "writes": [],
+      "passed": true,
+      "balanced_return": true,
+      "nonempty_bank_and_all_new_storage_unchanged": true
+    },
+    {
+      "name": "warm_setup",
+      "entry": "0x4009d0d8",
+      "admission_fixture": "0x4c495645",
+      "writes": [],
+      "passed": true,
+      "balanced_return": true,
+      "nonempty_bank_and_all_new_storage_unchanged": true
+    },
+    {
+      "name": "pool_wrapper",
+      "entry": "0x4009c5a0",
+      "admission_fixture": "0x4c495645",
+      "writes": [],
+      "passed": true,
+      "balanced_return": true,
+      "nonempty_bank_and_all_new_storage_unchanged": true
+    },
+    {
+      "name": "pool_initializer",
+      "entry": "0x400ffed0",
+      "admission_fixture": "0x4c495645",
+      "writes": [],
+      "passed": true,
+      "balanced_return": true,
+      "nonempty_bank_and_all_new_storage_unchanged": true
+    },
+    {
+      "name": "test_exit",
+      "entry": "0x4009d0ea",
+      "admission_fixture": "0x4c495645",
+      "writes": [],
+      "passed": true,
+      "balanced_return": true,
+      "nonempty_bank_and_all_new_storage_unchanged": true
+    },
+    {
+      "name": "E10_cold_init_refuses_LIVE",
+      "entry": "0x47beba00",
+      "admission_fixture": "0x4c495645",
+      "writes": [],
+      "passed": true,
+      "balanced_return": true,
+      "nonempty_bank_and_all_new_storage_unchanged": true
+    }
+  ],
+  "helpers_host_loaded": false,
+  "bank_host_written": false,
+  "passed": true,
+  "limits": [
+    "Stopped native entry calls with explicit admission fixtures; no concurrent input/reset or physical reset is claimed.",
+    "Existing diagnostic and warm-reset refusals protect the nonempty E10 bank and copied image in these ten entry cases. Unknown interior/computed bypasses and warm copier replay remain outside this check."
+  ]
+}

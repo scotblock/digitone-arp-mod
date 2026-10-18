@@ -1,0 +1,1176 @@
+{
+  "PC_only": true,
+  "helpers_host_loaded": false,
+  "hooks_host_patched": false,
+  "M1_initializer_host_called": false,
+  "settings_host_written": false,
+  "candidate_sha256": "bec5b8bbb71a17a96a5acd30962166e6d38b57e0f4c72c7a81ccf7d8e082b4c7",
+  "startup_snapshot": "<workspace>\\work\\E10-package-startup-E10_restored\\snapshots\\PC_ONLY-E10-package-loader-test\\gui-raw.snap",
+  "wire": [],
+  "marks": [],
+  "samples": [],
+  "failure": null,
+  "steps": [
+    {
+      "label": "configured_2",
+      "ms": 2014.929890625,
+      "UI_owner": "0x413084fa",
+      "consumed_owner": "0x413084fa",
+      "step_owner": "0x413084fa",
+      "slot": 3,
+      "fields": [
+        1,
+        16,
+        65533,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "held": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "arp_config": [
+        1,
+        3,
+        50,
+        0
+      ],
+      "settings_word": 44466
+    },
+    {
+      "label": "configured_1",
+      "ms": 4410.9299375,
+      "UI_owner": "0x41307b72",
+      "consumed_owner": "0x41307b72",
+      "step_owner": "0x413084fa",
+      "slot": 3,
+      "fields": [
+        1,
+        16,
+        65533,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "held": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "arp_config": [
+        1,
+        3,
+        50,
+        0
+      ],
+      "settings_word": 44466
+    },
+    {
+      "label": "A03_held",
+      "ms": 7072.9299375,
+      "UI_owner": "0x41307b72",
+      "consumed_owner": "0x41307b72",
+      "step_owner": "0x41307b72",
+      "slot": 2,
+      "fields": [
+        1,
+        15,
+        65535,
+        2147483776,
+        "01000000000000000000000000000000"
+      ],
+      "held": [
+        1,
+        1,
+        3,
+        0
+      ],
+      "arp_config": [
+        1,
+        3,
+        50,
+        0
+      ],
+      "settings_word": 44466
+    },
+    {
+      "label": "A04_requested",
+      "ms": 7464.000203125,
+      "UI_owner": "0x41307b72",
+      "consumed_owner": "0x41307b72",
+      "step_owner": "0x41307b72",
+      "slot": 2,
+      "fields": [
+        1,
+        15,
+        65535,
+        2147483776,
+        "01000000000000000000000000000000"
+      ],
+      "held": [
+        1,
+        1,
+        3,
+        0
+      ],
+      "arp_config": [
+        1,
+        3,
+        50,
+        0
+      ],
+      "settings_word": 44466
+    },
+    {
+      "label": "A04_consumed",
+      "ms": 8714.9299375,
+      "UI_owner": "0x413084fa",
+      "consumed_owner": "0x413084fa",
+      "step_owner": "0x413084fa",
+      "slot": 3,
+      "fields": [
+        1,
+        16,
+        65533,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "held": [
+        1,
+        1,
+        3,
+        0
+      ],
+      "arp_config": [
+        1,
+        3,
+        50,
+        0
+      ],
+      "settings_word": 44466
+    },
+    {
+      "label": "A04_playback",
+      "ms": 11114.9299375,
+      "UI_owner": "0x413084fa",
+      "consumed_owner": "0x413084fa",
+      "step_owner": "0x413084fa",
+      "slot": 3,
+      "fields": [
+        1,
+        16,
+        65533,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "held": [
+        1,
+        1,
+        3,
+        0
+      ],
+      "arp_config": [
+        1,
+        3,
+        50,
+        0
+      ],
+      "settings_word": 44466
+    },
+    {
+      "label": "released_stop",
+      "ms": 11675.596609375,
+      "UI_owner": "0x413084fa",
+      "consumed_owner": "0x413084fa",
+      "step_owner": "0x413084fa",
+      "slot": 3,
+      "fields": [
+        1,
+        16,
+        65533,
+        2147483777,
+        "ff000000000000000000000000000000"
+      ],
+      "held": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "arp_config": [
+        1,
+        3,
+        50,
+        0
+      ],
+      "settings_word": 44466
+    }
+  ],
+  "consumed_recalls": [
+    {
+      "phase": "A03_held",
+      "owner": "0x41307b72",
+      "held": 0,
+      "arena": 0
+    },
+    {
+      "phase": "A03_held",
+      "owner": "0x41307b72",
+      "held": 1,
+      "arena": 0
+    },
+    {
+      "phase": "A03_held",
+      "owner": "0x41307b72",
+      "held": 2,
+      "arena": 0
+    },
+    {
+      "phase": "A03_held",
+      "owner": "0x41307b72",
+      "held": 3,
+      "arena": 0
+    },
+    {
+      "phase": "handoff_A04",
+      "owner": "0x413084fa",
+      "held": 3,
+      "arena": 0
+    },
+    {
+      "phase": "handoff_A04",
+      "owner": "0x413084fa",
+      "held": 3,
+      "arena": 0
+    }
+  ],
+  "bank_host_written": false,
+  "startup_copier_source_reclaimed": true,
+  "input_gate_fixture": {
+    "before": 3,
+    "after": 3
+  },
+  "confirmed_held_handoff": true,
+  "due_steps": [
+    {
+      "phase": "A03_held",
+      "cursor": 0,
+      "length": 15,
+      "mask": 65535,
+      "offset": 1,
+      "rests": 0,
+      "emitted": 0
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 1,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 1
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 2,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 2
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 3,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 3
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 4,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 4
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 5,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 5
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 6,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 6
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 7,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 7
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 8,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 8
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 9,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 9
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 10,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 10
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 11,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 11
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 12,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 12
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 13,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 13
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 14,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 14
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 0,
+      "length": 15,
+      "mask": 65535,
+      "offset": 1,
+      "rests": 0,
+      "emitted": 15
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 1,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 16
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 2,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 17
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 3,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 18
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 4,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 19
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 5,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 20
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 6,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 21
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 7,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 22
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 8,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 23
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 9,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 24
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 10,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 25
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 11,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 26
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 12,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 27
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 13,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 28
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 14,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 29
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 0,
+      "length": 15,
+      "mask": 65535,
+      "offset": 1,
+      "rests": 0,
+      "emitted": 30
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 1,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 31
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 2,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 32
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 3,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 33
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 4,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 34
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 5,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 35
+    },
+    {
+      "phase": "A03_held",
+      "cursor": 6,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 36
+    },
+    {
+      "phase": "request_A02",
+      "cursor": 7,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 37
+    },
+    {
+      "phase": "request_A02",
+      "cursor": 8,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 38
+    },
+    {
+      "phase": "request_A02",
+      "cursor": 9,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 39
+    },
+    {
+      "phase": "request_A02",
+      "cursor": 10,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 40
+    },
+    {
+      "phase": "request_A02",
+      "cursor": 11,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 41
+    },
+    {
+      "phase": "request_A02",
+      "cursor": 12,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 42
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 13,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 43
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 14,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 44
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 0,
+      "length": 15,
+      "mask": 65535,
+      "offset": 1,
+      "rests": 0,
+      "emitted": 45
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 1,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 46
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 2,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 47
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 3,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 48
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 4,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 49
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 5,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 50
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 6,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 51
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 7,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 52
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 8,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 53
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 9,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 54
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 10,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 55
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 11,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 56
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 12,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 57
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 13,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 58
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 14,
+      "length": 15,
+      "mask": 65535,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 59
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 0,
+      "length": 15,
+      "mask": 65535,
+      "offset": 1,
+      "rests": 0,
+      "emitted": 60
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 0,
+      "length": 16,
+      "mask": 65533,
+      "offset": -1,
+      "rests": 0,
+      "emitted": 0
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 1,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 0,
+      "emitted": 1
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 2,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 1,
+      "emitted": 1
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 3,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 1,
+      "emitted": 2
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 4,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 1,
+      "emitted": 3
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 5,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 1,
+      "emitted": 4
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 6,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 1,
+      "emitted": 5
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 7,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 1,
+      "emitted": 6
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 8,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 1,
+      "emitted": 7
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 9,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 1,
+      "emitted": 8
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 10,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 1,
+      "emitted": 9
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 11,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 1,
+      "emitted": 10
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 12,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 1,
+      "emitted": 11
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 13,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 1,
+      "emitted": 12
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 14,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 1,
+      "emitted": 13
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 15,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 1,
+      "emitted": 14
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 0,
+      "length": 16,
+      "mask": 65533,
+      "offset": -1,
+      "rests": 1,
+      "emitted": 15
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 1,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 1,
+      "emitted": 16
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 2,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 2,
+      "emitted": 16
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 3,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 2,
+      "emitted": 17
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 4,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 2,
+      "emitted": 18
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 5,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 2,
+      "emitted": 19
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 6,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 2,
+      "emitted": 20
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 7,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 2,
+      "emitted": 21
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 8,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 2,
+      "emitted": 22
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 9,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 2,
+      "emitted": 23
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 10,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 2,
+      "emitted": 24
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 11,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 2,
+      "emitted": 25
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 12,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 2,
+      "emitted": 26
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 13,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 2,
+      "emitted": 27
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 14,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 2,
+      "emitted": 28
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 15,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 2,
+      "emitted": 29
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 0,
+      "length": 16,
+      "mask": 65533,
+      "offset": -1,
+      "rests": 2,
+      "emitted": 30
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 1,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 2,
+      "emitted": 31
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 2,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 3,
+      "emitted": 31
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 3,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 3,
+      "emitted": 32
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 4,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 3,
+      "emitted": 33
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 5,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 3,
+      "emitted": 34
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 6,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 3,
+      "emitted": 35
+    },
+    {
+      "phase": "handoff_A04",
+      "cursor": 7,
+      "length": 16,
+      "mask": 65533,
+      "offset": 0,
+      "rests": 3,
+      "emitted": 36
+    }
+  ],
+  "rest_consumption_observed": true,
+  "distinct_programs_consumed": true,
+  "passed": true,
+  "bank_preserved": true,
+  "matching_fields_after_consumed_handoff": true,
+  "limits": [
+    "Actual native PTN selection, backing replacement and consumed-owner recall; no code/bank/settings host writes. Input gate is the inherited emulator MIDI fixture.",
+    "One held-chord handoff and release/Stop. Physical timing, exceptional resets, copy/clear/undo and broader transition coverage remain separate."
+  ]
+}

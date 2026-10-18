@@ -1,0 +1,97 @@
+{
+  "PC_only": true,
+  "passed": true,
+  "checks": [
+    {
+      "check": "Internal package hash remains unchanged",
+      "passed": true
+    },
+    {
+      "check": "editor execution passes",
+      "passed": true
+    },
+    {
+      "check": "restart execution passes",
+      "passed": true
+    },
+    {
+      "check": "recall execution passes",
+      "passed": true
+    },
+    {
+      "check": "handoff execution passes",
+      "passed": true
+    },
+    {
+      "check": "copy_clear execution passes",
+      "passed": true
+    },
+    {
+      "check": "reset execution passes",
+      "passed": true
+    },
+    {
+      "check": "Native distinct two-pattern edit and named save/load",
+      "passed": true
+    },
+    {
+      "check": "No editor code or bank overlay",
+      "passed": true
+    },
+    {
+      "check": "A04 explicitly contains the programmed step-2 rest",
+      "passed": true
+    },
+    {
+      "check": "Cold restart, saved native load and both panel programs recalled",
+      "passed": true
+    },
+    {
+      "check": "Actual consumed handoff, distinct programs and rests",
+      "passed": true
+    },
+    {
+      "check": "Paste/undo and clear/undo match retained image",
+      "passed": true
+    },
+    {
+      "check": "Ten guarded reset entries preserve storage",
+      "passed": true
+    },
+    {
+      "check": "Lifecycle MAIN and copied code remain unchanged",
+      "passed": true
+    },
+    {
+      "check": "Working E09A firmware remains unchanged",
+      "passed": true
+    }
+  ],
+  "candidate_sha256": "bec5b8bbb71a17a96a5acd30962166e6d38b57e0f4c72c7a81ccf7d8e082b4c7",
+  "reports": {
+    "editor": "outputs/Digitone-E10-PC-package-workflow-patterns.json",
+    "restart": "outputs/Digitone-E10-PC-package-workflow-restart.json",
+    "recall": "outputs/Digitone-E10-PC-package-workflow-recall.json",
+    "handoff": "outputs/Digitone-E10-PC-package-workflow-handoff.json",
+    "copy_clear": "outputs/Digitone-E10-PC-package-workflow-copy.json",
+    "reset": "outputs/Digitone-E10-PC-package-workflow-reset.json"
+  },
+  "source_sha256": {
+    "work\\test-PC-E10-package-workflow-copy.py": "c347aca35fee80a566bbdb7dbf60c745d5eb63aab5a0bfa02d5654af0b35dd3a",
+    "work\\test-PC-E10-package-workflow-handoff.py": "1d89b6d227e61982d9a7a9e4882398efaced2a6e24bb12bc379aa7dc937bdd4d",
+    "work\\test-PC-E10-package-workflow-recall.py": "abf3418e4ed0dcb3e34f179f54624c34f66f598c5e1a4d7e3c383980fa4280cf",
+    "work\\test-PC-E10-package-workflow-reset.py": "d65fa2612d8e10b80c4cca01c45ffb3e25ddf2a0da5d650465f61b98852f8b61",
+    "work\\test-PC-E10-package-workflow-restart.py": "9de72ccb8d53fdd84f30b32836183443cb02707698010182bfdf27214ea2d3e2",
+    "work\\test-PC-E10-package-workflow.py": "62d137bd06e1e27ce9a3bcf62810ece654ce9888feea2a5805a486b20af4c0d6",
+    "<workspace>\\work\\verify-PC-E10-package-workflow.py": "12b2412cdf375d91e9430af533bfc6ffd21b3aefa0eeacca59243be2b1b97640"
+  },
+  "firmware_code_changed": false,
+  "firmware_release_created": false,
+  "hardware_ready": false,
+  "stock_power_handling": "Accepted inherited assumption; no abrupt-loss guarantee.",
+  "limits": [
+    "Private PC cards and serialized loader/UI handoffs; inherited ISA, timer, DDR, DSP, input and peripheral model fixtures remain.",
+    "Stopped copy/undo and trig clear/undo retain arp settings by stock semantics. Ten reset cases exercise direct guarded entries with admission fixtures, not physical reset overlap.",
+    "M1 prototype only. No new device update, physical timing/cache validation or power-system redesign."
+  ]
+}
