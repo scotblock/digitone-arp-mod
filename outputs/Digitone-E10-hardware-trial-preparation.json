@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "trial_candidate_prepared": true,
+  "candidate": "<workspace>\\outputs\\E10-hardware-trial\\Digitone_OS1.44E10_M1_STEPS_HARDWARE_TRIAL.syx",
+  "candidate_sha256": "bec5b8bbb71a17a96a5acd30962166e6d38b57e0f4c72c7a81ccf7d8e082b4c7",
+  "bytes": 1614496,
+  "identical_to_tested_container": true,
+  "firmware_code_changed": false,
+  "patch_zip": "<workspace>\\outputs\\E10-hardware-trial\\Digitone-OS1.44-E10-hardware-trial-patch.zip",
+  "patch_zip_sha256": "802df1903e765a8ef6fa3cf19fb458569372a78b2c95df8714d6672051bb6415",
+  "patcher_cli_reconstructs_exact_bytes": true,
+  "patcher_refuses_overwrite": true,
+  "stock_recovery_sha256": "d4f200d04484333d82822db7744e6484d0def8f2db8ddf55ee2b780cc13c9659",
+  "startup_DIN_checks_passed": 4,
+  "device_contacted": false,
+  "hardware_trial_pending": true,
+  "hardware_certified": false,
+  "github_release_published": false,
+  "limitations": [
+    "Modeled receiver uses SRAM code, first/end UART IRQ and recovered data callback; flash geometry/erase/program are fixtures.",
+    "PC loader/state handoffs, native startup and user workflows pass; physical RAM/cache/timing and all project/reset routes remain unproven.",
+    "Stock power handling is the accepted inherited assumption, not a guaranteed abrupt-loss recovery claim."
+  ]
+}

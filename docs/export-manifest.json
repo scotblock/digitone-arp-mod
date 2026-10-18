@@ -10361,6 +10361,55 @@
       "source_sha256": "64e0a5564aee68533f31b7768ef02057e22cdc12ca1c350d46c26077bc555f82",
       "export_sha256": "46a7600548579dce765a617daa788f866b2a37813bc516dac7d5476cf17e1fdb",
       "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/test-E10-startup-DIN-route.py",
+      "path": "work/test-E10-startup-DIN-route.py",
+      "source_sha256": "f3c7be08a35793834b9fbcf14f2b27089e86f1be188714270c33d440c0de868f",
+      "export_sha256": "47c8b12a5390d886da4292e97ca28f65b1ab8cd456ee2cac6d6665ecc2a2e932",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "work/prepare-E10-hardware-trial.py",
+      "path": "work/prepare-E10-hardware-trial.py",
+      "source_sha256": "9b526ddc57c993c2365691341da0669bf6845e096599d4696dfce1306482aeea",
+      "export_sha256": "a036233478dd610c9ed4114d754359bd531a11919420e1a28172783d32d114fe",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E10-startup-DIN-checks.json",
+      "path": "outputs/Digitone-E10-startup-DIN-checks.json",
+      "source_sha256": "c1cbf4313b8109d44d324e99d014541062059d169c730d399fd365b6ae1a585b",
+      "export_sha256": "b4cc5868c8bc68dc3b19bc75ea47476da327860931e87051bfb4b93cfdf70f53",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E10-hardware-trial-preparation.json",
+      "path": "outputs/Digitone-E10-hardware-trial-preparation.json",
+      "source_sha256": "4a9edf9b436f78f5717f8fb49f606b94ebd45bf01a982f012c9a7a4deb40cb63",
+      "export_sha256": "d223af63bea1e976fc74060c7b21c4ef5ee275736b4141d88494dc7f55c5c94d",
+      "personal_paths_rewritten": true
+    },
+    {
+      "source": "outputs/E10-hardware-trial/README.md",
+      "path": "outputs/Digitone-E10-hardware-trial-guide.md",
+      "source_sha256": "41d92111d91520887282c4fa274e5112c6ecdadede9a7a4ac93007bf122e576b",
+      "export_sha256": "85604530e542ff71dbe6ec0db7c1b46d72e03aa85dbcdcf5a76f6ce583714d4b",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/E10-hardware-trial/RECOVERY.md",
+      "path": "outputs/Digitone-E10-hardware-trial-recovery.md",
+      "source_sha256": "78ab8e9228773e9ae6a4779254095c282c70d73876cf2de1f8f46d36996179be",
+      "export_sha256": "78ab8e9228773e9ae6a4779254095c282c70d73876cf2de1f8f46d36996179be",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/E10-hardware-trial/TRIAL_RESULTS.md",
+      "path": "outputs/Digitone-E10-hardware-trial-results-template.md",
+      "source_sha256": "5099c6df303af9ee0db8601b2ee1a7fc74785b79434e99c261ee551893b061d3",
+      "export_sha256": "5099c6df303af9ee0db8601b2ee1a7fc74785b79434e99c261ee551893b061d3",
+      "personal_paths_rewritten": false
     }
   ]
 }

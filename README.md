@@ -12,11 +12,13 @@ Source and research archive for the original Elektron Digitone / Digitone Keys, 
 | E08F | M1 MIDI-track UP arp, MODE/RATE/GATE controls, corrected menu routing | User reported working on Digitone; exact installed hash not independently verified |
 | E09 | Synth arp follows normal DIN / USB / both selection, independent note ownership per port | PC tests only; physical dual-port validation outstanding |
 | E09A | Corrects M1 sequenced notes selecting parameter-lock lists as arp settings | User confirms physical synth/M1 arp DIN and USB output and M1 sequencer-triggered arp; installed hash not independently verified |
-| E10 prototype | M1 16-step scale-degree sequence, rests, root/scale controls and native encoder editor | Packaged edit/save/cold-restart/recall, held-chord handoff, copy/clear and guarded reset checks pass on PC; no hardware-ready E10 release |
+| E10 prototype | M1 16-step scale-degree sequence, rests, root/scale controls and native encoder editor | Packaged PC workflows pass; exact-byte experimental hardware-trial candidate prepared locally; physical E10 trial pending |
 
 M2–M4 arps are **not implemented**. A MIDI arp step editor now exists as an **E10 PC prototype**, with native startup/reset integration tested on PC. Native editor-to-bank publication, project saving/reloading and consumed-pattern recall now pass PC tests. Stopped native copy/paste/undo and clear/undo, ten guarded reset entries, and unsaved cache write/cold restore now pass PC checks. Modeled automatic shutdown and cold recovery now pass when the write completes. A synthetic first-chunk interruption exposes an unchanged stock bank-selection limitation; physical hold-up timing and hardware readiness remain unverified. E08F/E09 have a **confirmed M1 sequencer arp bug**: a sequenced note can disable the arp by selecting the wrong settings source. E09A corrects that source selection, with user-reported sequencer operation on hardware. Broader multi-note sequence entry, additional transition/copy/reset families and physical E10 behavior remain outside current coverage. E08E contains a known menu regression and is superseded by E08F. E04 failed to finish startup on hardware; stock was restored successfully.
 
 ## Start here
+
+- [E10 controlled hardware-trial guide](outputs/Digitone-E10-hardware-trial-guide.md) — exact tested bytes frozen locally, startup-menu DIN model and stock-dependent patch reconstruction pass; no hardware certification or public E10 release.
 
 - [E10 complete packaged PC workflow](outputs/Digitone-E10-PC-package-workflow-notes.md) — distinct programs, native save, cold restart/named recall, held-note handoff and copy/clear/reset checks.
 
