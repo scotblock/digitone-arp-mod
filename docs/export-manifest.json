@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-10-18",
+  "snapshot_date": "2026-10-19",
   "kind": "source-only archive",
   "files": [
     {
@@ -10570,6 +10570,13 @@
       "path": "outputs/Digitone-E11-control-guide.md",
       "source_sha256": "4b28bd1e91a116ce2b08d426f738718afea225e3eedcbff6e16205ee24005d7c",
       "export_sha256": "4b28bd1e91a116ce2b08d426f738718afea225e3eedcbff6e16205ee24005d7c",
+      "personal_paths_rewritten": false
+    },
+    {
+      "source": "outputs/Digitone-E11-hardware-observation-2026-10-19.json",
+      "path": "outputs/Digitone-E11-hardware-observation-2026-10-19.json",
+      "source_sha256": "d4d133756a2feaffbfd820b3472555c9256751a3c3746e97dc2361a584420c6c",
+      "export_sha256": "d4d133756a2feaffbfd820b3472555c9256751a3c3746e97dc2361a584420c6c",
       "personal_paths_rewritten": false
     }
   ]

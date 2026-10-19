@@ -43,3 +43,7 @@ The user accepts stock power handling as an inherited assumption and chose to ke
 ## E11 synth-style M1 editor — 18 October 2026
 
 [Verification](../outputs/Digitone-E11-PC-verification.json) covers native arrow/E/F programming, idempotent rest keys, cursor/length clamping, record/mirror validation, pattern recall and M2 isolation. Actual package loader/native startup copies the new UI; final playback gives 25 matching pairs per port without a UI overlay. Copy size grows by 7,792 bytes within the prior address bound, whose physical exclusivity is not proved. Full new E11 save/reboot/copy/reset coverage and physical cache/timing/UI behavior remain pending. [Notes](../outputs/Digitone-E11-synth-style-notes.md).
+
+## E11 hardware observation — 19 October 2026
+
+The user reports E11 working on the physical Digitone. [Observation](../outputs/Digitone-E11-hardware-observation-2026-10-19.json). The installed hash and individual controls, DIN/USB note-offs, E11 project reload and cold restart were not separately confirmed in this report. Earlier PC results remain separate. No firmware change or new device action was performed.

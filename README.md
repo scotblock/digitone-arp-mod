@@ -2,7 +2,7 @@
 
 Source and research archive for the original Elektron Digitone / Digitone Keys, focused on OS 1.44. Unofficial; not affiliated with Elektron.
 
-## Current status — 18 October 2026
+## Current status — 19 October 2026
 
 | Build | Change | Evidence |
 | --- | --- | --- |
@@ -12,10 +12,10 @@ Source and research archive for the original Elektron Digitone / Digitone Keys, 
 | E08F | M1 MIDI-track UP arp, MODE/RATE/GATE controls, corrected menu routing | User reported working on Digitone; exact installed hash not independently verified |
 | E09 | Synth arp follows normal DIN / USB / both selection, independent note ownership per port | PC tests only; physical dual-port validation outstanding |
 | E09A | Corrects M1 sequenced notes selecting parameter-lock lists as arp settings | User confirms physical synth/M1 arp DIN and USB output and M1 sequencer-triggered arp; installed hash not independently verified |
-| E10 prototype | M1 16-step scale-degree sequence, rests, root/scale controls and native encoder editor | Packaged PC workflows pass; exact-byte experimental hardware-trial candidate prepared locally; physical E10 trial pending |
-| E11 experimental candidate | M1 synth-style Left/Right, E/F and Up/Down step programming | Native controls, packaged loader/startup and playback pass on PC; physical E11 trial pending |
+| E10 prototype | M1 16-step scale-degree sequence, rests, root/scale controls and native encoder editor | PC workflows pass; user reports saved patterns and independent offsets/rest recall after project reload; installed hash not independently verified |
+| E11 experimental candidate | M1 synth-style Left/Right, E/F and Up/Down step programming | PC checks pass; user reports E11 working on the physical Digitone (19 October); installed hash and individual test cases not independently verified |
 
-M2–M4 arps are **not implemented**. A MIDI arp step editor now exists as an **E10 PC prototype**, with native startup/reset integration tested on PC. Native editor-to-bank publication, project saving/reloading and consumed-pattern recall now pass PC tests. Stopped native copy/paste/undo and clear/undo, ten guarded reset entries, and unsaved cache write/cold restore now pass PC checks. Modeled automatic shutdown and cold recovery now pass when the write completes. A synthetic first-chunk interruption exposes an unchanged stock bank-selection limitation; physical hold-up timing and hardware readiness remain unverified. E08F/E09 have a **confirmed M1 sequencer arp bug**: a sequenced note can disable the arp by selecting the wrong settings source. E09A corrects that source selection, with user-reported sequencer operation on hardware. Broader multi-note sequence entry, additional transition/copy/reset families and physical E10 behavior remain outside current coverage. E08E contains a known menu regression and is superseded by E08F. E04 failed to finish startup on hardware; stock was restored successfully.
+M2–M4 arps are **not implemented**. A MIDI arp step editor now exists as an **E10 PC prototype**, with native startup/reset integration tested on PC and user-reported E11 hardware operation. Native editor-to-bank publication, project saving/reloading and consumed-pattern recall now pass PC tests. Stopped native copy/paste/undo and clear/undo, ten guarded reset entries, and unsaved cache write/cold restore now pass PC checks. Modeled automatic shutdown and cold recovery now pass when the write completes. A synthetic first-chunk interruption exposes an unchanged stock bank-selection limitation; physical hold-up timing and hardware readiness remain unverified. E08F/E09 have a **confirmed M1 sequencer arp bug**: a sequenced note can disable the arp by selecting the wrong settings source. E09A corrects that source selection, with user-reported sequencer operation on hardware. Broader multi-note sequence entry, additional transition/copy/reset families and physical E10 behavior remain outside current coverage. E08E contains a known menu regression and is superseded by E08F. E04 failed to finish startup on hardware; stock was restored successfully.
 
 ## Start here
 

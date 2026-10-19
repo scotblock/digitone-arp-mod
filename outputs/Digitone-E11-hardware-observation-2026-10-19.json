@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-19",
+  "source": "Direct user report in this chat",
+  "user_statement": "e11 works with hardware",
+  "device_context": "Original Digitone, per this project conversation",
+  "build_context": "E11; installed hash not independently verified",
+  "supplied_candidate_sha256": "d7d3776054093b8a9b2999fc5b100c4cb88d436ab62685b6cd44770a6e4ecf75",
+  "user_reported_working_on_hardware": true,
+  "independently_observed": false,
+  "detailed_controls_individually_confirmed": false,
+  "DIN_USB_note_offs_individually_confirmed": false,
+  "E11_named_save_reload_and_cold_restart_individually_confirmed": false,
+  "scope": "General user-reported hardware operation; no additional detailed tests or universal certification inferred."
+}
