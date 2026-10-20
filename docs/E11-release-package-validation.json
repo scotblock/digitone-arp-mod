@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-20",
+  "build": "E11",
+  "passed": true,
+  "patcher_unit_tests_passed": 8,
+  "extracted_CLI_reconstruction_exact": true,
+  "overwrite_refused": true,
+  "package_generation_deterministic": true,
+  "complete_firmware_or_user_state_in_ZIP": false,
+  "candidate_sha256": "d7d3776054093b8a9b2999fc5b100c4cb88d436ab62685b6cd44770a6e4ecf75",
+  "zip_sha256": "0a6c244101d72dcf62edd340a848f53372908fa80f15298688dc274931529213",
+  "zip_name": "Digitone-OS1.44-E11-patch.zip",
+  "firmware_changed": false,
+  "development_status": "Paused at user request",
+  "new_firmware_execution_tests": false
+}

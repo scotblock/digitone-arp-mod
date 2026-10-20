@@ -19,6 +19,10 @@ M2–M4 arps are **not implemented**. A MIDI arp step editor now exists as an **
 
 ## Start here
 
+**Development paused at the user's request on 20 October 2026. E11 is the current working M1 build.**
+
+- [Download the E11 patch release](https://github.com/scotblock/digitone-arp-mod/releases/tag/patches-2026-10-20-e11) — supply your own stock OS 1.44 file; no full firmware is hosted.
+
 - [E11 synth-style M1 programming](outputs/Digitone-E11-synth-style-notes.md) — native arrow/E/F editor and separate experimental candidate; E10 unchanged.
 
 - [E10 controlled hardware-trial guide](outputs/Digitone-E10-hardware-trial-guide.md) — exact tested bytes frozen locally, startup-menu DIN model and stock-dependent patch reconstruction pass; no hardware certification or public E10 release.
@@ -52,7 +56,7 @@ M2–M4 arps are **not implemented**. A MIDI arp step editor now exists as an **
 
 `work/` preserves the research scripts and their original relative paths. `outputs/` contains historical notes and selected recorded results. Older notes describe experiments, proposed changes and superseded decisions; they are not current installation instructions.
 
-The research tree is a **source archive, not a turnkey source build**. Experimental release packages provide a separate stock-dependent patcher for E08F and the E09 PC-only preview. Stock/modified firmware, extracted firmware sections, flash cards, snapshots, recordings and private projects are excluded. Firmware inputs must be obtained separately. No complete installable image is supplied, and a passing PC test does not establish hardware readiness.
+The research tree is a **source archive, not a turnkey source build**. Experimental release packages provide a stock-dependent patcher for E11 and selected historical builds. Stock/modified firmware, extracted firmware sections, flash cards, snapshots, recordings and private projects are excluded. Firmware inputs must be obtained separately. No complete installable image is supplied, and a passing PC test does not establish hardware readiness.
 
 Personal absolute file paths were rewritten during export. The manifest records hashes of the original and exported source. Some historical scripts still require local path/toolchain configuration and generated artifacts. See the reproducibility notes before running them.
 

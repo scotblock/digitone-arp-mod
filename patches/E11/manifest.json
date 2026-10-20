@@ -1,0 +1,24 @@
+{
+  "patch_metadata": {
+    "format": "digitone-xor-v1",
+    "build": "E11",
+    "device": "Original Digitone / Digitone Keys",
+    "base_os": "1.44",
+    "status": "Experimental; user-reported Digitone operation and pattern saving, 19-20 October 2026; not hardware-certified",
+    "source_bytes": 1673760,
+    "source_sha256": "d4f200d04484333d82822db7744e6484d0def8f2db8ddf55ee2b780cc13c9659",
+    "target_bytes": 1615136,
+    "target_sha256": "d7d3776054093b8a9b2999fc5b100c4cb88d436ab62685b6cd44770a6e4ecf75",
+    "output_filename": "Digitone_OS1.44E11_M1_SYNTH_STYLE_EXPERIMENTAL.syx",
+    "delta_sha256": "55ef485d9455d77d3a4e9c62e1f0f83c44342da8421714ae5e6cf301410f1bd4"
+  },
+  "patch_sha256": "aa90805479d398de8d4545ed8929e54f06ed31d0ac1b2b8108576131ace603fa",
+  "validation": {
+    "reconstructed_byte_exact": true,
+    "firmware_bytes_unchanged": true,
+    "user_reported_hardware_operation": true,
+    "user_reported_pattern_saving": true,
+    "installed_hash_independently_verified": false,
+    "hardware_certified": false
+  }
+}

@@ -40,3 +40,5 @@ Historical notes are retained as dated research, including failed approaches. Th
 - 19 October 2026 — User reports “e11 works with hardware” on the physical Digitone. Recorded as a general user observation, not independent hash verification or confirmation of every control, port, note-off, save/reload or cold-restart case. No firmware changed.
 
 - 20 October 2026 — User reports E11 patterns saved successfully on the Digitone. Keep E11 as the current working M1 baseline. Exact restart/reload steps were not separately described; no extra hardware claims or firmware changes inferred.
+
+- 20 October 2026 — Prepared E11 for public stock-dependent patch release with updated user-reported hardware/saving status. Firmware bytes unchanged. Development paused at the user's request; no new feature work.

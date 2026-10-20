@@ -1,5 +1,5 @@
 @echo off
-git -C "%~dp0." push --atomic origin main refs/tags/patches-2026-10-17-e09a
+git -C "%~dp0." push --atomic origin main refs/tags/patches-2026-10-20-e11
 if errorlevel 1 goto failed
 echo.
 echo Upload complete. GitHub Actions will test and publish the patch ZIP files.
