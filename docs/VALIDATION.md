@@ -47,3 +47,7 @@ The user accepts stock power handling as an inherited assumption and chose to ke
 ## E11 hardware observation — 19 October 2026
 
 The user reports E11 working on the physical Digitone. [Observation](../outputs/Digitone-E11-hardware-observation-2026-10-19.json). The installed hash and individual controls, DIN/USB note-offs, E11 project reload and cold restart were not separately confirmed in this report. Earlier PC results remain separate. No firmware change or new device action was performed.
+
+## E11 pattern saving — 20 October 2026
+
+The user reports “patterns saved ok” following the suggested two-pattern save/restart/reload check. [Observation](../outputs/Digitone-E11-saving-observation-2026-10-20.json). This confirms user-reported successful saving; exact restart/reload steps and individual offset/rest comparisons were not separately described. E11 is the current working M1 baseline; no firmware changed.

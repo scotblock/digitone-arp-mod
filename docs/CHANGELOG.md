@@ -38,3 +38,5 @@ Historical notes are retained as dated research, including failed approaches. Th
 - 18 October 2026 — E11 adds synth-style M1 Left/Right, E/F and Up/Down programming plus a step strip. E10 backend/format and M1-only scope retained. Native editor/mirror/recall, actual loader/startup, 128-record restore and 25 matching keyboard/sequencer note pairs per port pass on PC. Exact-container startup-DIN controls and local patch reconstruction pass. E10 unchanged; physical E11 trial pending; no public release.
 
 - 19 October 2026 — User reports “e11 works with hardware” on the physical Digitone. Recorded as a general user observation, not independent hash verification or confirmation of every control, port, note-off, save/reload or cold-restart case. No firmware changed.
+
+- 20 October 2026 — User reports E11 patterns saved successfully on the Digitone. Keep E11 as the current working M1 baseline. Exact restart/reload steps were not separately described; no extra hardware claims or firmware changes inferred.

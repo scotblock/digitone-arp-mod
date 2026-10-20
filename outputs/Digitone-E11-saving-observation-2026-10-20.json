@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-20",
+  "source": "Direct user report in this chat",
+  "user_statement": "patterns saved ok",
+  "build_context": "E11 on the physical Digitone, per ongoing conversation",
+  "user_reported_pattern_saving_working": true,
+  "independently_observed": false,
+  "installed_hash_independently_verified": false,
+  "context": "Follow-up to the suggested two-pattern save/restart/reload check.",
+  "scope": "Records successful saving as reported; exact restart, reload and individual field checks were not separately described.",
+  "current_working_M1_baseline": "E11",
+  "firmware_changed": false
+}
